@@ -1,24 +1,33 @@
-const fs = require("fs");
-const { promisify } = require("util");
-const readdir = promisify(require("fs").readdir);
+import fs = require('fs');
 
-const Discord = require("discord.js");
+import * as Discord from 'discord.js';
+import config from './config';
+import * as logger from './functions/logger';
 
-class GuideBot extends Discord.Client {
-	/** @type { import("./commands/help")[]} */
-	commands = [];
+var wait = require('util').promisify(setTimeout);
+
+export default class GuideBot extends Discord.Client {
+	/** @type { } */
+	commands: typeof import('./commands/help')[];
+	config = config;
+	configLevels: any;
+	aliases: any[];
+	logger: any;
+	wait: any;
+	settings: any;
 
 	/**
 	 * @param {import("discord.js").ClientOptions} options
 	 */
-	constructor(options) {
+	constructor(options?: import('discord.js').ClientOptions) {
 		super(options);
 
 		// Here we load the config.js file that contains our token and our prefix values.
-		this.config = require("./config.js");
+		this.config = config;
+
 		// client.config.token contains the bot's token
 		// client.config.prefix contains the message prefix
-		this.configLevels = require("./configLevels.js");
+		this.configLevels = require('./configLevels.js');
 
 		// Aliases and commands are put in collections where they can be read from,
 		// catalogued, listed, etc.
@@ -31,10 +40,10 @@ class GuideBot extends Discord.Client {
 		// this.settings = {};
 
 		//requiring the Logger class for easy console logging
-		this.logger = require("./functions/logger.js");
+		this.logger = logger;
 
 		// Basically just an async shortcut to using a setTimeout. Nothing fancy!
-		this.wait = require("util").promisify(setTimeout);
+		this.wait = require('util').promisify(setTimeout);
 	}
 
 	/**
@@ -95,13 +104,13 @@ class GuideBot extends Discord.Client {
 	loadCommand(commandPath) {
 		try {
 			const props = require(`./commands/${commandPath}`);
-			this.logger.log(`Loading Command: ${props.help.name}. `, "log");
+			this.logger.log(`Loading Command: ${props.help.name}`, 'log');
 			this.commands.push(props);
 			// this.logger.ready("Done with " + commandPath);
 		} catch (e) {
 			this.logger.log(
 				`Unable to load command ${commandPath}: ${e}`,
-				"error"
+				'error'
 			);
 		}
 	}
@@ -123,16 +132,16 @@ class GuideBot extends Discord.Client {
 	 * @param {string} text
 	 */
 	async clean(text) {
-		if (text && text.constructor.name == "Promise") text = await text;
-		if (typeof text !== "string")
-			text = require("util").inspect(text, { depth: 1 });
+		if (text && text.constructor.name == 'Promise') text = await text;
+		if (typeof text !== 'string')
+			text = require('util').inspect(text, { depth: 1 });
 
 		text = text
-			.replace(/`/g, "`" + String.fromCharCode(8203))
-			.replace(/@/g, "@" + String.fromCharCode(8203))
+			.replace(/`/g, '`' + String.fromCharCode(8203))
+			.replace(/@/g, '@' + String.fromCharCode(8203))
 			.replace(
 				this.token,
-				"mfa.VkO_2G4Qv3T--NO--lWetW_tjND--TOKEN--QFTm6YGtzq9PH--4U--tG0"
+				'mfa.VkO_2G4Qv3T--NO--lWetW_tjND--TOKEN--QFTm6YGtzq9PH--4U--tG0'
 			);
 
 		return text;
@@ -158,7 +167,7 @@ class GuideBot extends Discord.Client {
 		// });
 
 		console.log(
-			"this.config.defaultSettings " + this.config.defaultSettings
+			'this.config.defaultSettings ' + this.config.defaultSettings
 		);
 		return this.config.defaultSettings;
 	}
@@ -170,9 +179,9 @@ class GuideBot extends Discord.Client {
 	 * @param {{ [x: string]: any; }} newSettings
 	 */
 	writeSettings(id, newSettings) {
-		const defaults = this.settings.get("default");
+		const defaults = this.settings.get('default');
 		let settings = this.settings.get(id);
-		if (typeof settings != "object") settings = {};
+		if (typeof settings != 'object') settings = {};
 		for (const key in newSettings) {
 			if (defaults[key] !== newSettings[key]) {
 				settings[key] = newSettings[key];
@@ -205,7 +214,7 @@ class GuideBot extends Discord.Client {
 			const collected = await msg.channel.awaitMessages(filter, {
 				max: 1,
 				time: limit,
-				errors: ["time"],
+				errors: ['time'],
 			});
 			return collected.first().content;
 		} catch (e) {
@@ -214,6 +223,6 @@ class GuideBot extends Discord.Client {
 	}
 }
 
-module.exports = {
-	GuideBot,
-};
+// module.exports = {
+// 	GuideBot,
+// };

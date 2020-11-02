@@ -1,9 +1,9 @@
-const { version } = require("discord.js");
-const moment = require("moment");
-require("moment-duration-format");
+import { version } from 'discord.js';
+var moment = require('moment');
+require('moment-duration-format');
 
-let { GuideBot } = require("../ClientClass.js");
-const Discord = require("discord.js");
+var { GuideBot } = require('../ClientClass.js');
+import * as Discord from 'discord.js';
 
 /**
  * @param { GuideBot } client
@@ -12,7 +12,7 @@ const Discord = require("discord.js");
 exports.run = (client, message, args, level) => {
 	let duration = moment
 		.duration(client.uptime)
-		.format(" D [days], H [hrs], m [mins], s [secs]");
+		.format(' D [days], H [hrs], m [mins], s [secs]');
 	let a = message.channel.send(
 		`= STATISTICS =
 • Mem Usage  :: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB
@@ -22,7 +22,7 @@ exports.run = (client, message, args, level) => {
 • Channels   :: ${client.channels.cache.size.toLocaleString()}
 • Discord.js :: v${version}
 • Node       :: ${process.version}`,
-		{ code: "asciidoc" }
+		{ code: 'asciidoc' }
 	);
 
 	a.then((messagebot) => {
@@ -30,7 +30,7 @@ exports.run = (client, message, args, level) => {
 		var intervalID = setInterval(function () {
 			duration = moment
 				.duration(client.uptime)
-				.format(" D [days], H [hrs], m [mins], s [secs]");
+				.format(' D [days], H [hrs], m [mins], s [secs]');
 			messagebot.edit(
 				`= STATISTICS = ${x}
 • Mem Usage  :: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB
@@ -40,7 +40,7 @@ exports.run = (client, message, args, level) => {
 • Channels   :: ${client.channels.cache.size.toLocaleString()}
 • Discord.js :: v${version}
 • Node       :: ${process.version}`,
-				{ code: "asciidoc" }
+				{ code: 'asciidoc' }
 			);
 
 			if (x <= 0) {
@@ -62,8 +62,8 @@ exports.conf = {
 };
 
 exports.help = {
-	name: "stats",
-	category: "System",
-	description: "Gives some useful bot statistics",
-	usage: "stats",
+	name: 'stats',
+	category: 'System',
+	description: 'Gives some useful bot statistics',
+	usage: 'stats',
 };

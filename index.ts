@@ -1,11 +1,11 @@
-const { promisify } = require('util');
+import { promisify } from 'util';
+import * as fs from 'fs';
+var readdir = promisify(fs.readdir);
 
-const fs = require('fs');
-const readdir = promisify(require('fs').readdir);
+import * as Discord from 'discord.js';
 
-const Discord = require('discord.js');
-
-const { GuideBot } = require('./src/ClientClass.js');
+// import { GuideBot } from './src/ClientClass';
+import GuideBot from './src/ClientClass';
 
 // Default Intents the bot needs.
 // By default GuideBot needs Guilds, Guild Messages and Direct Messages to work.
@@ -16,7 +16,7 @@ const intents = ['GUILDS', 'GUILD_MESSAGES', 'DIRECT_MESSAGES'];
 // This is your client. Some people call it `bot`, some people call it `self`,
 // some might call it `cootchie`. Either way, when you see `client.something`,
 // or `bot.something`, this is what we're refering to. Your client.
-const client = new GuideBot({ ws: { intents: intents } });
+const client = new GuideBot(); //const client = new GuideBot({ ws: { intents: intents } });
 
 // We're doing real fancy node 8 async/await stuff here, and to do that
 // we need to wrap stuff in an anonymous function. It's annoying but it works.
@@ -24,36 +24,31 @@ const client = new GuideBot({ ws: { intents: intents } });
 const init = async () => {
 	// Here we load **commands** into memory, as a collection, so they're accessible
 	// here and everywhere else.
-	const cmdFiles = await readdir('./src/commands/');
+	const cmdFiles = await readdir(__dirname + '/src/commands/');
 	client.logger.debug(`Loading a total of ${cmdFiles.length} commands.`);
 
-	cmdFiles.forEach((commandName) => {
-		if (!commandName.endsWith('.js')) return;
-		client.loadCommand(commandName);
+	cmdFiles.forEach((file) => {
+		if (!file.endsWith('.js')) return;
+		const filename = file.split('.')[0];
+		client.loadCommand(filename);
 	});
 
 	client.logger.none('');
 
 	// Then we load events, which will include our message and ready event.
-	const evtFiles = await readdir('./src/events/');
+	const evtFiles = await readdir(__dirname + '/src/events/');
 	client.logger.debug(`Loading a total of ${evtFiles.length} events.`);
 
 	evtFiles.forEach((file) => {
-		// client.logger.log(`Loading Event: ${file}`);
-		// const eventName = file.split(".")[0];
-		// client.logger.log(`Loading Event: ${eventName}`);
-		// const event = new (require(`./events/${file}`))(client);
-		// // This line is awesome by the way. Just sayin'.
-		// client.on(eventName, (...args) => event.run(...args));
-		// delete require.cache[require.resolve(`./events/${file}`)];
+		if (!file.endsWith('.js')) return;
+		const filename = file.split('.')[0];
+		client.logger.log(`Loading Event: ${filename}`);
+		const event = require(`./src/events/${filename}`);
 
-		const eventName = file.split('.')[0];
-		client.logger.log(`Loading Event: ${eventName}`);
-		const event = require(`./src/events/${file}`);
 		// Bind the client to any event, before the existing arguments
 		// provided by the discord.js event.
 		// This line is awesome by the way. Just sayin'.
-		client.on(eventName, event.bind(null, client));
+		client.on(filename, event.bind(null, client));
 	});
 
 	// Here we login the client.

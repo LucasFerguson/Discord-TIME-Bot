@@ -1,16 +1,16 @@
 module.exports = {
 	apps: [
 		{
-			name: "TimeBot",
-			script: "index.js",
-			log_date_format: "YYYY-MM-DD HH:mm Z",
-			ignoreWatch: ["node_modules", "./log", "./src/database"],
+			name: 'TimeBot',
+			script: './build/index.js',
+			log_date_format: 'YYYY-MM-DD HH:mm Z',
+			ignoreWatch: ['node_modules', './log', './src/database'],
 			watch: true,
 
-			args: ["--color"],
-			output: "./log/out.log",
-			error: "./log/error.log",
-			log: "./log/combined.outerr.log",
+			args: ['--color'],
+			output: './log/out.log',
+			error: './log/error.log',
+			log: './log/combined.outerr.log',
 		},
 	],
 };

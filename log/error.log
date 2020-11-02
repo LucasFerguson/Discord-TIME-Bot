@@ -1,0 +1,1960 @@
+2020-11-02 13:47 -06:00: Error: Cannot find module './src/events/message.ts'
+2020-11-02 13:47 -06:00: Require stack:
+2020-11-02 13:47 -06:00: - C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\index.js
+2020-11-02 13:47 -06:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+2020-11-02 13:47 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2020-11-02 13:47 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 13:47 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:53:17
+2020-11-02 13:47 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 13:47 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:42:11) {
+2020-11-02 13:47 -06:00:   code: 'MODULE_NOT_FOUND',
+2020-11-02 13:47 -06:00:   requireStack: [
+2020-11-02 13:47 -06:00:     'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build\\index.js'
+2020-11-02 13:47 -06:00:   ]
+2020-11-02 13:47 -06:00: }
+2020-11-02 13:48 -06:00: Error: Cannot find module './src/events/message.ts'
+2020-11-02 13:48 -06:00: Require stack:
+2020-11-02 13:48 -06:00: - C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\index.js
+2020-11-02 13:48 -06:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+2020-11-02 13:48 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2020-11-02 13:48 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 13:48 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:53:17
+2020-11-02 13:48 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 13:48 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:42:11) {
+2020-11-02 13:48 -06:00:   code: 'MODULE_NOT_FOUND',
+2020-11-02 13:48 -06:00:   requireStack: [
+2020-11-02 13:48 -06:00:     'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build\\index.js'
+2020-11-02 13:48 -06:00:   ]
+2020-11-02 13:48 -06:00: }
+2020-11-02 13:49 -06:00: Error: Cannot find module './src/events/message.ts'
+2020-11-02 13:49 -06:00: Require stack:
+2020-11-02 13:49 -06:00: - C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\index.js
+2020-11-02 13:49 -06:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+2020-11-02 13:49 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2020-11-02 13:49 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 13:49 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:53:17
+2020-11-02 13:49 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 13:49 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:42:11) {
+2020-11-02 13:49 -06:00:   code: 'MODULE_NOT_FOUND',
+2020-11-02 13:49 -06:00:   requireStack: [
+2020-11-02 13:49 -06:00:     'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build\\index.js'
+2020-11-02 13:49 -06:00:   ]
+2020-11-02 13:49 -06:00: }
+2020-11-02 13:50 -06:00: Error: Cannot find module './src/events/message.ts'
+2020-11-02 13:50 -06:00: Require stack:
+2020-11-02 13:50 -06:00: - C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\index.js
+2020-11-02 13:50 -06:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+2020-11-02 13:50 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2020-11-02 13:50 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 13:50 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:54:17
+2020-11-02 13:50 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 13:50 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:42:11) {
+2020-11-02 13:50 -06:00:   code: 'MODULE_NOT_FOUND',
+2020-11-02 13:50 -06:00:   requireStack: [
+2020-11-02 13:50 -06:00:     'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build\\index.js'
+2020-11-02 13:50 -06:00:   ]
+2020-11-02 13:50 -06:00: }
+2020-11-02 13:51 -06:00: Error: Cannot find module './src/events/message.ts'
+2020-11-02 13:51 -06:00: Require stack:
+2020-11-02 13:51 -06:00: - C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\index.js
+2020-11-02 13:51 -06:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+2020-11-02 13:51 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2020-11-02 13:51 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 13:51 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:54:17
+2020-11-02 13:51 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 13:51 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:42:11) {
+2020-11-02 13:51 -06:00:   code: 'MODULE_NOT_FOUND',
+2020-11-02 13:51 -06:00:   requireStack: [
+2020-11-02 13:51 -06:00:     'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build\\index.js'
+2020-11-02 13:51 -06:00:   ]
+2020-11-02 13:51 -06:00: }
+2020-11-02 13:51 -06:00: Error: Cannot find module './src/events/message.ts'
+2020-11-02 13:51 -06:00: Require stack:
+2020-11-02 13:51 -06:00: - C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\index.js
+2020-11-02 13:51 -06:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+2020-11-02 13:51 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2020-11-02 13:51 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 13:51 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:54:17
+2020-11-02 13:51 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 13:51 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:42:11) {
+2020-11-02 13:51 -06:00:   code: 'MODULE_NOT_FOUND',
+2020-11-02 13:51 -06:00:   requireStack: [
+2020-11-02 13:51 -06:00:     'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build\\index.js'
+2020-11-02 13:51 -06:00:   ]
+2020-11-02 13:51 -06:00: }
+2020-11-02 13:52 -06:00: [Error: ENOENT: no such file or directory, scandir 'C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\commands'] {
+2020-11-02 13:52 -06:00:   errno: -4058,
+2020-11-02 13:52 -06:00:   code: 'ENOENT',
+2020-11-02 13:52 -06:00:   syscall: 'scandir',
+2020-11-02 13:52 -06:00:   path: 'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build\\commands'
+2020-11-02 13:52 -06:00: }
+2020-11-02 13:52 -06:00: [Error: ENOENT: no such file or directory, scandir 'C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\commands'] {
+2020-11-02 13:52 -06:00:   errno: -4058,
+2020-11-02 13:52 -06:00:   code: 'ENOENT',
+2020-11-02 13:52 -06:00:   syscall: 'scandir',
+2020-11-02 13:52 -06:00:   path: 'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build\\commands'
+2020-11-02 13:52 -06:00: }
+2020-11-02 13:52 -06:00: [Error: ENOENT: no such file or directory, scandir 'C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\commands'] {
+2020-11-02 13:52 -06:00:   errno: -4058,
+2020-11-02 13:52 -06:00:   code: 'ENOENT',
+2020-11-02 13:52 -06:00:   syscall: 'scandir',
+2020-11-02 13:52 -06:00:   path: 'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\commands'
+2020-11-02 13:52 -06:00: }
+2020-11-02 13:52 -06:00: Error: Cannot find module './src/events/message.ts'
+2020-11-02 13:52 -06:00: Require stack:
+2020-11-02 13:52 -06:00: - C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\index.js
+2020-11-02 13:52 -06:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+2020-11-02 13:52 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2020-11-02 13:52 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 13:52 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:54:17
+2020-11-02 13:52 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 13:52 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:42:11) {
+2020-11-02 13:52 -06:00:   code: 'MODULE_NOT_FOUND',
+2020-11-02 13:52 -06:00:   requireStack: [
+2020-11-02 13:52 -06:00:     'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build\\index.js'
+2020-11-02 13:52 -06:00:   ]
+2020-11-02 13:52 -06:00: }
+2020-11-02 13:54 -06:00: Error: Cannot find module './src/events/message.ts'
+2020-11-02 13:54 -06:00: Require stack:
+2020-11-02 13:54 -06:00: - C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\index.js
+2020-11-02 13:54 -06:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+2020-11-02 13:54 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2020-11-02 13:54 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 13:54 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:54:9
+2020-11-02 13:54 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 13:54 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:42:2) {
+2020-11-02 13:54 -06:00:   code: 'MODULE_NOT_FOUND',
+2020-11-02 13:54 -06:00:   requireStack: [
+2020-11-02 13:54 -06:00:     'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build\\index.js'
+2020-11-02 13:54 -06:00:   ]
+2020-11-02 13:54 -06:00: }
+2020-11-02 13:54 -06:00: Error: Cannot find module './src/events/message.ts'
+2020-11-02 13:54 -06:00: Require stack:
+2020-11-02 13:54 -06:00: - C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\index.js
+2020-11-02 13:54 -06:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+2020-11-02 13:54 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2020-11-02 13:54 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 13:54 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:54:9
+2020-11-02 13:54 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 13:54 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:42:2) {
+2020-11-02 13:54 -06:00:   code: 'MODULE_NOT_FOUND',
+2020-11-02 13:54 -06:00:   requireStack: [
+2020-11-02 13:54 -06:00:     'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build\\index.js'
+2020-11-02 13:54 -06:00:   ]
+2020-11-02 13:54 -06:00: }
+2020-11-02 13:54 -06:00: Error: Cannot find module './src/events/message.ts'
+2020-11-02 13:54 -06:00: Require stack:
+2020-11-02 13:54 -06:00: - C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\index.js
+2020-11-02 13:54 -06:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+2020-11-02 13:54 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2020-11-02 13:54 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 13:54 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:54:17
+2020-11-02 13:54 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 13:54 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:42:11) {
+2020-11-02 13:54 -06:00:   code: 'MODULE_NOT_FOUND',
+2020-11-02 13:54 -06:00:   requireStack: [
+2020-11-02 13:54 -06:00:     'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build\\index.js'
+2020-11-02 13:54 -06:00:   ]
+2020-11-02 13:54 -06:00: }
+2020-11-02 13:55 -06:00: Error: Cannot find module './src/events/message.ts'
+2020-11-02 13:55 -06:00: Require stack:
+2020-11-02 13:55 -06:00: - C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\index.js
+2020-11-02 13:55 -06:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+2020-11-02 13:55 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2020-11-02 13:55 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 13:55 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:54:17
+2020-11-02 13:55 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 13:55 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:42:11) {
+2020-11-02 13:55 -06:00:   code: 'MODULE_NOT_FOUND',
+2020-11-02 13:55 -06:00:   requireStack: [
+2020-11-02 13:55 -06:00:     'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build\\index.js'
+2020-11-02 13:55 -06:00:   ]
+2020-11-02 13:55 -06:00: }
+2020-11-02 13:55 -06:00: Error: Cannot find module './src/events/message.ts'
+2020-11-02 13:55 -06:00: Require stack:
+2020-11-02 13:55 -06:00: - C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\index.js
+2020-11-02 13:55 -06:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+2020-11-02 13:55 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2020-11-02 13:55 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 13:55 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:56:17
+2020-11-02 13:55 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 13:55 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:42:11) {
+2020-11-02 13:55 -06:00:   code: 'MODULE_NOT_FOUND',
+2020-11-02 13:55 -06:00:   requireStack: [
+2020-11-02 13:55 -06:00:     'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build\\index.js'
+2020-11-02 13:55 -06:00:   ]
+2020-11-02 13:55 -06:00: }
+2020-11-02 13:56 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:56 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:56 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:18)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:56 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:56 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:56 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:56 -06:00: }
+2020-11-02 13:56 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:56 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:56 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:18)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:56 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:56 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:56 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:56 -06:00: }
+2020-11-02 13:56 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:56 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:56 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:18)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:56 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:56 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:56 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:56 -06:00: }
+2020-11-02 13:56 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:56 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:56 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:18)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:56 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:56 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:56 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:56 -06:00: }
+2020-11-02 13:56 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:56 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:56 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:18)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:56 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:56 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:56 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:56 -06:00: }
+2020-11-02 13:56 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:56 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:56 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:18)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:56 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:56 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:56 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:56 -06:00: }
+2020-11-02 13:56 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:56 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:56 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:18)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:56 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:56 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:56 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:56 -06:00: }
+2020-11-02 13:56 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:56 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:56 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:18)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:56 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:56 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:56 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:56 -06:00: }
+2020-11-02 13:56 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:56 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:56 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:18)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:56 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:56 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:56 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:56 -06:00: }
+2020-11-02 13:56 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:56 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:56 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:18)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:56 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:56 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:56 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:56 -06:00: }
+2020-11-02 13:56 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:56 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:56 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:18)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:56 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:56 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:56 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:56 -06:00: }
+2020-11-02 13:56 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:56 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:56 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:18)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:56 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:56 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:56 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:56 -06:00: }
+2020-11-02 13:56 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:56 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:56 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:18)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:56 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:56 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:56 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:56 -06:00: }
+2020-11-02 13:56 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:56 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:56 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:18)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:56 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:56 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:56 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:56 -06:00: }
+2020-11-02 13:56 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:56 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:56 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:18)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:56 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:56 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:56 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:56 -06:00: }
+2020-11-02 13:56 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:56 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:56 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:18)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:56 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:56 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:56 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:56 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:56 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:56 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:56 -06:00: }
+2020-11-02 13:57 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:57 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:57 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:18)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:57 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:57 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:57 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:57 -06:00: }
+2020-11-02 13:57 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:57 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:57 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:18)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:57 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:57 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:57 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:57 -06:00: }
+2020-11-02 13:57 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:57 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:57 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:28)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:57 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:57 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:57 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:57 -06:00: }
+2020-11-02 13:57 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:57 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:57 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:28)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:57 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:57 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:57 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:57 -06:00: }
+2020-11-02 13:57 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:57 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:57 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:28)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:57 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:57 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:57 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:57 -06:00: }
+2020-11-02 13:57 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:57 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:57 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:28)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:57 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:57 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:57 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:57 -06:00: }
+2020-11-02 13:57 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:57 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:57 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:28)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:57 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:57 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:57 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:57 -06:00: }
+2020-11-02 13:57 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:57 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:57 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:28)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:57 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:57 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:57 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:57 -06:00: }
+2020-11-02 13:57 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:57 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:57 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:28)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:57 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:57 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:57 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:57 -06:00: }
+2020-11-02 13:57 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:57 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:57 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:28)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:57 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:57 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:57 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:57 -06:00: }
+2020-11-02 13:57 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:57 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:57 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:28)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:57 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:57 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:57 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:57 -06:00: }
+2020-11-02 13:57 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:57 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:57 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:28)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:57 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:57 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:57 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:57 -06:00: }
+2020-11-02 13:57 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:57 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:57 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:28)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:57 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:57 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:57 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:57 -06:00: }
+2020-11-02 13:57 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:57 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:57 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:28)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:57 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:57 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:57 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:57 -06:00: }
+2020-11-02 13:57 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:57 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:57 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:28)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:57 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:57 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:57 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:57 -06:00: }
+2020-11-02 13:57 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:57 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:57 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:28)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:57 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:57 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:57 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:57 -06:00: }
+2020-11-02 13:57 -06:00: TypeError [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+2020-11-02 13:57 -06:00:     at makeCallback (fs.js:143:11)
+2020-11-02 13:57 -06:00:     at Object.readdir (fs.js:827:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:5:28)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 13:57 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 13:57 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 13:57 -06:00:     at Object.<anonymous> (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:33:23)
+2020-11-02 13:57 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 13:57 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10) {
+2020-11-02 13:57 -06:00:   code: 'ERR_INVALID_CALLBACK'
+2020-11-02 13:57 -06:00: }
+2020-11-02 13:59 -06:00: ReferenceError: file is not defined
+2020-11-02 13:59 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:35:21
+2020-11-02 13:59 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 13:59 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:30:11)
+2020-11-02 14:00 -06:00: ReferenceError: file is not defined
+2020-11-02 14:00 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:35:21
+2020-11-02 14:00 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 14:00 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:30:11)
+2020-11-02 14:00 -06:00: ReferenceError: file is not defined
+2020-11-02 14:00 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:35:21
+2020-11-02 14:00 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 14:00 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:30:11)
+2020-11-02 14:00 -06:00: ReferenceError: file is not defined
+2020-11-02 14:00 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:35:21
+2020-11-02 14:00 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 14:00 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:30:11)
+2020-11-02 14:00 -06:00: ReferenceError: file is not defined
+2020-11-02 14:00 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:35:21
+2020-11-02 14:00 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 14:00 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:30:11)
+2020-11-02 14:01 -06:00: Error: Cannot find module './src/events/help.js'
+2020-11-02 14:01 -06:00: Require stack:
+2020-11-02 14:01 -06:00: - C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\index.js
+2020-11-02 14:01 -06:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+2020-11-02 14:01 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2020-11-02 14:01 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:01 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:37:19
+2020-11-02 14:01 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 14:01 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:30:11) {
+2020-11-02 14:01 -06:00:   code: 'MODULE_NOT_FOUND',
+2020-11-02 14:01 -06:00:   requireStack: [
+2020-11-02 14:01 -06:00:     'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build\\index.js'
+2020-11-02 14:01 -06:00:   ]
+2020-11-02 14:01 -06:00: }
+2020-11-02 14:01 -06:00: Error: Cannot find module './src/events/help.js'
+2020-11-02 14:01 -06:00: Require stack:
+2020-11-02 14:01 -06:00: - C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\index.js
+2020-11-02 14:01 -06:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+2020-11-02 14:01 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2020-11-02 14:01 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:01 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:37:19
+2020-11-02 14:01 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 14:01 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:30:11) {
+2020-11-02 14:01 -06:00:   code: 'MODULE_NOT_FOUND',
+2020-11-02 14:01 -06:00:   requireStack: [
+2020-11-02 14:01 -06:00:     'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build\\index.js'
+2020-11-02 14:01 -06:00:   ]
+2020-11-02 14:01 -06:00: }
+2020-11-02 14:03 -06:00: ReferenceError: path is not defined
+2020-11-02 14:03 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:37:3
+2020-11-02 14:03 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 14:03 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:30:11)
+2020-11-02 14:03 -06:00: Error: Cannot find module './src/events/C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\buildhelp.js'
+2020-11-02 14:03 -06:00: Require stack:
+2020-11-02 14:03 -06:00: - C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\index.js
+2020-11-02 14:03 -06:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+2020-11-02 14:03 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2020-11-02 14:03 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:03 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:37:19
+2020-11-02 14:03 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 14:03 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:30:11) {
+2020-11-02 14:03 -06:00:   code: 'MODULE_NOT_FOUND',
+2020-11-02 14:03 -06:00:   requireStack: [
+2020-11-02 14:03 -06:00:     'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build\\index.js'
+2020-11-02 14:03 -06:00:   ]
+2020-11-02 14:03 -06:00: }
+2020-11-02 14:04 -06:00: Error: Cannot find module './src/commands/C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\buildhelp.js'
+2020-11-02 14:04 -06:00: Require stack:
+2020-11-02 14:04 -06:00: - C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\index.js
+2020-11-02 14:04 -06:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+2020-11-02 14:04 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2020-11-02 14:04 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:04 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:37:19
+2020-11-02 14:04 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 14:04 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:30:11) {
+2020-11-02 14:04 -06:00:   code: 'MODULE_NOT_FOUND',
+2020-11-02 14:04 -06:00:   requireStack: [
+2020-11-02 14:04 -06:00:     'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build\\index.js'
+2020-11-02 14:04 -06:00:   ]
+2020-11-02 14:04 -06:00: }
+2020-11-02 14:06 -06:00: [Error: ENOENT: no such file or directory, scandir 'C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build.\src\commands'] {
+2020-11-02 14:06 -06:00:   errno: -4058,
+2020-11-02 14:06 -06:00:   code: 'ENOENT',
+2020-11-02 14:06 -06:00:   syscall: 'scandir',
+2020-11-02 14:06 -06:00:   path: 'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build.\\src\\commands'
+2020-11-02 14:06 -06:00: }
+2020-11-02 14:06 -06:00: [Error: ENOENT: no such file or directory, scandir 'C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build.\src\commands'] {
+2020-11-02 14:06 -06:00:   errno: -4058,
+2020-11-02 14:06 -06:00:   code: 'ENOENT',
+2020-11-02 14:06 -06:00:   syscall: 'scandir',
+2020-11-02 14:06 -06:00:   path: 'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build.\\src\\commands'
+2020-11-02 14:06 -06:00: }
+2020-11-02 14:06 -06:00: [Error: ENOENT: no such file or directory, scandir 'C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build.\src\commands'] {
+2020-11-02 14:06 -06:00:   errno: -4058,
+2020-11-02 14:06 -06:00:   code: 'ENOENT',
+2020-11-02 14:06 -06:00:   syscall: 'scandir',
+2020-11-02 14:06 -06:00:   path: 'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build.\\src\\commands'
+2020-11-02 14:06 -06:00: }
+2020-11-02 14:06 -06:00: [Error: ENOENT: no such file or directory, scandir 'C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build.\src\commands'] {
+2020-11-02 14:06 -06:00:   errno: -4058,
+2020-11-02 14:06 -06:00:   code: 'ENOENT',
+2020-11-02 14:06 -06:00:   syscall: 'scandir',
+2020-11-02 14:06 -06:00:   path: 'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build.\\src\\commands'
+2020-11-02 14:06 -06:00: }
+2020-11-02 14:09 -06:00: Error: Cannot find module 'C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build./src/commands/help.js'
+2020-11-02 14:09 -06:00: Require stack:
+2020-11-02 14:09 -06:00: - C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\index.js
+2020-11-02 14:09 -06:00:     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:797:15)
+2020-11-02 14:09 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:61:29)
+2020-11-02 14:09 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:09 -06:00:     at C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:37:19
+2020-11-02 14:09 -06:00:     at Array.forEach (<anonymous>)
+2020-11-02 14:09 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:30:11) {
+2020-11-02 14:09 -06:00:   code: 'MODULE_NOT_FOUND',
+2020-11-02 14:09 -06:00:   requireStack: [
+2020-11-02 14:09 -06:00:     'C:\\Users\\Lucas\\LucasDrive💻\\Code🛠\\TimeBot\\build\\index.js'
+2020-11-02 14:09 -06:00:   ]
+2020-11-02 14:09 -06:00: }
+2020-11-02 14:13 -06:00: TypeError: Cannot read property 'prefix' of undefined
+2020-11-02 14:13 -06:00:     at module.exports (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\events\message.ts:30:39)
+2020-11-02 14:13 -06:00:     at GuideBot.emit (events.js:210:5)
+2020-11-02 14:13 -06:00:     at MessageCreateAction.handle (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\node_modules\discord.js\src\client\actions\MessageCreate.js:31:14)
+2020-11-02 14:13 -06:00:     at Object.module.exports (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\node_modules\discord.js\src\client\websocket\handlers\MESSAGE_CREATE.js:4:32)
+2020-11-02 14:13 -06:00:     at WebSocketManager.handlePacket (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:384:31)
+2020-11-02 14:13 -06:00:     at WebSocketShard.onPacket (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:444:22)
+2020-11-02 14:13 -06:00:     at WebSocketShard.onMessage (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\node_modules\discord.js\src\client\websocket\WebSocketShard.js:301:10)
+2020-11-02 14:13 -06:00:     at WebSocket.onMessage (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\node_modules\ws\lib\event-target.js:125:16)
+2020-11-02 14:13 -06:00:     at WebSocket.emit (events.js:210:5)
+2020-11-02 14:13 -06:00:     at Receiver.receiverOnMessage (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\node_modules\ws\lib\websocket.js:797:20)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:36)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:36)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:36)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:36)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:36)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:36)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:36)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:36)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:36)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:36)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:36)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:36)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:36)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:36)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:36)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:36)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:38)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:38)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:38)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:38)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:38)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:38)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:38)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:38)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:38)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:38)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:38)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:38)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:38)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:38)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:38)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00: ReferenceError: args is not defined
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:38)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:19 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:19 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:19 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:19 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:19 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:19 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:19 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:19 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00: ReferenceError: warn is not defined
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:57:8)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:20 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:20 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:20 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:20 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:20 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00: ReferenceError: warn is not defined
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:57:8)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:20 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:20 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:20 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:20 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:20 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00: ReferenceError: warn is not defined
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:57:8)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:20 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:20 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:20 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:20 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:20 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00: ReferenceError: warn is not defined
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:57:8)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:20 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:20 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:20 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:20 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:20 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00: ReferenceError: warn is not defined
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:57:8)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:20 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:20 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:20 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:20 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:20 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00: ReferenceError: warn is not defined
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:57:8)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:20 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:20 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:20 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:20 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:20 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00: ReferenceError: warn is not defined
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:57:8)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:20 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:20 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:20 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:20 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:20 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00: ReferenceError: warn is not defined
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:57:8)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:20 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:20 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:20 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:20 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:20 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00: ReferenceError: warn is not defined
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:57:8)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:20 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:20 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:20 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:20 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:20 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00: ReferenceError: warn is not defined
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:57:8)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:20 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:20 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:20 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:20 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:20 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00: ReferenceError: warn is not defined
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:57:8)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:20 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:20 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:20 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:20 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:20 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00: ReferenceError: warn is not defined
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:57:8)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:20 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:20 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:20 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:20 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:20 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00: ReferenceError: warn is not defined
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:57:8)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:20 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:20 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:20 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:20 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:20 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00: ReferenceError: warn is not defined
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:57:8)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:20 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:20 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:20 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:20 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:20 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00: ReferenceError: warn is not defined
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:57:8)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:20 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:20 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:20 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:20 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:20 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00: ReferenceError: warn is not defined
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:57:8)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:20 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:20 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:20 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:20 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:20 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:20 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:20 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:7:14)
+2020-11-02 14:20 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:21 -06:00: RangeError: Maximum call stack size exceeded
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:20)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:68:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:68:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:68:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:68:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:68:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:68:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:68:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:68:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:68:2)
+2020-11-02 14:21 -06:00: RangeError: Maximum call stack size exceeded
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:20)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:68:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:68:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:68:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:68:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:68:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:68:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:68:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:68:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:68:2)
+2020-11-02 14:21 -06:00: RangeError: Maximum call stack size exceeded
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:66:20)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00: RangeError: Maximum call stack size exceeded
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:66:20)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00: RangeError: Maximum call stack size exceeded
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:66:20)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00: RangeError: Maximum call stack size exceeded
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:66:20)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00: RangeError: Maximum call stack size exceeded
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:66:20)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:21 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:22 -06:00: RangeError: Maximum call stack size exceeded
+2020-11-02 14:22 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:66:20)
+2020-11-02 14:22 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:22 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:22 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:22 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:22 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:22 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:22 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:22 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:22 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:23 -06:00: RangeError: Maximum call stack size exceeded
+2020-11-02 14:23 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:66:20)
+2020-11-02 14:23 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:23 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:23 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:23 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:23 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:23 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:23 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:23 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:23 -06:00:     at log (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:67:2)
+2020-11-02 14:23 -06:00: ReferenceError: error is not defined
+2020-11-02 14:23 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:13)
+2020-11-02 14:23 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:23 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:23 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:23 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:23 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:23 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:23 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:23 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:5:1)
+2020-11-02 14:23 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:23 -06:00: ReferenceError: error is not defined
+2020-11-02 14:23 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:13)
+2020-11-02 14:23 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:23 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:23 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:23 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:23 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:23 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:23 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:23 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:5:1)
+2020-11-02 14:23 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:23 -06:00: ReferenceError: error is not defined
+2020-11-02 14:23 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:13)
+2020-11-02 14:23 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:23 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:23 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:23 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:23 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:23 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:23 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:23 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:5:1)
+2020-11-02 14:23 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:23 -06:00: ReferenceError: error is not defined
+2020-11-02 14:23 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:13)
+2020-11-02 14:23 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:23 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:23 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:23 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:23 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:23 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:23 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:23 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:5:1)
+2020-11-02 14:23 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:23 -06:00: ReferenceError: error is not defined
+2020-11-02 14:23 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:13)
+2020-11-02 14:23 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:23 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:23 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:23 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:23 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:23 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:23 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:23 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:5:1)
+2020-11-02 14:23 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:23 -06:00: ReferenceError: error is not defined
+2020-11-02 14:23 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:13)
+2020-11-02 14:23 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:23 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:23 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:23 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:23 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:23 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:23 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:23 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:5:1)
+2020-11-02 14:23 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:23 -06:00: ReferenceError: error is not defined
+2020-11-02 14:23 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:13)
+2020-11-02 14:23 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:23 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:23 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:23 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:23 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:23 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:23 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:23 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:5:1)
+2020-11-02 14:23 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:24 -06:00: ReferenceError: error is not defined
+2020-11-02 14:24 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:13)
+2020-11-02 14:24 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:24 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:24 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:24 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:24 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:24 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:24 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:24 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:5:1)
+2020-11-02 14:24 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:24 -06:00: ReferenceError: error is not defined
+2020-11-02 14:24 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:13)
+2020-11-02 14:24 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:24 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:24 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:24 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:24 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:24 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:24 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:24 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:5:1)
+2020-11-02 14:24 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:24 -06:00: ReferenceError: error is not defined
+2020-11-02 14:24 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:13)
+2020-11-02 14:24 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:24 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:24 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:24 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:24 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:24 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:24 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:24 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:5:1)
+2020-11-02 14:24 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:24 -06:00: ReferenceError: error is not defined
+2020-11-02 14:24 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:13)
+2020-11-02 14:24 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:24 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:24 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:24 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:24 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:24 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:24 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:24 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:5:1)
+2020-11-02 14:24 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:24 -06:00: ReferenceError: error is not defined
+2020-11-02 14:24 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:13)
+2020-11-02 14:24 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:24 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:24 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:24 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:24 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:24 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:24 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:24 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:5:1)
+2020-11-02 14:24 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:24 -06:00: ReferenceError: error is not defined
+2020-11-02 14:24 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:13)
+2020-11-02 14:24 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:24 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:24 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:24 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:24 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:24 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:24 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:24 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:5:1)
+2020-11-02 14:24 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:24 -06:00: ReferenceError: error is not defined
+2020-11-02 14:24 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:13)
+2020-11-02 14:24 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:24 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:24 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:24 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:24 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:24 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:24 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:24 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:5:1)
+2020-11-02 14:24 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:24 -06:00: ReferenceError: error is not defined
+2020-11-02 14:24 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:13)
+2020-11-02 14:24 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:24 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:24 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:24 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:24 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:24 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:24 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:24 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:5:1)
+2020-11-02 14:24 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:24 -06:00: ReferenceError: error is not defined
+2020-11-02 14:24 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\functions\logger.ts:54:13)
+2020-11-02 14:24 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:24 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:24 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:24 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:24 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:24 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:24 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:24 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:5:1)
+2020-11-02 14:24 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:24 -06:00: TypeError: client.logger.debug is not a function
+2020-11-02 14:24 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:28:16)
+2020-11-02 14:24 -06:00: TypeError: client.logger.debug is not a function
+2020-11-02 14:24 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:28:16)
+2020-11-02 14:24 -06:00: TypeError: client.logger.debug is not a function
+2020-11-02 14:24 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:28:16)
+2020-11-02 14:24 -06:00: TypeError: client.logger.debug is not a function
+2020-11-02 14:24 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:28:16)
+2020-11-02 14:24 -06:00: TypeError: client.logger.debug is not a function
+2020-11-02 14:24 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:28:16)
+2020-11-02 14:25 -06:00: TypeError: client.logger.none is not a function
+2020-11-02 14:25 -06:00:     at init (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:36:16)
+2020-11-02 14:25 -06:00: C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\src\ClientClass.js:17
+2020-11-02 14:25 -06:00: constructor(options ?  : Promise.resolve().then(() => require('discord.js')).ClientOptions);
+2020-11-02 14:25 -06:00:                        ^
+2020-11-02 14:25 -06:00: 
+2020-11-02 14:25 -06:00: SyntaxError: Unexpected token ':'
+2020-11-02 14:25 -06:00:     at Module._compile (internal/modules/cjs/loader.js:895:18)
+2020-11-02 14:25 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:25 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:25 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:25 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:25 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:25 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:25 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:25 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:25 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:25 -06:00: C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\src\ClientClass.js:17
+2020-11-02 14:25 -06:00: constructor(options ?  : Promise.resolve().then(() => require('discord.js')).ClientOptions);
+2020-11-02 14:25 -06:00:                        ^
+2020-11-02 14:25 -06:00: 
+2020-11-02 14:25 -06:00: SyntaxError: Unexpected token ':'
+2020-11-02 14:25 -06:00:     at Module._compile (internal/modules/cjs/loader.js:895:18)
+2020-11-02 14:25 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:25 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:25 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:25 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:25 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:25 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:25 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:25 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:25 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:25 -06:00: C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\src\ClientClass.js:17
+2020-11-02 14:25 -06:00: constructor(options ?  : Promise.resolve().then(() => require('discord.js')).ClientOptions);
+2020-11-02 14:25 -06:00:                        ^
+2020-11-02 14:25 -06:00: 
+2020-11-02 14:25 -06:00: SyntaxError: Unexpected token ':'
+2020-11-02 14:25 -06:00:     at Module._compile (internal/modules/cjs/loader.js:895:18)
+2020-11-02 14:25 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:25 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:25 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:25 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:25 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:25 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:25 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:25 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:25 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:25 -06:00: C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\src\ClientClass.js:17
+2020-11-02 14:25 -06:00: constructor(options ?  : Promise.resolve().then(() => require('discord.js')).ClientOptions);
+2020-11-02 14:25 -06:00:                        ^
+2020-11-02 14:25 -06:00: 
+2020-11-02 14:25 -06:00: SyntaxError: Unexpected token ':'
+2020-11-02 14:25 -06:00:     at Module._compile (internal/modules/cjs/loader.js:895:18)
+2020-11-02 14:25 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:25 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:25 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:25 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:25 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:25 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:25 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:25 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:25 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:25 -06:00: C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\src\ClientClass.js:17
+2020-11-02 14:25 -06:00: constructor(options ?  : Promise.resolve().then(() => require('discord.js')).ClientOptions);
+2020-11-02 14:25 -06:00:                        ^
+2020-11-02 14:25 -06:00: 
+2020-11-02 14:25 -06:00: SyntaxError: Unexpected token ':'
+2020-11-02 14:25 -06:00:     at Module._compile (internal/modules/cjs/loader.js:895:18)
+2020-11-02 14:25 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:25 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:25 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:25 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:25 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:25 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:25 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:25 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:25 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:25 -06:00: C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\src\ClientClass.js:17
+2020-11-02 14:25 -06:00: constructor(options ?  : Promise.resolve().then(() => require('discord.js')).ClientOptions);
+2020-11-02 14:25 -06:00:                        ^
+2020-11-02 14:25 -06:00: 
+2020-11-02 14:25 -06:00: SyntaxError: Unexpected token ':'
+2020-11-02 14:25 -06:00:     at Module._compile (internal/modules/cjs/loader.js:895:18)
+2020-11-02 14:25 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:25 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:25 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:25 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:25 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:25 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:25 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:25 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:25 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:25 -06:00: C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\src\ClientClass.js:17
+2020-11-02 14:25 -06:00: constructor(options ?  : Promise.resolve().then(() => require('discord.js')).ClientOptions);
+2020-11-02 14:25 -06:00:                        ^
+2020-11-02 14:25 -06:00: 
+2020-11-02 14:25 -06:00: SyntaxError: Unexpected token ':'
+2020-11-02 14:25 -06:00:     at Module._compile (internal/modules/cjs/loader.js:895:18)
+2020-11-02 14:25 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:25 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:25 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:25 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:25 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:25 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:25 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:25 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:25 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:25 -06:00: C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\src\ClientClass.js:17
+2020-11-02 14:25 -06:00: constructor(options ?  : Promise.resolve().then(() => require('discord.js')).ClientOptions);
+2020-11-02 14:25 -06:00:                        ^
+2020-11-02 14:25 -06:00: 
+2020-11-02 14:25 -06:00: SyntaxError: Unexpected token ':'
+2020-11-02 14:25 -06:00:     at Module._compile (internal/modules/cjs/loader.js:895:18)
+2020-11-02 14:25 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:25 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:25 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:25 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:25 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:25 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:25 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:25 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:25 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:25 -06:00: C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\src\ClientClass.js:17
+2020-11-02 14:25 -06:00: constructor(options ?  : Promise.resolve().then(() => require('discord.js')).ClientOptions);
+2020-11-02 14:25 -06:00:                        ^
+2020-11-02 14:25 -06:00: 
+2020-11-02 14:25 -06:00: SyntaxError: Unexpected token ':'
+2020-11-02 14:25 -06:00:     at Module._compile (internal/modules/cjs/loader.js:895:18)
+2020-11-02 14:25 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:25 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:25 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:25 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:25 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:25 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:25 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:25 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:25 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:29 -06:00: C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\src\ClientClass.js:8
+2020-11-02 14:29 -06:00: ;
+2020-11-02 14:29 -06:00: ^
+2020-11-02 14:29 -06:00: 
+2020-11-02 14:29 -06:00: SyntaxError: Unexpected token ';'
+2020-11-02 14:29 -06:00:     at Module._compile (internal/modules/cjs/loader.js:895:18)
+2020-11-02 14:29 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:29 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:29 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:29 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:29 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:29 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:29 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:29 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:29 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:29 -06:00: C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\src\ClientClass.js:8
+2020-11-02 14:29 -06:00: ;
+2020-11-02 14:29 -06:00: ^
+2020-11-02 14:29 -06:00: 
+2020-11-02 14:29 -06:00: SyntaxError: Unexpected token ';'
+2020-11-02 14:29 -06:00:     at Module._compile (internal/modules/cjs/loader.js:895:18)
+2020-11-02 14:29 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:29 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:29 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:29 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:29 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:29 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:29 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:29 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:29 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:29 -06:00: C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\src\ClientClass.js:8
+2020-11-02 14:29 -06:00: ;
+2020-11-02 14:29 -06:00: ^
+2020-11-02 14:29 -06:00: 
+2020-11-02 14:29 -06:00: SyntaxError: Unexpected token ';'
+2020-11-02 14:29 -06:00:     at Module._compile (internal/modules/cjs/loader.js:895:18)
+2020-11-02 14:29 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:29 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:29 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:29 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:29 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:29 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:29 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:29 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:29 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:29 -06:00: C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\src\ClientClass.js:8
+2020-11-02 14:29 -06:00: ;
+2020-11-02 14:29 -06:00: ^
+2020-11-02 14:29 -06:00: 
+2020-11-02 14:29 -06:00: SyntaxError: Unexpected token ';'
+2020-11-02 14:29 -06:00:     at Module._compile (internal/modules/cjs/loader.js:895:18)
+2020-11-02 14:29 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:29 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:29 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:29 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:29 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:29 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:29 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:29 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:29 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:29 -06:00: C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\src\ClientClass.js:8
+2020-11-02 14:29 -06:00: ;
+2020-11-02 14:29 -06:00: ^
+2020-11-02 14:29 -06:00: 
+2020-11-02 14:29 -06:00: SyntaxError: Unexpected token ';'
+2020-11-02 14:29 -06:00:     at Module._compile (internal/modules/cjs/loader.js:895:18)
+2020-11-02 14:29 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:29 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:29 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:29 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:29 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:29 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:29 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:29 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:29 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:29 -06:00: C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\build\src\ClientClass.js:8
+2020-11-02 14:29 -06:00: ;
+2020-11-02 14:29 -06:00: ^
+2020-11-02 14:29 -06:00: 
+2020-11-02 14:29 -06:00: SyntaxError: Unexpected token ';'
+2020-11-02 14:29 -06:00:     at Module._compile (internal/modules/cjs/loader.js:895:18)
+2020-11-02 14:29 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:29 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:29 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:29 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:29 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:29 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:29 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:29 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:29 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:31 -06:00: TypeError: Cannot set property 'adg' of undefined
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:11:6)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:31 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:31 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:31 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:31 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:31 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00: TypeError: Cannot set property 'adg' of undefined
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:11:6)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:31 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:31 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:31 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:31 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:31 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00: TypeError: Cannot set property 'adg' of undefined
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:11:6)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:31 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:31 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:31 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:31 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:31 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00: TypeError: Cannot set property 'adg' of undefined
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:11:6)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:31 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:31 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:31 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:31 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:31 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00: TypeError: Cannot set property 'adg' of undefined
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:11:6)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:31 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:31 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:31 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:31 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:31 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00: TypeError: Cannot set property 'adg' of undefined
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:11:6)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:31 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:31 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:31 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:31 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:31 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00: TypeError: Cannot set property 'adg' of undefined
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:11:6)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:31 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:31 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:31 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:31 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:31 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00: TypeError: Cannot set property 'adg' of undefined
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:11:6)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:31 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:31 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:31 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:31 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:31 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00: TypeError: Cannot set property 'adg' of undefined
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:11:6)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:31 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:31 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:31 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:31 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:31 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00: TypeError: Cannot set property 'adg' of undefined
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:11:6)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:31 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:31 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:31 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:31 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:31 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00: TypeError: Cannot set property 'adg' of undefined
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:11:6)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:31 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:31 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:31 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:31 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:31 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00: TypeError: Cannot set property 'adg' of undefined
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:11:6)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:31 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:31 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:31 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:31 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:31 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00: TypeError: Cannot set property 'adg' of undefined
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:11:6)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:31 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:31 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:31 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:31 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:31 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00: TypeError: Cannot set property 'adg' of undefined
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:11:6)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:31 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:31 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:31 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:31 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:31 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00: TypeError: Cannot set property 'adg' of undefined
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:11:6)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:31 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:31 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:31 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:31 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:31 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00: TypeError: Cannot set property 'adg' of undefined
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\src\ClientClass.ts:11:6)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)
+2020-11-02 14:31 -06:00:     at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+2020-11-02 14:31 -06:00:     at Module.load (internal/modules/cjs/loader.js:815:32)
+2020-11-02 14:31 -06:00:     at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+2020-11-02 14:31 -06:00:     at Module.require (internal/modules/cjs/loader.js:852:19)
+2020-11-02 14:31 -06:00:     at Module.Hook._require.Module.require (C:\Users\Lucas\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:80:39)
+2020-11-02 14:31 -06:00:     at require (internal/modules/cjs/helpers.js:74:18)
+2020-11-02 14:31 -06:00:     at Object.<anonymous> (C:\Users\Lucas\LucasDrive💻\Code🛠\TimeBot\index.ts:8:1)
+2020-11-02 14:31 -06:00:     at Module._compile (internal/modules/cjs/loader.js:959:30)

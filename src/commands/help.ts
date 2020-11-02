@@ -5,8 +5,8 @@ command is also filtered by level, so if a user does not have access to
 a command, it is not shown to them. If a command name is given with the
 help command, its extended help is shown.
 */
-let { GuideBot } = require("../ClientClass.js");
-const Discord = require("discord.js");
+let { GuideBot } = require('../ClientClass.js');
+import * as Discord from 'discord.js';
 
 /**
  * @param { GuideBot } client
@@ -47,7 +47,7 @@ exports.run = (client, message, args, level) => {
 				longest = a;
 			}
 		});
-		let currentCategory = "";
+		let currentCategory = '';
 		let output = `= Command List =\n\n[Use ${client.config.defaultSettings.prefix}help <commandname> for details]\n`;
 		const sorted = myCommands.sort((p, c) =>
 			p.help.category > c.help.category
@@ -65,13 +65,13 @@ exports.run = (client, message, args, level) => {
 			}
 			output += `${client.config.defaultSettings.prefix}${
 				c.help.name
-			}${" ".repeat(longest - c.help.name.length)} :: ${
+			}${' '.repeat(longest - c.help.name.length)} :: ${
 				c.help.description
 			}\n`;
 		});
 		message.channel.send(output, {
-			code: "asciidoc",
-			split: { char: "\u200b" },
+			code: 'asciidoc',
+			split: { char: '\u200b' },
 		});
 	} else {
 		// Show individual command's help.
@@ -80,10 +80,10 @@ exports.run = (client, message, args, level) => {
 		message.channel.send(
 			`= ${command.help.name} = \n${command.help.description}\nusage:: ${
 				command.help.usage
-			}\naliases:: ${command.conf.aliases.join(", ")}\n= ${
+			}\naliases:: ${command.conf.aliases.join(', ')}\n= ${
 				command.help.name
 			} =`,
-			{ code: "asciidoc" }
+			{ code: 'asciidoc' }
 		);
 
 		// if (client.commands.has(command)) {
@@ -106,14 +106,14 @@ exports.run = (client, message, args, level) => {
 exports.conf = {
 	enabled: true,
 	guildOnly: false,
-	aliases: ["h", "halp"],
+	aliases: ['h', 'help'],
 	permLevel: 0,
 };
 
 exports.help = {
-	name: "help",
-	category: "Miscelaneous",
+	name: 'help',
+	category: 'Miscelaneous',
 	description:
-		"Displays all the available commands for your permission level.",
-	usage: "help [command]",
+		'Displays all the available commands for your permission level.',
+	usage: 'help [command]',
 };

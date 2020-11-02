@@ -1,12 +1,12 @@
-let { GuideBot } = require("../ClientClass.js");
-const Discord = require("discord.js");
+let { GuideBot } = require('../ClientClass.js');
+import * as Discord from 'discord.js';
 
 /**
  * @param { GuideBot } client
  * @param { Discord.Message } message
  */
 exports.run = async (client, message, args, level) => {
-	let friendly = "null";
+	let friendly = 'null';
 	for (let i = 0; i < client.configLevels.length; i++) {
 		if (client.configLevels[i].level == level) {
 			friendly = client.configLevels[i].name;
@@ -23,9 +23,9 @@ exports.conf = {
 };
 
 exports.help = {
-	name: "mylevel",
-	category: "Miscelaneous",
+	name: 'mylevel',
+	category: 'Miscelaneous',
 	description:
-		"Tells you your permission level for the current message location.",
-	usage: "mylevel",
+		'Tells you your permission level for the current message location.',
+	usage: 'mylevel',
 };

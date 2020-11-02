@@ -1,44 +1,44 @@
 /*
     Logger class for easy and aesthetically pleasing console logging.  by Évelyne Lachance
 */
-const chalk = require("chalk");
-const moment = require("moment");
+const chalk = require('chalk');
+var moment = require('moment');
 
-function log(content, type = "log") {
-	const timestamp = `[${moment().format("YYYY-MM-DD HH:mm:ss")}]:`;
-	let returnMessage = "";
+function Logger(content, type = 'log') {
+	const timestamp = `[${moment().format('YYYY-MM-DD HH:mm:ss')}]:`;
+	let returnMessage = '';
 	switch (type) {
-		case "log": {
+		case 'log': {
 			returnMessage = `${timestamp} ${chalk.bgBlue(
 				type.toUpperCase()
 			)} ${content} `;
 		}
-		case "warn": {
+		case 'warn': {
 			returnMessage = `${timestamp} ${chalk.black.bgYellow(
 				type.toUpperCase()
 			)} ${content} `;
 		}
-		case "error": {
+		case 'error': {
 			returnMessage = `${timestamp} ${chalk.bgRed(
 				type.toUpperCase()
 			)} ${content} `;
 		}
-		case "debug": {
+		case 'debug': {
 			returnMessage = `${timestamp} ${chalk.green(
 				type.toUpperCase()
 			)} ${content} `;
 		}
-		case "cmd": {
+		case 'cmd': {
 			returnMessage = `${timestamp} ${chalk.black.bgWhite(
 				type.toUpperCase()
 			)} ${content}`;
 		}
-		case "ready": {
+		case 'ready': {
 			returnMessage = `${timestamp} ${chalk.black.bgGreen(
 				type.toUpperCase()
 			)} ${content}`;
 		}
-		case "none": {
+		case 'none': {
 			returnMessage = `${timestamp} ${content}`;
 		}
 		// default:
@@ -51,19 +51,27 @@ function log(content, type = "log") {
 	console.log(returnMessage);
 }
 
-exports.error = (...args) => log(...args, "error");
-
-exports.warn = (...args) => log(...args, "warn");
-
-exports.debug = (...args) => log(...args, "debug");
-
-exports.cmd = (...args) => log(...args, "cmd");
-
-exports.log = (...args) => log(...args, "log");
-
-exports.ready = (...args) => log(...args, "ready");
-
-exports.none = (...args) => log(...args, "none");
+export var error = (args) => {
+	Logger(args, 'error');
+};
+export var warn = (args) => {
+	Logger(args, 'warn');
+};
+export var debug = (args) => {
+	Logger(args, 'debug');
+};
+export var cmd = (args) => {
+	Logger(args, 'cmd');
+};
+export var log = (args) => {
+	Logger(args, 'log');
+};
+export var ready = (args) => {
+	Logger(args, 'ready');
+};
+export var none = (args) => {
+	Logger(args, 'none');
+};
 
 // module.exports = {
 // 	log,

@@ -1,8 +1,8 @@
 // The MESSAGE event runs anytime a message is received
 // Note that due to the binding of client to every event, every event
 // goes `client, other, args` when this function is run.
-let { GuideBot } = require("../ClientClass.js");
-const Discord = require("discord.js");
+import GuideBot from '../ClientClass';
+import * as Discord from 'discord.js';
 
 /**
  * @param { GuideBot } client
@@ -54,7 +54,7 @@ module.exports = async (client, message) => {
 	// and return a friendly error message.
 	if (cmd && !message.guild && cmd.conf.guildOnly) {
 		return message.channel.send(
-			"This command is unavailable via private message. Please run this command in a guild."
+			'This command is unavailable via private message. Please run this command in a guild.'
 		);
 	}
 
