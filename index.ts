@@ -1,17 +1,17 @@
-const { promisify } = require("util");
+const { promisify } = require('util');
 
-const fs = require("fs");
-const readdir = promisify(require("fs").readdir);
+const fs = require('fs');
+const readdir = promisify(require('fs').readdir);
 
-const Discord = require("discord.js");
+const Discord = require('discord.js');
 
-const { GuideBot } = require("./src/ClientClass.js");
+const { GuideBot } = require('./src/ClientClass.js');
 
 // Default Intents the bot needs.
 // By default GuideBot needs Guilds, Guild Messages and Direct Messages to work.
 // For join messages to work you need Guild Members, which is privileged and requires extra setup.
 // For more info about intents see the README.
-const intents = ["GUILDS", "GUILD_MESSAGES", "DIRECT_MESSAGES"];
+const intents = ['GUILDS', 'GUILD_MESSAGES', 'DIRECT_MESSAGES'];
 
 // This is your client. Some people call it `bot`, some people call it `self`,
 // some might call it `cootchie`. Either way, when you see `client.something`,
@@ -24,18 +24,18 @@ const client = new GuideBot({ ws: { intents: intents } });
 const init = async () => {
 	// Here we load **commands** into memory, as a collection, so they're accessible
 	// here and everywhere else.
-	const cmdFiles = await readdir("./src/commands/");
+	const cmdFiles = await readdir('./src/commands/');
 	client.logger.debug(`Loading a total of ${cmdFiles.length} commands.`);
 
 	cmdFiles.forEach((commandName) => {
-		if (!commandName.endsWith(".js")) return;
+		if (!commandName.endsWith('.js')) return;
 		client.loadCommand(commandName);
 	});
 
-	client.logger.none("");
+	client.logger.none('');
 
 	// Then we load events, which will include our message and ready event.
-	const evtFiles = await readdir("./src/events/");
+	const evtFiles = await readdir('./src/events/');
 	client.logger.debug(`Loading a total of ${evtFiles.length} events.`);
 
 	evtFiles.forEach((file) => {
@@ -47,7 +47,7 @@ const init = async () => {
 		// client.on(eventName, (...args) => event.run(...args));
 		// delete require.cache[require.resolve(`./events/${file}`)];
 
-		const eventName = file.split(".")[0];
+		const eventName = file.split('.')[0];
 		client.logger.log(`Loading Event: ${eventName}`);
 		const event = require(`./src/events/${file}`);
 		// Bind the client to any event, before the existing arguments
@@ -57,7 +57,7 @@ const init = async () => {
 	});
 
 	// Here we login the client.
-	client.login("NzYzMjAxODk0MDE3NDAwODcz.X30RJw.Jh4Ekm2gryN002AMLhVrplFgmGM");
+	client.login('NzYzMjAxODk0MDE3NDAwODcz.X30RJw.Jh4Ekm2gryN002AMLhVrplFgmGM');
 
 	// End top-level async/await function.
 };

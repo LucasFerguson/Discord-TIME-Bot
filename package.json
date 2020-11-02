@@ -18,6 +18,7 @@
 		"delay": "0"
 	},
 	"dependencies": {
+		"@types/node": "^14.14.6",
 		"chalk": "^4.1.0",
 		"discord.js": "^12.4.1",
 		"moment": "^2.29.1",
