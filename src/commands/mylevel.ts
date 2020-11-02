@@ -1,11 +1,24 @@
-let { GuideBot } = require('../ClientClass.js');
-import * as Discord from 'discord.js';
+import { Command } from '../config/Command';
 
-/**
- * @param { GuideBot } client
- * @param { Discord.Message } message
- */
-exports.run = async (client, message, args, level) => {
+let thisCommand: Command = {
+	run: async (client, message, args, level) => {},
+	conf: {
+		enabled: true,
+		guildOnly: false,
+		aliases: [],
+		permLevel: 0,
+	},
+
+	help: {
+		name: 'mylevel',
+		category: 'User',
+		description:
+			'Tells you your permission level for the current message location.',
+		usage: 'mylevel',
+	},
+};
+
+thisCommand.run = async (client, message, args, level) => {
 	let friendly = 'null';
 	for (let i = 0; i < client.configLevels.length; i++) {
 		if (client.configLevels[i].level == level) {
@@ -15,17 +28,4 @@ exports.run = async (client, message, args, level) => {
 	message.reply(`Your permission level is: Level ${level} - ${friendly}`);
 };
 
-exports.conf = {
-	enabled: true,
-	guildOnly: false,
-	aliases: [],
-	permLevel: 0,
-};
-
-exports.help = {
-	name: 'mylevel',
-	category: 'Miscelaneous',
-	description:
-		'Tells you your permission level for the current message location.',
-	usage: 'mylevel',
-};
+export default thisCommand;

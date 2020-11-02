@@ -1,3 +1,22 @@
+import { Command } from '../config/Command';
+
+let thisCommand: Command = {
+	run: async (client, message, args, level) => {},
+	conf: {
+		enabled: true,
+		guildOnly: false,
+		aliases: [],
+		permLevel: 0,
+	},
+
+	help: {
+		name: 'stats',
+		category: 'System',
+		description: 'Gives some useful bot statistics',
+		usage: 'stats',
+	},
+};
+
 import { version } from 'discord.js';
 var moment = require('moment');
 require('moment-duration-format');
@@ -5,11 +24,7 @@ require('moment-duration-format');
 var { GuideBot } = require('../ClientClass.js');
 import * as Discord from 'discord.js';
 
-/**
- * @param { GuideBot } client
- * @param { Discord.Message } message
- */
-exports.run = (client, message, args, level) => {
+thisCommand.run = (client, message, args, level) => {
 	let duration = moment
 		.duration(client.uptime)
 		.format(' D [days], H [hrs], m [mins], s [secs]');
@@ -54,16 +69,4 @@ exports.run = (client, message, args, level) => {
 	});
 };
 
-exports.conf = {
-	enabled: true,
-	guildOnly: false,
-	aliases: [],
-	permLevel: 0,
-};
-
-exports.help = {
-	name: 'stats',
-	category: 'System',
-	description: 'Gives some useful bot statistics',
-	usage: 'stats',
-};
+export default thisCommand;

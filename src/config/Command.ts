@@ -9,7 +9,7 @@ export interface Command {
 			message: Discord.Message,
 			args: string[],
 			level: number
-		);
+		): Promise<void>;
 	};
 	conf: {
 		enabled: boolean;

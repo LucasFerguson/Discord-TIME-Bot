@@ -5,14 +5,27 @@ command is also filtered by level, so if a user does not have access to
 a command, it is not shown to them. If a command name is given with the
 help command, its extended help is shown.
 */
-let { GuideBot } = require('../ClientClass.js');
-import * as Discord from 'discord.js';
+import { Command } from '../config/Command';
 
-/**
- * @param { GuideBot } client
- * @param { Discord.Message } message
- */
-exports.run = (client, message, args, level) => {
+let thisCommand: Command = {
+	run: async (client, message, args, level) => {},
+	conf: {
+		enabled: true,
+		guildOnly: false,
+		aliases: ['h', 'help'],
+		permLevel: 0,
+	},
+
+	help: {
+		name: 'help',
+		category: 'User',
+		description:
+			'Displays all the available commands for your permission level.',
+		usage: 'help [command]',
+	},
+};
+
+thisCommand.run = async (client, message, args, level) => {
 	// If no specific command is called, show all filtered commands.
 
 	client.commands;
@@ -103,17 +116,4 @@ exports.run = (client, message, args, level) => {
 	}
 };
 
-exports.conf = {
-	enabled: true,
-	guildOnly: false,
-	aliases: ['h', 'help'],
-	permLevel: 0,
-};
-
-exports.help = {
-	name: 'help',
-	category: 'Miscelaneous',
-	description:
-		'Displays all the available commands for your permission level.',
-	usage: 'help [command]',
-};
+export default thisCommand;

@@ -1,6 +1,26 @@
-exports.run = async (client, message, args, level) => {
+import { Command } from '../config/Command';
+
+let thisCommand: Command = {
+	run: async (client, message, args, level) => {},
+	conf: {
+		enabled: true,
+		guildOnly: false,
+		aliases: [],
+		permLevel: 0,
+	},
+
+	help: {
+		name: 'ping',
+		category: 'System',
+		description:
+			'Test the latency from the Server to the Discord API. Ping Pong. 🏓 ',
+		usage: 'ping',
+	},
+};
+
+thisCommand.run = async (client, message, args, level) => {
 	// eslint-disable-line no-unused-vars
-	const msg = await message.channel.send("Ping?");
+	const msg = await message.channel.send('Ping?');
 	msg.edit(
 		`Pong! Latency is [${
 			msg.createdTimestamp - message.createdTimestamp
@@ -8,17 +28,4 @@ exports.run = async (client, message, args, level) => {
 	);
 };
 
-exports.conf = {
-	enabled: true,
-	guildOnly: false,
-	aliases: [],
-	permLevel: 0,
-};
-
-exports.help = {
-	name: "ping",
-	category: "System",
-	description:
-		"Test the latency from the Server to the Discord API. It Pings. Then Pongs. Ping Pong. 🏓 ",
-	usage: "ping",
-};
+export default thisCommand;

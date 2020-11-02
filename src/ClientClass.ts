@@ -1,16 +1,19 @@
 import fs = require('fs');
 
 import * as Discord from 'discord.js';
-import config from './config';
 import * as logger from './functions/logger';
+import { Command } from './config/Command';
+
+import config from './config';
+import configLevels from './configLevels';
 
 var wait = require('util').promisify(setTimeout);
 
 export default class GuideBot extends Discord.Client {
 	/** @type { } */
-	commands: typeof import('./commands/help')[];
+	commands: Command[];
 	config = config;
-	configLevels: any;
+	configLevels = configLevels;
 	aliases: any[];
 	logger: any;
 	wait: any;
@@ -27,7 +30,7 @@ export default class GuideBot extends Discord.Client {
 
 		// client.config.token contains the bot's token
 		// client.config.prefix contains the message prefix
-		this.configLevels = require('./configLevels.js');
+		this.configLevels = configLevels; // require('./configLevels.js');
 
 		// Aliases and commands are put in collections where they can be read from,
 		// catalogued, listed, etc.
@@ -102,17 +105,18 @@ export default class GuideBot extends Discord.Client {
 	 * @param {string} commandPath
 	 */
 	loadCommand(commandPath) {
-		try {
-			const props = require(`./commands/${commandPath}`);
-			this.logger.log(`Loading Command: ${props.help.name}`, 'log');
-			this.commands.push(props);
-			// this.logger.ready("Done with " + commandPath);
-		} catch (e) {
-			this.logger.log(
-				`Unable to load command ${commandPath}: ${e}`,
-				'error'
-			);
-		}
+		// try {
+		const props = require(`./commands/${commandPath}`).default;
+		console.log(props);
+		this.logger.log(`Loading Command: ${props.help.name}`, 'log');
+		this.commands.push(props);
+		// this.logger.ready("Done with " + commandPath);
+		// } catch (e) {
+		// 	this.logger.log(
+		// 		`Unable to load command ${commandPath}: ${e}`,
+		// 		'error'
+		// 	);
+		// }
 	}
 
 	/**
