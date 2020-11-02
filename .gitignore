@@ -1,3 +1,5 @@
 node_modules
 build
-log
+log/*
+log/combined.outerr.log
+log/out.log
