@@ -1598,3 +1598,119 @@
 2020-11-02 14:46 -06:00: [2020-11-02 14:46:02]: [CMD] 🌌Lucas Ferguson🌌 (340297379070738433) Level (0). Running Command <help>, With args <>
 2020-11-02 14:46 -06:00: this.config.defaultSettings [object Object]
 2020-11-02 14:46 -06:00: [2020-11-02 14:46:13]: [CMD] 🌌Lucas Ferguson🌌 (340297379070738433) Level (0). Running Command <mylevel>, With args <>
+2020-11-02 14:46 -06:00: [2020-11-02 14:46:34]: Loading a total of 10 commands.
+2020-11-02 14:46 -06:00: [2020-11-02 14:46:34]: Loading Command: help
+2020-11-02 14:46 -06:00: [2020-11-02 14:46:34]: Loading Command: mylevel
+2020-11-02 14:46 -06:00: [2020-11-02 14:46:34]: Loading Command: ping
+2020-11-02 14:46 -06:00: [2020-11-02 14:46:34]: Loading Command: reboot
+2020-11-02 14:46 -06:00: [2020-11-02 14:46:34]: Loading Command: stats
+2020-11-02 14:46 -06:00: [2020-11-02 14:46:34]: 
+2020-11-02 14:46 -06:00: [2020-11-02 14:46:34]: Loading a total of 4 events.
+2020-11-02 14:46 -06:00: [2020-11-02 14:46:34]: Loading Event: message
+2020-11-02 14:46 -06:00: [2020-11-02 14:46:34]: Loading Event: ready
+2020-11-02 14:46 -06:00: [2020-11-02 14:46:34]: TIME Bots 5275#8904, ready to serve 1 users in 2 servers.
+2020-11-02 14:47 -06:00: this.config.defaultSettings [object Object]
+2020-11-02 14:47 -06:00: [2020-11-02 14:47:12]: [CMD] 🌌Lucas Ferguson🌌 (340297379070738433) Level (0). Running Command <mylevel>, With args <>
+2020-11-02 14:47 -06:00: this.config.defaultSettings [object Object]
+2020-11-02 14:47 -06:00: [2020-11-02 14:47:19]: [CMD] 🌌Lucas Ferguson🌌 (340297379070738433) Level (0). Running Command <ping>, With args <>
+2020-11-02 14:47 -06:00: this.config.defaultSettings [object Object]
+2020-11-02 14:47 -06:00: this.config.defaultSettings [object Object]
+2020-11-02 14:47 -06:00: [2020-11-02 14:47:34]: [CMD] 🌌Lucas Ferguson🌌 (340297379070738433) Level (0). Running Command <stats>, With args <>
+2020-11-02 14:48 -06:00: [2020-11-02 14:48:59]: Loading a total of 10 commands.
+2020-11-02 14:48 -06:00: [2020-11-02 14:48:59]: Loading Command: help
+2020-11-02 14:48 -06:00: [2020-11-02 14:48:59]: Loading Command: mylevel
+2020-11-02 14:48 -06:00: [2020-11-02 14:48:59]: Loading Command: ping
+2020-11-02 14:48 -06:00: [2020-11-02 14:48:59]: Loading Command: reboot
+2020-11-02 14:48 -06:00: [2020-11-02 14:48:59]: Loading Command: stats
+2020-11-02 14:48 -06:00: [2020-11-02 14:48:59]: 
+2020-11-02 14:48 -06:00: [2020-11-02 14:48:59]: Loading a total of 4 events.
+2020-11-02 14:48 -06:00: [2020-11-02 14:48:59]: Loading Event: message
+2020-11-02 14:48 -06:00: [2020-11-02 14:48:59]: Loading Event: ready
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:00]: TIME Bots 5275#8904, ready to serve 1 users in 2 servers.
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:27]: Loading a total of 10 commands.
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:27]: Loading Command: help
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:27]: Loading Command: mylevel
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:27]: Loading Command: ping
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:27]: Loading Command: reboot
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:27]: Loading Command: stats
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:27]: 
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:27]: Loading a total of 4 events.
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:27]: Loading Event: message
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:27]: Loading Event: ready
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:28]: TIME Bots 5275#8904, ready to serve 1 users in 2 servers.
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:34]: Loading a total of 10 commands.
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:34]: Loading Command: help
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:34]: Loading Command: mylevel
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:34]: Loading Command: ping
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:34]: Loading Command: reboot
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:34]: Loading Command: stats
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:34]: 
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:34]: Loading a total of 4 events.
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:34]: Loading Event: message
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:34]: Loading Event: ready
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:34]: TIME Bots 5275#8904, ready to serve 1 users in 2 servers.
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:43]: Loading a total of 10 commands.
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:43]: Loading Command: help
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:43]: Loading Command: mylevel
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:43]: Loading Command: ping
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:43]: Loading Command: reboot
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:43]: Loading Command: stats
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:43]: 
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:43]: Loading a total of 4 events.
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:43]: Loading Event: message
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:43]: Loading Event: ready
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:44]: TIME Bots 5275#8904, ready to serve 1 users in 2 servers.
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:56]: Loading a total of 10 commands.
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:56]: Loading Command: help
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:56]: Loading Command: mylevel
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:56]: Loading Command: ping
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:56]: Loading Command: reboot
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:56]: Loading Command: stats
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:56]: 
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:56]: Loading a total of 4 events.
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:56]: Loading Event: message
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:56]: Loading Event: ready
+2020-11-02 14:49 -06:00: [2020-11-02 14:49:56]: TIME Bots 5275#8904, ready to serve 1 users in 2 servers.
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:00]: Loading a total of 10 commands.
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:00]: Loading Command: help
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:00]: Loading Command: mylevel
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:00]: Loading Command: ping
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:00]: Loading Command: reboot
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:00]: Loading Command: stats
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:00]: 
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:00]: Loading a total of 4 events.
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:00]: Loading Event: message
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:00]: Loading Event: ready
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:01]: Loading a total of 10 commands.
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:01]: Loading Command: help
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:01]: Loading Command: mylevel
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:01]: Loading Command: ping
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:01]: Loading Command: reboot
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:01]: Loading Command: stats
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:01]: 
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:01]: Loading a total of 4 events.
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:01]: Loading Event: message
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:01]: Loading Event: ready
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:01]: TIME Bots 5275#8904, ready to serve 1 users in 2 servers.
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:07]: Loading a total of 10 commands.
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:07]: Loading Command: help
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:07]: Loading Command: mylevel
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:07]: Loading Command: ping
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:07]: Loading Command: reboot
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:07]: Loading Command: stats
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:07]: 
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:07]: Loading a total of 4 events.
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:07]: Loading Event: message
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:07]: Loading Event: ready
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:07]: TIME Bots 5275#8904, ready to serve 1 users in 2 servers.
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:23]: Loading a total of 10 commands.
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:23]: Loading Command: help
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:23]: Loading Command: mylevel
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:23]: Loading Command: ping
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:23]: Loading Command: reboot
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:23]: Loading Command: stats
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:23]: 
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:23]: Loading a total of 4 events.
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:23]: Loading Event: message
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:23]: Loading Event: ready
+2020-11-02 14:50 -06:00: [2020-11-02 14:50:23]: TIME Bots 5275#8904, ready to serve 1 users in 2 servers.
