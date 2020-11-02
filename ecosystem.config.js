@@ -6,6 +6,7 @@ module.exports = {
 			log_date_format: "YYYY-MM-DD HH:mm Z",
 			ignoreWatch: ["node_modules", "./log", "./src/database"],
 			watch: true,
+
 			args: ["--color"],
 			output: "./log/out.log",
 			error: "./log/error.log",
