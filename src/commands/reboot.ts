@@ -21,7 +21,7 @@ let thisCommand: Command = {
 thisCommand.run = async (client, message, args, level) => {
 	// eslint-disable-line no-unused-vars
 	await message.reply('Bot is shutting down.');
-	await Promise.all(client.commands.map((cmd) => client.unloadCommand(cmd)));
+	// await Promise.all(client.commands.map((cmd) => client.unloadCommand(cmd)));
 	process.exit(0);
 };
 

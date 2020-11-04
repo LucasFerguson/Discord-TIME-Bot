@@ -83,7 +83,7 @@ thisCommand.run = async (client, message, args, level) => {
 			}\n`;
 		});
 		message.channel.send(output, {
-			code: 'asciidoc',
+			// code: 'asciidoc',
 			split: { char: '\u200b' },
 		});
 	} else {
@@ -95,8 +95,8 @@ thisCommand.run = async (client, message, args, level) => {
 				command.help.usage
 			}\naliases:: ${command.conf.aliases.join(', ')}\n= ${
 				command.help.name
-			} =`,
-			{ code: 'asciidoc' }
+			} =`
+			// { code: 'asciidoc' }
 		);
 
 		// if (client.commands.has(command)) {

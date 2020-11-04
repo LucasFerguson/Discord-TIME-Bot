@@ -1,7 +1,7 @@
 import fs = require('fs');
 
 import * as Discord from 'discord.js';
-import * as logger from './functions/logger';
+import Logger from './functions/logger';
 import { Command } from './config/Command';
 
 import config from './config';
@@ -15,7 +15,7 @@ export default class GuideBot extends Discord.Client {
 	config = config;
 	configLevels = configLevels;
 	aliases: any[];
-	logger: any;
+	logger = new Logger(this);
 	wait: any;
 	settings: any;
 
@@ -43,7 +43,7 @@ export default class GuideBot extends Discord.Client {
 		// this.settings = {};
 
 		//requiring the Logger class for easy console logging
-		this.logger = logger;
+		this.logger = new Logger(this);
 
 		// Basically just an async shortcut to using a setTimeout. Nothing fancy!
 		this.wait = require('util').promisify(setTimeout);
@@ -107,14 +107,11 @@ export default class GuideBot extends Discord.Client {
 	loadCommand(commandPath) {
 		try {
 			const props = require(`./commands/${commandPath}`).default;
-			this.logger.log(`Loading Command: ${props.help.name}`, 'log');
+			this.logger.log(`Loading Command: ${props.help.name}`);
 			this.commands.push(props);
 			this.logger.ready('Done with ' + commandPath);
 		} catch (e) {
-			this.logger.log(
-				`Unable to load command ${commandPath}: ${e}`,
-				'error'
-			);
+			this.logger.error(`Unable to load command ${commandPath}: ${e}`);
 		}
 	}
 

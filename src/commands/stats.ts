@@ -24,7 +24,7 @@ require('moment-duration-format');
 var { GuideBot } = require('../ClientClass.js');
 import * as Discord from 'discord.js';
 
-thisCommand.run = (client, message, args, level) => {
+thisCommand.run = async (client, message, args, level) => {
 	let duration = moment
 		.duration(client.uptime)
 		.format(' D [days], H [hrs], m [mins], s [secs]');
@@ -36,8 +36,7 @@ thisCommand.run = (client, message, args, level) => {
 • Servers    :: ${client.guilds.cache.size.toLocaleString()}
 • Channels   :: ${client.channels.cache.size.toLocaleString()}
 • Discord.js :: v${version}
-• Node       :: ${process.version}`,
-		{ code: 'asciidoc' }
+• Node       :: ${process.version}`
 	);
 
 	a.then((messagebot) => {
@@ -54,8 +53,7 @@ thisCommand.run = (client, message, args, level) => {
 • Servers    :: ${client.guilds.cache.size.toLocaleString()}
 • Channels   :: ${client.channels.cache.size.toLocaleString()}
 • Discord.js :: v${version}
-• Node       :: ${process.version}`,
-				{ code: 'asciidoc' }
+• Node       :: ${process.version}`
 			);
 
 			if (x <= 0) {
