@@ -14,7 +14,6 @@ import GuideBot from './src/ClientClass';
 const intents = ['GUILDS', 'GUILD_MESSAGES', 'DIRECT_MESSAGES'];
 
 // This is your client. Some people call it `bot`, some people call it `self`,
-// some might call it `cootchie`. Either way, when you see `client.something`,
 // or `bot.something`, this is what we're refering to. Your client.
 const client = new GuideBot(); //const client = new GuideBot({ ws: { intents: intents } });
 
@@ -25,7 +24,7 @@ const init = async () => {
 	// Here we load **commands** into memory, as a collection, so they're accessible
 	// here and everywhere else.
 	const cmdFiles = await readdir(__dirname + '/src/commands/');
-	client.logger.debug(`Loading a total of ${cmdFiles.length} commands.`);
+	client.logger.debug(`Loading a total of ${cmdFiles.length / 2} commands.`);
 
 	cmdFiles.forEach((file) => {
 		if (!file.endsWith('.js')) return;
@@ -37,7 +36,7 @@ const init = async () => {
 
 	// Then we load events, which will include our message and ready event.
 	const evtFiles = await readdir(__dirname + '/src/events/');
-	client.logger.debug(`Loading a total of ${evtFiles.length} events.`);
+	client.logger.debug(`Loading a total of ${evtFiles.length / 2} events.`);
 
 	evtFiles.forEach((file) => {
 		if (!file.endsWith('.js')) return;
