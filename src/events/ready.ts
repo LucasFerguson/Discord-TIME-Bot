@@ -19,7 +19,7 @@ module.exports = async (client) => {
 		type: 'PLAYING',
 	});
 
-	client.database.update();
+	client.clickup.update();
 };
 
 // let { GuideBot } = require("../client.js");
