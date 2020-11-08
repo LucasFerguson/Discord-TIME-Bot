@@ -1,3 +1,8 @@
+import {
+	token as _token,
+	clickupToken as _clickupToken,
+} from './token.lock.json';
+
 export default {
 	// Bot Owner, level 10 by default. You do not need to supply the owner ID, as the bot
 	// will pull this information directly from its application page.
@@ -10,8 +15,8 @@ export default {
 	support: [],
 
 	// Your Bot's Token. Available on https://discordapp.com/developers/applications/me
-	token: 'NzYzMjAxODk0MDE3NDAwODcz.X30RJw.Jh4Ekm2gryN002AMLhVrplFgmGM',
-	clickupToken: 'pk_1383473_MP4F4VJ6OLGFM5Q2B56T428ML3LOIB70',
+	token: _token,
+	clickupToken: _clickupToken,
 
 	// Default per-server settings. These settings are entered in a database on first load,
 	// And are then completely ignored from this file. To modify default settings, use the `conf` command.
