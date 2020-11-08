@@ -4,7 +4,13 @@ module.exports = {
 			name: 'TimeBot',
 			script: './build/index.js',
 			log_date_format: 'YYYY-MM-DD HH:mm Z',
-			ignoreWatch: ['node_modules', './log', './src/database', '.git'],
+			ignoreWatch: [
+				'node_modules',
+				'./log',
+				'./src/database',
+				'./src/database/*',
+				'.git',
+			],
 			watch: true,
 
 			args: ['--color'],

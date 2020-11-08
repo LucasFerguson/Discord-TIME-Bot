@@ -8,10 +8,14 @@ import * as Discord from 'discord.js';
  * @param { GuideBot } client
  * @param { Discord.Message } message
  */
-module.exports = async (client, message) => {
+module.exports = async (client: GuideBot, message: Discord.Message) => {
 	// It's good practice to ignore other bots. This also makes your bot ignore itself
 	// and not get into a spam loop (we call that "botception").
 	if (message.author.bot) return;
+
+	client.logger.cmd(
+		`User ${message.author.username}, At ${message.channel.type} ${message.channel.id}, Message ${message.content}`
+	);
 
 	// Grab the settings for this server from Enmap.
 	// If there is no guild, get default conf (DMs)

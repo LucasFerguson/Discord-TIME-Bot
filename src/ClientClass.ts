@@ -2,6 +2,7 @@ import fs = require('fs');
 
 import * as Discord from 'discord.js';
 import Logger from './functions/logger';
+import Database from './functions/DatabaseClass';
 import { Command } from './config/Command';
 
 import config from './config';
@@ -16,6 +17,7 @@ export default class GuideBot extends Discord.Client {
 	configLevels = configLevels;
 	aliases: any[];
 	logger = new Logger(this);
+	database = new Database(this);
 	wait: any;
 	settings: any;
 
@@ -44,6 +46,7 @@ export default class GuideBot extends Discord.Client {
 
 		//requiring the Logger class for easy console logging
 		this.logger = new Logger(this);
+		this.database = new Database(this);
 
 		// Basically just an async shortcut to using a setTimeout. Nothing fancy!
 		this.wait = require('util').promisify(setTimeout);
@@ -165,10 +168,6 @@ export default class GuideBot extends Discord.Client {
 		// Object.keys(defaults).forEach((key) => {
 		// 	returnObject[key] = guildData[key] ? guildData[key] : defaults[key];
 		// });
-
-		console.log(
-			'this.config.defaultSettings ' + this.config.defaultSettings
-		);
 		return this.config.defaultSettings;
 	}
 

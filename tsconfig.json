@@ -5,5 +5,7 @@
         "outDir": "./build",
         "sourceMap": true,
         "watch": true,
+        "resolveJsonModule": true,
+        // "esModuleInterop": true 
     }
 }

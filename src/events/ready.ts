@@ -1,4 +1,4 @@
-let { GuideBot } = require("../ClientClass.js");
+let { GuideBot } = require('../ClientClass.js');
 
 /**
  * @param { GuideBot } client
@@ -7,7 +7,7 @@ module.exports = async (client) => {
 	// Log that the bot is online.
 	client.logger.log(
 		`${client.user.tag}, ready to serve ${client.users.cache.size} users in ${client.guilds.cache.size} servers.`,
-		"ready"
+		'ready'
 	);
 
 	// Make the bot "play the game" which is the help command with default prefix.
@@ -16,8 +16,10 @@ module.exports = async (client) => {
 	// });
 
 	client.user.setActivity(`-help`, {
-		type: "PLAYING",
+		type: 'PLAYING',
 	});
+
+	client.database.update();
 };
 
 // let { GuideBot } = require("../client.js");
