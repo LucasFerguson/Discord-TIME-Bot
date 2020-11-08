@@ -11,6 +11,7 @@ export default {
 
 	// Your Bot's Token. Available on https://discordapp.com/developers/applications/me
 	token: 'NzYzMjAxODk0MDE3NDAwODcz.X30RJw.Jh4Ekm2gryN002AMLhVrplFgmGM',
+	clickupToken: 'pk_1383473_MP4F4VJ6OLGFM5Q2B56T428ML3LOIB70',
 
 	// Default per-server settings. These settings are entered in a database on first load,
 	// And are then completely ignored from this file. To modify default settings, use the `conf` command.
