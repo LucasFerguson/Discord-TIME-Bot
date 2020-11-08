@@ -3,3 +3,4 @@ build
 log/*
 log/combined.outerr.log
 log/out.log
+src/token.lock.json
