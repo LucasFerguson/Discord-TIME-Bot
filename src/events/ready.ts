@@ -1,13 +1,16 @@
-let { GuideBot } = require('../ClientClass.js');
+import GuideBot from '../ClientClass';
+import * as Discord from 'discord.js';
 
 /**
  * @param { GuideBot } client
+ * @param { Discord.Message } message
  */
-module.exports = async (client) => {
+module.exports = async (client: GuideBot) => {
 	// Log that the bot is online.
-	client.logger.log(
-		`${client.user.tag}, ready to serve ${client.users.cache.size} users in ${client.guilds.cache.size} servers.`,
-		'ready'
+	// client.ready = true;
+
+	client.logger.ready(
+		`${client.user.tag}, ready to serve ${client.users.cache.size} users in ${client.guilds.cache.size} servers.`
 	);
 
 	// Make the bot "play the game" which is the help command with default prefix.
@@ -19,7 +22,11 @@ module.exports = async (client) => {
 		type: 'PLAYING',
 	});
 
-	client.clickup.update();
+	await client.init();
+
+	client.ready = true;
+
+	// client.clickup.update();
 };
 
 // let { GuideBot } = require("../client.js");

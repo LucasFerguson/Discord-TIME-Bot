@@ -23,6 +23,7 @@ export default class GuideBot extends Discord.Client {
 	clickup: ClickUp;
 	wait: any;
 	settings: any;
+	ready: boolean;
 
 	/**
 	 * @param {import("discord.js").ClientOptions} options
@@ -49,11 +50,18 @@ export default class GuideBot extends Discord.Client {
 
 		//requiring the Logger class for easy console logging
 		this.logger = new Logger(this);
-		this.database = new Database(this);
-		this.clickup = new ClickUp(this);
+		// this.database = new Database(this);
+		// this.clickup = new ClickUp(this);
 
 		// Basically just an async shortcut to using a setTimeout. Nothing fancy!
 		this.wait = require('util').promisify(setTimeout);
+
+		// Discord Server Logs
+		this.ready = false;
+	}
+
+	async init() {
+		await this.logger.init();
 	}
 
 	/**

@@ -1,3 +1,5 @@
+// Created By  :  Lucas Ferguson\nLatest Version  :  1.0.0\nUpdated Date  :  10/30/2020\n
+
 import { Command } from '../config/Command';
 
 let thisCommand: Command = {
@@ -66,5 +68,4 @@ thisCommand.run = async (client, message, args, level) => {
 		}, 1000);
 	});
 };
-
 export default thisCommand;

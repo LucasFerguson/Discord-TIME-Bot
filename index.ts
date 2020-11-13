@@ -25,6 +25,7 @@ const client = new GuideBot(); //const client = new GuideBot({ ws: { intents: in
 const init = async () => {
 	// Here we load **commands** into memory, as a collection, so they're accessible
 	// here and everywhere else.
+
 	const cmdFiles = await readdir(__dirname + '/src/commands/');
 	client.logger.debug(`Loading a total of ${cmdFiles.length / 2} commands.`);
 
@@ -53,7 +54,10 @@ const init = async () => {
 	});
 
 	// Here we login the client.
-	client.login('NzYzMjAxODk0MDE3NDAwODcz.X30RJw.Jh4Ekm2gryN002AMLhVrplFgmGM');
+	await client.login(
+		'NzYzMjAxODk0MDE3NDAwODcz.X30RJw.Jh4Ekm2gryN002AMLhVrplFgmGM'
+	);
+	// await client.logger.init();
 
 	// End top-level async/await function.
 };

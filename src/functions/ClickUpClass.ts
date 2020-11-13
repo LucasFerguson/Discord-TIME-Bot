@@ -14,7 +14,7 @@ export default class ClickUp {
 		this.subteams = _subteams; // JSON.parse();
 		this.clickup = new Click(this.client.config.clickupToken);
 
-		console.log(this.subteams);
+		// console.log(this.subteams);
 	}
 
 	getSub(name) {

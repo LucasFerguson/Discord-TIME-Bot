@@ -68,7 +68,7 @@ export default class Database {
 			})
 			.catch(console.error);
 
-		console.log(userlist);
+		// console.log(userlist);
 	}
 }
 

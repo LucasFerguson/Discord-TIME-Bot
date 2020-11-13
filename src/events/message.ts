@@ -14,7 +14,7 @@ module.exports = async (client: GuideBot, message: Discord.Message) => {
 	if (message.author.bot) return;
 
 	client.logger.cmd(
-		`User ${message.author.username}, At ${message.channel.type} ${message.channel.id}, Message ${message.content}`
+		`User ${message.author.username}, Message ${message.content}`
 	);
 
 	// Grab the settings for this server from Enmap.
