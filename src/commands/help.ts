@@ -87,7 +87,7 @@ thisCommand.run = async (client, message, args, level) => {
 
 		await botMessage.react('◀️');
 		await botMessage.react('▶️');
-		await botMessage.react('🔢');
+		// await botMessage.react('🔢');
 		await botMessage.react('❌');
 
 		let r1 = client.addReactionsListener(
@@ -95,7 +95,9 @@ thisCommand.run = async (client, message, args, level) => {
 			'▶️',
 			(reaction, user) => {
 				botMessage.edit({ embed: getpage(client, 1, categorys) });
-				reaction.users.remove(user.id);
+				if (message.guild) {
+					reaction.users.remove(user.id);
+				}
 			}
 		);
 
@@ -104,7 +106,9 @@ thisCommand.run = async (client, message, args, level) => {
 			'◀️',
 			(reaction, user) => {
 				botMessage.edit({ embed: getpage(client, 0, categorys) });
-				reaction.users.remove(user.id);
+				if (message.guild) {
+					reaction.users.remove(user.id);
+				}
 			}
 		);
 
@@ -115,9 +119,12 @@ thisCommand.run = async (client, message, args, level) => {
 				r1.removeAllListeners();
 				r2.removeAllListeners();
 				r3.removeAllListeners();
+				try {
+					botMessage.delete();
+				} catch (e) {}
+
 				if (message.guild) {
 					try {
-						botMessage.delete();
 						message.delete();
 					} catch (e) {}
 				}
@@ -200,7 +207,7 @@ function getpage(client: GuideBot, page: number, categorys) {
 		if (cat.page != page) return;
 		output += `\n**== __${cat.name} Commands__ ==**\n`;
 		cat.arr.forEach((c) => {
-			output += `***${client.config.defaultSettings.prefix}${c.help.name}*** : \`CSS ${c.help.description}\`\n`;
+			output += `***${client.config.defaultSettings.prefix}${c.help.name}*** : \`${c.help.description}\`\n`;
 		});
 	});
 
