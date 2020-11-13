@@ -5,6 +5,8 @@ command is also filtered by level, so if a user does not have access to
 a command, it is not shown to them. If a command name is given with the
 help command, its extended help is shown.
 */
+import { Message } from 'discord.js';
+import GuideBot from '../ClientClass';
 import { Command } from '../config/Command';
 
 let thisCommand: Command = {
@@ -50,54 +52,127 @@ thisCommand.run = async (client, message, args, level) => {
 	// 	0
 	// 	);
 
-	if (!args[0]) {
-		const myCommands = client.commands;
+	let responseMessage = '';
 
-		let longest = 0;
+	if (!args[0]) {
+		let categorys = [
+			{ name: 'User', arr: [], page: 0 },
+			{ name: 'ClickUp', arr: [], page: 0 },
+			{ name: 'System', arr: [], page: 1 },
+		];
+
 		client.commands.forEach((c) => {
-			let a = c.help.name.length;
-			if (a > longest) {
-				longest = a;
+			for (let i = 0; i < categorys.length; i++) {
+				if (categorys[i].name == c.help.category) {
+					categorys[i].arr.push(c);
+				}
 			}
 		});
-		let currentCategory = '';
-		let output = `= Command List =\n\n[Use ${client.config.defaultSettings.prefix}help <commandname> for details]\n`;
-		const sorted = myCommands.sort((p, c) =>
-			p.help.category > c.help.category
-				? 1
-				: p.help.name > c.help.name &&
-				  p.help.category === c.help.category
-				? 1
-				: -1
+		let page = 0;
+
+		// message.channel.send(output);
+
+		// const exampleEmbed = {
+		// 	color: 0xf6b436,
+		// 	title: 'Help Command',
+		// 	description: `${output}`,
+		// 	footer: {
+		// 		text: '1/4',
+		// 	},
+		// };
+
+		let botMessage = await message.channel.send({
+			embed: getpage(client, 0, categorys),
+		});
+
+		await botMessage.react('◀️');
+		await botMessage.react('▶️');
+		await botMessage.react('🔢');
+		await botMessage.react('❌');
+
+		let r1 = client.addReactionsListener(
+			botMessage,
+			'▶️',
+			(reaction, user) => {
+				botMessage.edit({ embed: getpage(client, 1, categorys) });
+				reaction.users.remove(user.id);
+			}
 		);
-		sorted.forEach((c) => {
-			const cat = c.help.category;
-			if (currentCategory !== cat) {
-				output += `\u200b\n== ${cat} ==\n`;
-				currentCategory = cat;
+
+		let r2 = client.addReactionsListener(
+			botMessage,
+			'◀️',
+			(reaction, user) => {
+				botMessage.edit({ embed: getpage(client, 0, categorys) });
+				reaction.users.remove(user.id);
 			}
-			output += `${client.config.defaultSettings.prefix}${
-				c.help.name
-			}${' '.repeat(longest - c.help.name.length)} :: ${
-				c.help.description
-			}\n`;
-		});
-		message.channel.send(output, {
-			// code: 'asciidoc',
-			split: { char: '\u200b' },
-		});
+		);
+
+		let r3 = client.addReactionsListener(
+			botMessage,
+			'❌',
+			(reaction, user) => {
+				r1.removeAllListeners();
+				r2.removeAllListeners();
+				r3.removeAllListeners();
+				if (message.guild) {
+					try {
+						botMessage.delete();
+						message.delete();
+					} catch (e) {}
+				}
+			}
+		);
+
+		// botMessage
+		// 	.awaitReactions(
+		// 		(reaction, user) =>
+		// 			user.id == message.author.id &&
+		// 			(reaction.emoji.name == '◀️' ||
+		// 				reaction.emoji.name == '▶️'),
+		// 		{ max: 1, time: 30000 }
+		// 	)
+		// 	.then((collected) => {
+		// 		if (collected.first().emoji.name == '▶️') {
+		// 			collected.first().users.remove(message.author.id);
+		// 			botMessage.edit({ embed: getpage(client, 1, categorys) });
+		// 		}
+
+		// 		if (collected.first().emoji.name == '◀️') {
+		// 			collected.first().users.remove(message.author.id);
+		// 			botMessage.edit({ embed: getpage(client, 0, categorys) });
+		// 		}
+		// 	})
+		// 	.catch(() => {
+		// 		client.logger.log(
+		// 			'No reaction after 30 seconds, operation canceled'
+		// 		);
+		// 	});
 	} else {
 		// Show individual command's help.
 
+		// try {
+		// } catch (e) {
+
+		// }
 		let command = client.getCommand(args[0]);
-		message.channel.send(
-			`= ${command.help.name} = \n${command.help.description}\nusage:: ${
+
+		if (command) {
+			let output = `${command.help.description}\n**Usage** : ${
 				command.help.usage
-			}\naliases:: ${command.conf.aliases.join(', ')}\n= ${
-				command.help.name
-			} =`
-			// { code: 'asciidoc' }
-		);
+			}\n**Aliases** : ${command.conf.aliases.join(', ')}`;
+			const exampleEmbed = {
+				color: 0xf6b436,
+				title: `${client.config.defaultSettings.prefix}${command.help.name}`,
+				description: `${output}`,
+			};
+
+			let botMessage = await message.channel.send({
+				embed: exampleEmbed,
+			});
+		} else {
+			message.channel.send(`${args[0]}, is not Found.`);
+		}
 
 		// if (client.commands.has(command)) {
 		// 	command = client.commands.get(command);
@@ -117,3 +192,27 @@ thisCommand.run = async (client, message, args, level) => {
 };
 
 export default thisCommand;
+
+function getpage(client: GuideBot, page: number, categorys) {
+	let output = `\nUse ${client.config.defaultSettings.prefix}help <commandname> for details\n***-help ping***\n`;
+
+	categorys.forEach((cat) => {
+		if (cat.page != page) return;
+		output += `\n**== __${cat.name} Commands__ ==**\n`;
+		cat.arr.forEach((c) => {
+			output += `***${client.config.defaultSettings.prefix}${c.help.name}*** : \`CSS ${c.help.description}\`\n`;
+		});
+	});
+
+	const exampleEmbed = {
+		color: 0xf6b436,
+		title: 'Help Command',
+		description: `${output}`,
+		footer: {
+			text: `${page + 1}/2`,
+		},
+	};
+	// message.edit({ embed: exampleEmbed });
+
+	return exampleEmbed;
+}

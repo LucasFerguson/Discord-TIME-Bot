@@ -11,7 +11,7 @@ let thisCommand: Command = {
 
 	help: {
 		name: 'clickupUser',
-		category: 'User',
+		category: 'ClickUp',
 		description: 'Get all ClickUp tasks someone is assigned to.',
 		usage: 'clickupGetTasks [User]',
 	},

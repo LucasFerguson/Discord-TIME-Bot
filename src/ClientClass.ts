@@ -4,6 +4,7 @@ import * as Discord from 'discord.js';
 import Logger from './functions/logger';
 import Database from './functions/DatabaseClass';
 import ClickUp from './functions/ClickUpClass';
+import DiscordMessage from './functions/discordMessage';
 
 import { Command } from './config/Command';
 
@@ -19,6 +20,7 @@ export default class GuideBot extends Discord.Client {
 	configLevels = configLevels;
 	aliases: any[];
 	logger: Logger;
+	discordMessage: DiscordMessage;
 	database: Database;
 	clickup: ClickUp;
 	wait: any;
@@ -50,6 +52,7 @@ export default class GuideBot extends Discord.Client {
 
 		//requiring the Logger class for easy console logging
 		this.logger = new Logger(this);
+		this.discordMessage = new DiscordMessage(this);
 		// this.database = new Database(this);
 		// this.clickup = new ClickUp(this);
 
@@ -80,6 +83,55 @@ export default class GuideBot extends Discord.Client {
 				}
 			}
 		}
+	}
+
+	addReactionsListener(
+		message: Discord.Message,
+		emoji: string,
+		fun: (reaction: Discord.MessageReaction, user: Discord.User)
+	) {
+		const filter = (reaction, user) => {
+			return reaction.emoji.name === emoji;
+		};
+
+		const collector = message.createReactionCollector(filter, {
+			time: 30000,
+		});
+
+		collector.on('collect', (reaction, user) => {
+			console.log(`Collected ${reaction.emoji.name} from ${user.tag}`);
+			fun(reaction, user);
+		});
+
+		collector.on('end', () => {
+			console.log(`end createReactionCollector`);
+			// reaction.remove();
+			message.reactions.removeAll();
+			// message.delete();
+		});
+
+		return collector;
+
+
+		// message.createReactionCollector
+		// 	.awaitReactions(
+		// 		(reaction, user) =>
+		// 			// user.id == message.author.id &&
+		// 			reaction.emoji.name == emoji,
+		// 		{ max: 1, time: 30000 }
+		// 	)
+		// 	.then((collected) => {
+		// 		if (collected.first().emoji.name == '▶️') {
+		// 			collected.first().users.remove(message.author.id);
+		// 			botMessage.edit({ embed: getpage(client, 1, categorys) });
+		// 			fun.
+		// 		}
+		// 	})
+		// 	.catch(() => {
+		// 		this.logger.log(
+		// 			'No reaction after 30 seconds, operation canceled'
+		// 		);
+		// 	});
 	}
 
 	/*

@@ -9,9 +9,9 @@ module.exports = async (client: GuideBot) => {
 	// Log that the bot is online.
 	// client.ready = true;
 
-	client.logger.ready(
-		`${client.user.tag}, ready to serve ${client.users.cache.size} users in ${client.guilds.cache.size} servers.`
-	);
+	// client.logger.ready(
+	// 	`${client.user.tag}, ready to serve ${client.users.cache.size} users in ${client.guilds.cache.size} servers.`
+	// );
 
 	// Make the bot "play the game" which is the help command with default prefix.
 	// client.user.setActivity(`${client.settings.get("default").prefix}help`, {
@@ -25,6 +25,10 @@ module.exports = async (client: GuideBot) => {
 	await client.init();
 
 	client.ready = true;
+
+	client.logger.ready(
+		`${client.user.tag}, ready to serve ${client.users.cache.size} users in ${client.guilds.cache.size} servers.`
+	);
 
 	// client.clickup.update();
 };
