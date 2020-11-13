@@ -4,7 +4,7 @@ export default [
 	// This is the lowest permission level, this is for non-roled users.
 	{
 		level: 0,
-		name: 'User',
+		name: '[Server] User',
 		// Don't bother checking, just return true which allows them to execute any command their
 		// level allows them to.
 		check: () => true,
@@ -14,7 +14,7 @@ export default [
 	{
 		level: 2,
 		// This is the name of the role.
-		name: 'Moderator',
+		name: '[Server] Moderator',
 		// The following lines check the guild the message came from for the roles.
 		// Then it checks if the member that authored the message has the role.
 		// If they do return true, which will allow them to execute the command in question.
@@ -36,7 +36,7 @@ export default [
 
 	{
 		level: 3,
-		name: 'Administrator',
+		name: '[Server] Administrator',
 		check: (message) => {
 			try {
 				const adminRole = message.guild.roles.cache.find(
@@ -55,7 +55,7 @@ export default [
 	// This is the server owner.
 	{
 		level: 4,
-		name: 'Server Owner',
+		name: '[Server] Owner',
 		// Simple check, if the guild owner id matches the message author's ID, then it will return true.
 		// Otherwise it will return false.
 		check: (message) =>
@@ -70,7 +70,7 @@ export default [
 	// to any server they joins, in order to help troubleshoot the bot on behalf of owners.
 	{
 		level: 8,
-		name: 'Bot Support',
+		name: '[Bot] Support',
 		// The check is by reading if an ID is part of this array. Yes, this means you need to
 		// change this and reboot the bot to add a support user. Make it better yourself!
 		check: (message) => config.support.includes(message.author.id),
@@ -79,7 +79,7 @@ export default [
 	// Bot Admin has some limited access like rebooting the bot or reloading commands.
 	{
 		level: 9,
-		name: 'Bot Admin',
+		name: '[Bot] Admin',
 		check: (message) => config.admins.includes(message.author.id),
 	},
 
@@ -88,7 +88,7 @@ export default [
 	// or exec (if the owner has that).
 	{
 		level: 10,
-		name: 'Bot Director',
+		name: '[Bot] Director',
 		// Another simple check, compares the message author id to the one stored in the config file.
 		check: (message) => config.owner === message.author.id,
 	},

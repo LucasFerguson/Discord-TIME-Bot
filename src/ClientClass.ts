@@ -84,17 +84,16 @@ export default class GuideBot extends Discord.Client {
 			}
 		}
 	}
-
 	addReactionsListener(
 		message: Discord.Message,
 		emoji: string,
-		fun: (reaction: Discord.MessageReaction, user: Discord.User)
-	) {
-		const filter = (reaction, user) => {
+		fun: (reaction: Discord.MessageReaction, user: Discord.User) 
+	): Discord.ReactionCollector { 
+		let filter = (reaction, user) => {
 			return reaction.emoji.name === emoji;
 		};
 
-		const collector = message.createReactionCollector(filter, {
+		let collector = message.createReactionCollector(filter, {
 			time: 30000,
 		});
 
@@ -106,12 +105,13 @@ export default class GuideBot extends Discord.Client {
 		collector.on('end', () => {
 			console.log(`end createReactionCollector`);
 			// reaction.remove();
-			message.reactions.removeAll();
+			try {
+				message.reactions.removeAll();
+			} catch (e) {}
 			// message.delete();
 		});
 
 		return collector;
-
 
 		// message.createReactionCollector
 		// 	.awaitReactions(

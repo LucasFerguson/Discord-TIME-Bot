@@ -91,17 +91,17 @@ export default class Logger {
 		// 	},
 		// };
 
-		let a = {
-			title: 'Help Command',
-			description:
-				'Use -help <commandname> for details\n`- help ping`\n\n== System ==\n` - ping`: Test the latency from the Server to the Discord API. Ping Pong. :ping_pong: \n` - readline` : read Line\n` - reboot` : Shuts down the bot. If running under PM2, bot will restart automatically.\n` - stats` : Gives some useful bot statistics\n',
-			color: 16167990,
-			footer: {
-				text: '1/4',
-			},
-		};
+		// let a = {
+		// 	title: 'Help Command',
+		// 	description:
+		// 		'Use -help <commandname> for details\n`- help ping`\n\n== System ==\n` - ping`: Test the latency from the Server to the Discord API. Ping Pong. :ping_pong: \n` - readline` : read Line\n` - reboot` : Shuts down the bot. If running under PM2, bot will restart automatically.\n` - stats` : Gives some useful bot statistics\n',
+		// 	color: 16167990,
+		// 	footer: {
+		// 		text: '1/4',
+		// 	},
+		// };
 
-		this.logsServer.send({ embed: a });
+		// this.logsServer.send({ embed: a });
 	}
 
 	// console(content, type = 'log') {
