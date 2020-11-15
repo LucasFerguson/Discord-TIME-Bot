@@ -1,27 +1,61 @@
 import { Command } from '../config/Command';
+import { Task } from '../config/Task';
 
 let thisCommand: Command = {
 	run: async (client, message, args, level) => {},
 	conf: {
 		enabled: true,
 		guildOnly: false,
-		aliases: ['User'],
+		aliases: ['subteam', 'team'],
 		permLevel: 0,
 	},
 
 	help: {
-		name: 'clickupUser',
+		name: 'clickupTeam',
 		category: 'ClickUp',
-		description: 'Get all ClickUp tasks someone is assigned to.',
-		usage: 'clickupGetTasks [User]',
+		description: 'Get all ClickUp tasks for subteam.',
+		usage: 'clickupTeam [subteam]',
 	},
 };
 
 thisCommand.run = async (client, message, args, level) => {
-	client.clickup.getAllTasks();
+	if (!args[0]) {
+		let output = '';
 
-	return;
+		client.database.subteams.forEach((team) => {
+			output += `${team.name}\n`;
+		});
+
+		const exampleEmbed = {
+			color: 0xe7e7e7,
+			title: 'ClickUp - Subteams',
+			description: `${output}`,
+			// footer: {
+			// 	text: `${page + 1}/2`,
+			// },
+		};
+		message.channel.send({ embed: exampleEmbed });
+
+		return;
+	}
+
 	try {
+		// get a specific task
+		// const { body } = await clickup.lists.getTasks("48453100"); // frputk https://app.clickup.com/2293969/v/f/18948674/6345890
+		let teamName = '';
+		args.forEach((s) => {
+			teamName += s;
+		});
+
+		let team = client.database.getSub(teamName);
+		let body = await client.clickup.folders.getLists(team.clickup); // frputk https://app.clickup.com/2293969/v/f/18948674/6345890
+
+		body = body.body;
+
+		// interface task {
+		// 	name: string;
+		// }
+
 		interface list {
 			name: string;
 			id: string;
@@ -43,7 +77,7 @@ thisCommand.run = async (client, message, args, level) => {
 
 		// for (let i = 0; i < all[1].tasks.length; i++) {
 		// 	// const element = all[i];
-		client.logger.log(all[0].tasks[0]);
+		// client.logger.log(all[0].tasks[0]);
 		// }
 
 		let output = '';
@@ -73,6 +107,7 @@ thisCommand.run = async (client, message, args, level) => {
 		};
 		message.channel.send({ embed: exampleEmbed });
 	} catch (error) {
+		message.channel.send('Team not Found');
 		if (error.response) {
 			// The request was made and the server responded with a status code
 			// that falls out of the range of 2xx
@@ -88,6 +123,12 @@ thisCommand.run = async (client, message, args, level) => {
 		}
 		client.logger.log(error.options);
 	}
+	/**
+	 * -clickup tasks
+	 * -clickup
+	 * -clickup
+	 * -clickup
+	 */
 };
 
 export default thisCommand;
