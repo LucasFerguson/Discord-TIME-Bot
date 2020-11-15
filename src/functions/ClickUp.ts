@@ -176,8 +176,10 @@ export default class Clickup {
 		};
 
 		if (Object.getOwnPropertyNames(json).length) {
+			//@ts-ignore
 			options.json = json;
 		} else {
+			//@ts-ignore
 			options.body = body;
 		}
 
@@ -204,8 +206,10 @@ export default class Clickup {
 		};
 
 		if (Object.getOwnPropertyNames(json).length) {
+			//@ts-ignore
 			options.json = json;
 		} else {
+			//@ts-ignore
 			options.body = body;
 		}
 

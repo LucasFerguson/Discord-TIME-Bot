@@ -71,7 +71,7 @@ export interface Folder {
 			start_date: null;
 			archived: false;
 			override_statuses: false;
-			statuses: [Array];
+			statuses: [];
 			permission_level: 'create';
 		},
 		{
@@ -86,7 +86,7 @@ export interface Folder {
 			start_date: null;
 			archived: false;
 			override_statuses: null;
-			statuses: [Array];
+			statuses: [];
 			permission_level: 'create';
 		},
 		{
@@ -101,7 +101,7 @@ export interface Folder {
 			start_date: null;
 			archived: false;
 			override_statuses: false;
-			statuses: [Array];
+			statuses: [];
 			permission_level: 'create';
 		}
 	];

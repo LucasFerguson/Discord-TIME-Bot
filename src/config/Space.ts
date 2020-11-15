@@ -64,7 +64,7 @@ export interface Space {
 		sprints: { enabled: false };
 		time_tracking: { enabled: true; harvest: false; rollup: true };
 		points: { enabled: false };
-		priorities: { enabled: true; priorities: [Array] };
+		priorities: { enabled: true; priorities: [] };
 		tags: { enabled: true };
 		time_estimates: { enabled: true; rollup: true; per_assignee: false };
 		check_unresolved: {
