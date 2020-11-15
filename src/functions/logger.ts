@@ -49,7 +49,7 @@ export default class Logger {
 		this.default('[] ' + content);
 	}
 	log(content) {
-		this.default('[LOG] ' + content);
+		this.default(content);
 	}
 	ready(content) {
 		this.default('[READY] ' + content);

@@ -5,15 +5,14 @@ let thisCommand: Command = {
 	conf: {
 		enabled: true,
 		guildOnly: false,
-		aliases: [],
+		aliases: ['level'],
 		permLevel: 0,
 	},
 
 	help: {
 		name: 'mylevel',
 		category: 'User',
-		description:
-			'Tells you your permission level for the current message location.',
+		description: 'Your permission level for the server.',
 		usage: 'mylevel',
 	},
 };

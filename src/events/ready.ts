@@ -21,10 +21,9 @@ module.exports = async (client: GuideBot) => {
 	client.user.setActivity(`-help`, {
 		type: 'PLAYING',
 	});
+	client.ready = true;
 
 	await client.init();
-
-	client.ready = true;
 
 	client.logger.ready(
 		`${client.user.tag}, ready to serve ${client.users.cache.size} users in ${client.guilds.cache.size} servers.`

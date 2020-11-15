@@ -3,8 +3,7 @@ import fs = require('fs');
 import * as Discord from 'discord.js';
 import Logger from './functions/logger';
 import Database from './functions/DatabaseClass';
-import ClickUp from './functions/ClickUpClass';
-import DiscordMessage from './functions/discordMessage';
+import ClickUp from './functions/ClickUp';
 
 import { Command } from './config/Command';
 
@@ -20,7 +19,6 @@ export default class GuideBot extends Discord.Client {
 	configLevels = configLevels;
 	aliases: any[];
 	logger: Logger;
-	discordMessage: DiscordMessage;
 	database: Database;
 	clickup: ClickUp;
 	wait: any;
@@ -52,9 +50,8 @@ export default class GuideBot extends Discord.Client {
 
 		//requiring the Logger class for easy console logging
 		this.logger = new Logger(this);
-		this.discordMessage = new DiscordMessage(this);
-		// this.database = new Database(this);
-		// this.clickup = new ClickUp(this);
+		this.database = new Database(this);
+		this.clickup = new ClickUp(this);
 
 		// Basically just an async shortcut to using a setTimeout. Nothing fancy!
 		this.wait = require('util').promisify(setTimeout);
@@ -65,30 +62,39 @@ export default class GuideBot extends Discord.Client {
 
 	async init() {
 		await this.logger.init();
+		await this.clickup.init();
 	}
 
 	/**
 	 * @param {string} stringC
 	 */
-	getCommand(stringC) {
-		for (let i = 0; i < this.commands.length; i++) {
-			// this.commands[i].conf.aliases.
-			// }
-			for (let a = 0; a < this.commands.length; a++) {
+	getCommand(stringC: string) {
+		for (let c = 0; c < this.commands.length; c++) {
+			if (
+				this.commands[c].help.name.toLowerCase() ==
+				stringC.toLowerCase()
+			) {
+				return this.commands[c];
+			}
+
+			for (let a = 0; a < this.commands[c].conf.aliases.length; a++) {
 				if (
-					this.commands[i].conf.aliases[a] == stringC ||
-					this.commands[i].help.name == stringC
+					this.commands[c].conf.aliases[a].toLowerCase() ==
+					stringC.toLowerCase()
 				) {
-					return this.commands[i];
+					return this.commands[c];
 				}
 			}
 		}
+
+		return this.getCommand('null');
 	}
+
 	addReactionsListener(
 		message: Discord.Message,
 		emoji: string,
-		fun: (reaction: Discord.MessageReaction, user: Discord.User) 
-	): Discord.ReactionCollector { 
+		fun: (reaction: Discord.MessageReaction, user: Discord.User) => void
+	): Discord.ReactionCollector {
 		let filter = (reaction, user) => {
 			return reaction.emoji.name === emoji;
 		};
@@ -112,26 +118,6 @@ export default class GuideBot extends Discord.Client {
 		});
 
 		return collector;
-
-		// message.createReactionCollector
-		// 	.awaitReactions(
-		// 		(reaction, user) =>
-		// 			// user.id == message.author.id &&
-		// 			reaction.emoji.name == emoji,
-		// 		{ max: 1, time: 30000 }
-		// 	)
-		// 	.then((collected) => {
-		// 		if (collected.first().emoji.name == '▶️') {
-		// 			collected.first().users.remove(message.author.id);
-		// 			botMessage.edit({ embed: getpage(client, 1, categorys) });
-		// 			fun.
-		// 		}
-		// 	})
-		// 	.catch(() => {
-		// 		this.logger.log(
-		// 			'No reaction after 30 seconds, operation canceled'
-		// 		);
-		// 	});
 	}
 
 	/*

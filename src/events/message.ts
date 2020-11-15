@@ -11,6 +11,11 @@ import * as Discord from 'discord.js';
 module.exports = async (client: GuideBot, message: Discord.Message) => {
 	// It's good practice to ignore other bots. This also makes your bot ignore itself
 	// and not get into a spam loop (we call that "botception").
+
+	if (message.channel.id == '774676961481064468') {
+		client.clickup.update(message);
+	}
+
 	if (message.author.bot) return;
 
 	client.logger.cmd(

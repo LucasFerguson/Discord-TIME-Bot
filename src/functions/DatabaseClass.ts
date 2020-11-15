@@ -9,12 +9,20 @@ export default class Database {
 	constructor(_client) {
 		this.client = _client;
 		this.subteams = _subteams; // JSON.parse();
-		console.log(this.subteams);
+		// console.log(this.subteams);
 	}
 
-	getSub(name) {
+	getSub(_name: string) {
 		// this.subteams.
 		// return
+		for (let i = 0; i < this.subteams.length; i++) {
+			if (
+				this.subteams[i].name.toLowerCase().replace(' ', '') ==
+				_name.toLowerCase()
+			) {
+				return this.subteams[i];
+			}
+		}
 	}
 
 	addUser() {}
