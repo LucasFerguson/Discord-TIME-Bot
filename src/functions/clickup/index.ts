@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 const Authorization = require('./Authorization');
 const Checklists = require('./Checklists');
 const Comments = require('./Comments');

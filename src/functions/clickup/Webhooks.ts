@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import Clickup from '../ClickUp';
 
 export default class Webhooks {

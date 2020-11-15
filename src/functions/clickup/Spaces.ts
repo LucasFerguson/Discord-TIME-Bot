@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { Space } from '../../config/Space';
 import Clickup from '../ClickUp';
 

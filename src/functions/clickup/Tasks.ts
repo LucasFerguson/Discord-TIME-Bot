@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 const { createReadStream } = require('fs');
 const FormData = require('form-data');
 

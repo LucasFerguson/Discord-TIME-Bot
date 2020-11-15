@@ -4,6 +4,7 @@
         "target": "esnext",
         "outDir": "./build",
         "sourceMap": true,
+        "removeComments": true,
         "watch": true,
         "resolveJsonModule": true,
         // "esModuleInterop": true 
