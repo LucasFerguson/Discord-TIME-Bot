@@ -1,13 +1,12 @@
-import { DiscordAPIError } from 'discord.js';
 import got from 'got';
 import { Http2ServerRequest } from 'http2';
+import * as Discord from 'discord.js';
+
 import GuideBot from '../ClientClass';
-// const routes  from'./clickup/routes
 import config from '../config';
 import { Folder } from '../config/Folder';
 import { Space } from '../config/Space';
 import { Task } from '../config/Task';
-import * as Discord from 'discord.js';
 
 import Authorization from './clickup/Authorization';
 import Checklists from './clickup/Checklists';

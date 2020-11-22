@@ -2,33 +2,54 @@
 	"subteams": [
 		{
 			"name": "Mechanical",
-			"clickup": 16995360,
-			"discord": 480753292289507338
+			"clickup": {
+				"id": "16995360",
+				"url": ""
+			},
+			"google": {
+				"url": ""
+			},
+			"discord": "480753292289507338"
 		},
 		{
 			"name": "CAD",
-			"clickup": 16804750,
-			"discord": 480753292289507338
+			"clickup": {
+				"id": "16804750",
+				"url": ""
+			},
+			"discord": "480753292289507338"
 		},
 		{
 			"name": "Controls",
-			"clickup": 16804753,
-			"discord": 480753292289507338
+			"clickup": {
+				"id": "16804753",
+				"url": ""
+			},
+			"discord": "480753292289507338"
 		},
 		{
 			"name": "Community Impact",
-			"clickup": 16804755,
-			"discord": 480753292289507338
+			"clickup": {
+				"id": "16804755",
+				"url": ""
+			},
+			"discord": "480753292289507338"
 		},
 		{
 			"name": "Finance",
-			"clickup": 0,
-			"discord": 0
+			"clickup": {
+				"id": "0",
+				"url": ""
+			},
+			"discord": "0"
 		},
 		{
 			"name": "Safety",
-			"clickup": 16804752,
-			"discord": 480753292289507338
+			"clickup": {
+				"id": "16804752",
+				"url": ""
+			},
+			"discord": "480753292289507338"
 		}
 	]
 }
