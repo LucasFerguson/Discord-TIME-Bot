@@ -8,18 +8,18 @@ import { Folder } from '../config/Folder';
 import { Space } from '../config/Space';
 import { Task } from '../config/Task';
 
-import Authorization from './clickup/Authorization';
-import Checklists from './clickup/Checklists';
-import Comments from './clickup/Comments';
-import Folders from './clickup/Folders';
-import Goals from './clickup/Goals';
-import KeyResults from './clickup/KeyResults';
-import Lists from './clickup/Lists';
-import Spaces from './clickup/Spaces';
-import Tasks from './clickup/Tasks';
-import Teams from './clickup/Teams';
-import Views from './clickup/Views';
-import Webhooks from './clickup/Webhooks';
+import Authorization from './clickupLib/Authorization';
+import Checklists from './clickupLib/Checklists';
+import Comments from './clickupLib/Comments';
+import Folders from './clickupLib/Folders';
+import Goals from './clickupLib/Goals';
+import KeyResults from './clickupLib/KeyResults';
+import Lists from './clickupLib/Lists';
+import Spaces from './clickupLib/Spaces';
+import Tasks from './clickupLib/Tasks';
+import Teams from './clickupLib/Teams';
+import Views from './clickupLib/Views';
+import Webhooks from './clickupLib/Webhooks';
 
 export default class Clickup {
 	_baseUrl: string;

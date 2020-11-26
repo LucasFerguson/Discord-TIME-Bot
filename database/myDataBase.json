@@ -1,0 +1,60 @@
+{
+    "subteams": [
+        {
+            "name": "string",
+            "discord": {
+                "id": "string",
+                "url": "string"
+            },
+            "clickup": {
+                "id": "string",
+                "url": "string"
+            },
+            "google": {
+                "url": "string"
+            }
+        },
+        {
+            "name": "string",
+            "discord": {
+                "id": "string",
+                "url": "string"
+            },
+            "clickup": {
+                "id": "string",
+                "url": "string"
+            },
+            "google": {
+                "url": "string"
+            }
+        },
+        {
+            "name": "string",
+            "discord": {
+                "id": "string",
+                "url": "string"
+            },
+            "clickup": {
+                "id": "string",
+                "url": "string"
+            },
+            "google": {
+                "url": "string"
+            }
+        },
+        {
+            "name": "string",
+            "discord": {
+                "id": "string",
+                "url": "string"
+            },
+            "clickup": {
+                "id": "string",
+                "url": "string"
+            },
+            "google": {
+                "url": "string"
+            }
+        }
+    ]
+}
