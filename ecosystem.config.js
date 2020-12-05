@@ -12,6 +12,7 @@ module.exports = {
 				'.git',
 			],
 			watch: true,
+			restart_delay: 200,
 
 			args: ['--color'],
 			output: './log/out.log',
