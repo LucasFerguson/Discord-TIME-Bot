@@ -94,28 +94,32 @@ export default class Clickup {
 		// 	});
 		// });
 		let num = 0;
+		let returnString = '';
 
 		for (const folder of folders) {
-			console.log(`	FOLDER NAME ${folder.name}  `);
+			returnString += `	FOLDER NAME ${folder.name}  \n`;
 
-			for (const list of folder.lists) {
-				let gettasks = await this.lists.getTasks(list.id);
-				console.log(`		LIST NAME ${list.name}  `);
+			// for (const list of folder.lists) {
+			// 	let gettasks = await this.lists.getTasks(list.id);
+			// 	returnString += `		LIST NAME ${list.name}  \n`;
 
-				let tasks: Task[] = gettasks.body.tasks;
-				for (const task of tasks) {
-					num++;
-					console.log(`			${num} TASK NAME ${task.name}  `);
+			// let tasks: Task[] = gettasks.body.tasks;
+			// for (const task of tasks) {
+			// 	num++;
+			// 	returnString += `			${num} TASK NAME ${task.name}  \n`;
 
-					// break;
-				}
-			}
+			// 	// break;
+			// }
+			// }
 		}
+		console.log('Done');
+
+		return returnString;
 	}
 
 	update(_message: Discord.Message) {
-		this.client.logger.log(_message.embeds[0].url);
-		this.client.logger.log(_message.embeds[0].description);
+		// this.client.logger.log(_message.embeds[0].url);
+		// this.client.logger.log(_message.embeds[0].description);
 		/**
 		 * Local  -->   ClickUp
 		 * tasks  <--   tasks

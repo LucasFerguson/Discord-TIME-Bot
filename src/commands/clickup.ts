@@ -13,27 +13,31 @@ let thisCommand: Command = {
 		name: 'clickup',
 		category: 'ClickUp',
 		description: 'ClickUp',
-		usage: 'clickup ',
+		usage: 'clickup',
 	},
 };
 
 thisCommand.run = async (client, message, args, level) => {
 	message.channel.send(`ClickUp`);
 
-	if (!message.guild) {
-		// Get Users Tasks
-		console.log('not message.guild');
-		let cmd = client.getCommand('clickupUser');
-		cmd.run(client, message, [message.author.id], level);
-	} else if (message.guild) {
-		console.log('message.guild' + message.channel.id);
-	}
+	// if (!message.guild) {
+	// Get Users Tasks
+	// console.log('not message.guild');
+	// let cmd = client.getCommand('clickup' + args[0]);
+	// cmd.run(client, message, [message.author.id], level);
+	// } else if (message.guild) {
+	// console.log('message.guild  ' + message.channel.id);
+	// }
+
+	client.logger.log('Run Smart Command');
+	let cmd = client.getCommand('clickup_' + args.shift());
+	cmd.run(client, message, args, level);
 
 	/**
-	 * -clickup tasks
-	 * -clickup
-	 * -clickup
-	 * -clickup
+	 * -clickup all
+	 * -clickup task
+	 * -clickup team
+	 * -clickup user
 	 */
 };
 

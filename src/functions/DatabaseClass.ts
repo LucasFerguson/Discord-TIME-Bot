@@ -1,7 +1,7 @@
 // @ts-nocheck
 
 import GuideBot from '../ClientClass';
-import { subteams as _subteams } from '../database/subteams.json';
+import { subteams as _subteams } from '../../../database/subteams.json';
 import * as fs from 'fs';
 
 export default class Database {

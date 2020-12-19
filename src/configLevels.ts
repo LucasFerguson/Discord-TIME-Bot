@@ -52,6 +52,26 @@ export default [
 			}
 		},
 	},
+
+	{
+		level: 3,
+		name: 'Lead',
+		check: (message) => {
+			try {
+				const adminRole = message.guild.roles.cache.find(
+					(r) =>
+						r.name.toLowerCase() ===
+						message.settings.adminRole.toLowerCase()
+				);
+				return (
+					adminRole && message.member.roles.cache.has(adminRole.id)
+				);
+			} catch (e) {
+				return false;
+			}
+		},
+	},
+
 	// This is the server owner.
 	{
 		level: 4,

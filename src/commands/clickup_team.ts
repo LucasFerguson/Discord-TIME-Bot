@@ -11,7 +11,7 @@ let thisCommand: Command = {
 	},
 
 	help: {
-		name: 'clickupTeam',
+		name: 'clickup_team',
 		category: 'ClickUp',
 		description: 'Get all ClickUp tasks for subteam.',
 		usage: 'clickupTeam [subteam]',
@@ -19,6 +19,8 @@ let thisCommand: Command = {
 };
 
 thisCommand.run = async (client, message, args, level) => {
+	message.channel.startTyping();
+
 	if (!args[0]) {
 		let output = '';
 
@@ -48,7 +50,8 @@ thisCommand.run = async (client, message, args, level) => {
 		});
 
 		let team = client.database.getSub(teamName);
-		let body = await client.clickup.folders.getLists(team.clickup); // frputk https://app.clickup.com/2293969/v/f/18948674/6345890
+		console.log('team ' + team);
+		let body = await client.clickup.folders.getLists(team.clickup.id); // frputk https://app.clickup.com/2293969/v/f/18948674/6345890
 
 		body = body.body;
 
@@ -85,7 +88,7 @@ thisCommand.run = async (client, message, args, level) => {
 			output += '**List Name : ' + list.name + '**\n';
 			// client.logger.log();
 			list.tasks.forEach((task) => {
-				output += `TASK : [${task.name}](${task.url})\n`;
+				output += ` ${task.id} : [${task.name}](${task.url})\n`;
 			});
 			output += '\n';
 		});
@@ -95,7 +98,7 @@ thisCommand.run = async (client, message, args, level) => {
 		const exampleEmbed = {
 			color: 0xe7e7e7,
 			title: `ClickUp - ${team.name}`,
-			description: `${output}`,
+			description: `Task ID : Task URL \n${output}`,
 			// footer: {
 			// 	text: `${page + 1}/2`,
 			// },
@@ -108,20 +111,20 @@ thisCommand.run = async (client, message, args, level) => {
 		message.channel.send({ embed: exampleEmbed });
 	} catch (error) {
 		message.channel.send('Team not Found');
-		if (error.response) {
-			// The request was made and the server responded with a status code
-			// that falls out of the range of 2xx
-			client.logger.log(error.response.body);
-			client.logger.log(error.response.statusCode);
-			client.logger.log(error.response.headers);
-		} else if (error.request) {
-			// The request was made but no response was received
-			client.logger.log(error.request);
-		} else {
-			// Something happened in setting up the request that triggered an Error
-			console.log('Error', error.message);
-		}
-		client.logger.log(error.options);
+		// if (error.response) {
+		// 	// The request was made and the server responded with a status code
+		// 	// that falls out of the range of 2xx
+		// 	client.logger.log(error.response.body);
+		// 	client.logger.log(error.response.statusCode);
+		// 	client.logger.log(error.response.headers);
+		// } else if (error.request) {
+		// 	// The request was made but no response was received
+		// 	client.logger.log(error.request);
+		// } else {
+		// 	// Something happened in setting up the request that triggered an Error
+		// 	console.log('Error', error.message);
+		// }
+		client.logger.log(error);
 	}
 	/**
 	 * -clickup tasks
@@ -129,6 +132,8 @@ thisCommand.run = async (client, message, args, level) => {
 	 * -clickup
 	 * -clickup
 	 */
+
+	message.channel.stopTyping();
 };
 
 export default thisCommand;
