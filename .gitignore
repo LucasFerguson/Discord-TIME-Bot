@@ -4,3 +4,4 @@ log/*
 log/combined.outerr.log
 log/out.log
 src/token.lock.json
+src/token.lock.json
