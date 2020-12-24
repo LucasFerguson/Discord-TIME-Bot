@@ -54,22 +54,22 @@ thisCommand.run = async (client, message, args, level) => {
 
 	let responseMessage = '';
 
-	if (!args[0]) {
-		let categorys = [
-			{ name: 'User', arr: [], page: 0 },
-			{ name: 'ClickUp', arr: [], page: 0 },
-			{ name: 'System', arr: [], page: 1 },
-		];
+	let categories = [
+		{ name: 'User', arr: [], page: 0 },
+		{ name: 'ClickUp', arr: [], page: 0 },
+		{ name: 'System', arr: [], page: 1 },
+	];
 
-		client.commands.forEach((c) => {
-			for (let i = 0; i < categorys.length; i++) {
-				if (categorys[i].name == c.help.category) {
-					categorys[i].arr.push(c);
-				}
+	client.commands.forEach((c) => {
+		for (let i = 0; i < categories.length; i++) {
+			if (categories[i].name == c.help.category) {
+				categories[i].arr.push(c);
 			}
-		});
-		let page = 0;
+		}
+	});
+	let page = 0;
 
+	if (!args[0]) {
 		// message.channel.send(output);
 
 		// const exampleEmbed = {
@@ -82,7 +82,7 @@ thisCommand.run = async (client, message, args, level) => {
 		// };
 
 		let botMessage = await message.channel.send({
-			embed: getpage(client, 0, categorys),
+			embed: getpage(client, 0, categories),
 		});
 
 		await botMessage.react('◀️');
@@ -94,7 +94,7 @@ thisCommand.run = async (client, message, args, level) => {
 			botMessage,
 			'▶️',
 			(reaction, user) => {
-				botMessage.edit({ embed: getpage(client, 1, categorys) });
+				botMessage.edit({ embed: getpage(client, 1, categories) });
 				if (message.guild) {
 					reaction.users.remove(user.id);
 				}
@@ -105,7 +105,7 @@ thisCommand.run = async (client, message, args, level) => {
 			botMessage,
 			'◀️',
 			(reaction, user) => {
-				botMessage.edit({ embed: getpage(client, 0, categorys) });
+				botMessage.edit({ embed: getpage(client, 0, categories) });
 				if (message.guild) {
 					reaction.users.remove(user.id);
 				}
@@ -162,23 +162,65 @@ thisCommand.run = async (client, message, args, level) => {
 		// } catch (e) {
 
 		// }
-		let command = client.getCommand(args[0]);
 
-		if (command) {
-			let output = `${command.help.description}\n**Usage** : ${
-				command.help.usage
-			}\n**Aliases** : ${command.conf.aliases.join(', ')}`;
-			const exampleEmbed = {
-				color: 0xf6b436,
-				title: `${client.config.defaultSettings.prefix}${command.help.name}`,
-				description: `${output}`,
-			};
+		let isCommand = true;
 
-			let botMessage = await message.channel.send({
-				embed: exampleEmbed,
-			});
-		} else {
-			message.channel.send(`${args[0]}, is not Found.`);
+		for (let i = 0; i < categories.length; i++) {
+			if (args[0].toLowerCase() == categories[i].name.toLowerCase()) {
+				isCommand = false;
+				client.logger.log('category ' + categories[i].name);
+
+				let output = `\nUse ${client.config.defaultSettings.prefix}help <commandname> for details ***-help ping***`;
+				output += `\nUse ${client.config.defaultSettings.prefix}help <command category> ***-help ClickUp***\n`;
+
+				output += `\n**== __${categories[i].name} Commands__ ==**\n`;
+				categories[i].arr.forEach((c) => {
+					output += `***${client.config.defaultSettings.prefix}${c.help.name}*** : \`${c.help.description}\`\n`;
+				});
+
+				const exampleEmbed = {
+					color: 0xe7e7e7,
+					author: {
+						name: `${categories[i].name} Commands`,
+						icon_url: '',
+					},
+
+					description: `${output}`,
+					footer: {
+						text: `${page + 1}/1`,
+					},
+				};
+
+				if (categories[i].name == 'ClickUp') {
+					exampleEmbed.author.icon_url =
+						'https://clickup.com/landing/images/for-se-page/clickup.png';
+				}
+
+				message.channel.send({
+					embed: exampleEmbed,
+				});
+			}
+		}
+
+		if (isCommand) {
+			let command = client.getCommand(args[0]);
+
+			if (command) {
+				let output = `${command.help.description}\n**Usage** : ${
+					command.help.usage
+				}\n**Aliases** : ${command.conf.aliases.join(', ')}`;
+				const exampleEmbed = {
+					color: 0xf6b436,
+					title: `${client.config.defaultSettings.prefix}${command.help.name}`,
+					description: `${output}`,
+				};
+
+				let botMessage = await message.channel.send({
+					embed: exampleEmbed,
+				});
+			} else {
+				message.channel.send(`${args[0]}, is not Found.`);
+			}
 		}
 
 		// if (client.commands.has(command)) {
@@ -200,10 +242,11 @@ thisCommand.run = async (client, message, args, level) => {
 
 export default thisCommand;
 
-function getpage(client: GuideBot, page: number, categorys) {
-	let output = `\nUse ${client.config.defaultSettings.prefix}help <commandname> for details\n***-help ping***\n`;
+function getpage(client: GuideBot, page: number, categories) {
+	let output = `\nUse ${client.config.defaultSettings.prefix}help <commandname> for details ***-help ping***`;
+	output += `\nUse ${client.config.defaultSettings.prefix}help <command category> ***-help ClickUp***\n`;
 
-	categorys.forEach((cat) => {
+	categories.forEach((cat) => {
 		if (cat.page != page) return;
 		output += `\n**== __${cat.name} Commands__ ==**\n`;
 		cat.arr.forEach((c) => {

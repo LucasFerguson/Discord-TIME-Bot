@@ -68,7 +68,7 @@ export default class GuideBot extends Discord.Client {
 	/**
 	 * @param {string} stringC
 	 */
-	getCommand(stringC: string) {
+	getCommand(stringC: string): Command {
 		for (let c = 0; c < this.commands.length; c++) {
 			if (
 				this.commands[c].help.name.toLowerCase() ==
