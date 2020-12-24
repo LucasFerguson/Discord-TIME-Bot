@@ -2,6 +2,8 @@ import { promisify } from 'util';
 import * as fs from 'fs';
 var readdir = promisify(fs.readdir);
 
+import config from './src/config';
+
 import * as Discord from 'discord.js';
 
 // import { GuideBot } from './src/ClientClass';
@@ -52,9 +54,7 @@ const init = async () => {
 	});
 
 	// Here we login the client.
-	await client.login(
-		'NzYzMjAxODk0MDE3NDAwODcz.X30RJw.Jh4Ekm2gryN002AMLhVrplFgmGM'
-	);
+	await client.login('' + config.token);
 	// await client.logger.init();
 
 	// End top-level async/await function.
