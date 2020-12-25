@@ -20,7 +20,7 @@ function display(n) {
     }
     //console.log(arr); // use arr result on your own
     for (let i = 0; i < arr.length; i++) {
-         console.log(i);
+         console.log(i + "  " + arr[i] );
     }
 }
 
