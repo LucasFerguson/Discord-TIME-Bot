@@ -1,4 +1,5 @@
 
+
 console.log("Hello, World!")
 
 function isPrime(num) {
@@ -17,7 +18,10 @@ function display(n) {
             arr.push(i);
         }
     }
-    console.log(arr); // use arr result on your own
+    //console.log(arr); // use arr result on your own
+    for (let i = 0; i < arr.length; i++) {
+         console.log(i);
+    }
 }
 
-display(100);
+display(1000);
