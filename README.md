@@ -1,18 +1,19 @@
 # Discord-TIME-Bot
 
-Lucas Ferguson
-Date 10/31/2020
+Lucas Ferguson  
+Date 10/31/2020  
+Date Updated 12/29/2020
 
 ---
 
 ## File Architecture
 
 TimeBot  
-├─build  
-├─database  
+├─build (compiled_javascript)  
+├─database (📁local_database)  
 ├─log  
 ├─src  
-└─tokens
+└─tokens (🔐local_tokens)
 
 ---
 
