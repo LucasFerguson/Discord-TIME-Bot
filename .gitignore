@@ -2,9 +2,12 @@
 node_modules
 
 build/*
+!build/temp.js
 
 log/*
+!log/temp.js
 
 tokens/*
+!tokens/temp.js
 
 src/token.lock.json
