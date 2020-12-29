@@ -3,6 +3,7 @@ import * as fs from 'fs';
 var readdir = promisify(fs.readdir);
 
 import config from './src/config';
+import * as tokens from './tokens/token.lock.json';
 
 import * as Discord from 'discord.js';
 
@@ -54,7 +55,7 @@ const init = async () => {
 	});
 
 	// Here we login the client.
-	await client.login('' + config.token);
+	await client.login('' + tokens.discordToken);
 	// await client.logger.init();
 
 	// End top-level async/await function.

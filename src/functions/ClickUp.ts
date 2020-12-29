@@ -4,6 +4,7 @@ import * as Discord from 'discord.js';
 
 import GuideBot from '../ClientClass';
 import config from '../config';
+import * as tokens from '../../tokens/token.lock.json';
 import { Folder } from '../config/Folder';
 import { Space } from '../config/Space';
 import { Task } from '../config/Task';
@@ -50,7 +51,7 @@ export default class Clickup {
 	constructor(_client) {
 		this.client = _client;
 		this._baseUrl = 'https://api.clickup.com/api/v2';
-		this._token = config.clickupToken;
+		this._token = tokens.clickupToken;
 		this._headers = {
 			authorization: this._token,
 			'content-type': 'application/json',
