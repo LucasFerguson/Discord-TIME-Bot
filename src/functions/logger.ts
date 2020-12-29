@@ -28,6 +28,7 @@ export default class Logger {
 		this.logsTimebot = await this.client.channels.fetch(
 			this.client.config.discord.logs.timebot
 		);
+		// console.log('Logger Ready (: ');
 	}
 
 	error(content) {

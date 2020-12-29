@@ -74,12 +74,7 @@ export default class Clickup {
 	}
 
 	async init() {
-		this.client.logger.log('ClickUp Ready');
-		// this.getAllTasks();
-
-		// let hook = await this.webhooks.create();
-		// console.log('hook hook hook hook hook ');
-		// console.log(hook);
+		// this.client.logger.log('Loading Function: ClickUp Ready (:');
 	}
 
 	async getAllTasks() {

@@ -30,8 +30,6 @@ export default class Database {
 
 	async init() {
 		// this.client.logger.log('Database Ready');
-
-		console.log('Database Ready (: ');
 	}
 
 	async getAllSubteams(): Promise<SubTeam[]> {
