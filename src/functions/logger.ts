@@ -1,6 +1,5 @@
 import { DiscordAPIError, TextChannel } from 'discord.js';
 import GuideBot from '../ClientClass';
-import config from '../config';
 // import { version as _version } from '.../package.json';
 import * as Discord from 'discord.js';
 
@@ -23,11 +22,11 @@ export default class Logger {
 		let serverLucas = this.client.guilds.cache.get('645153111538794496');
 		// @ts-ignore
 		this.logsServer = await this.client.channels.fetch(
-			config.discord.logs.server
+			this.client.config.discord.logs.server
 		);
 		// @ts-ignore
 		this.logsTimebot = await this.client.channels.fetch(
-			config.discord.logs.timebot
+			this.client.config.discord.logs.timebot
 		);
 	}
 
