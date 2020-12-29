@@ -48,10 +48,16 @@ export default class Database {
 
 		let team: SubTeam;
 		subteams.forEach((t) => {
-			if (t.name == teamName) {
+			if (
+				t.name.toLowerCase().replace(' ', '') ==
+				teamName.toLowerCase().replace(' ', '')
+			) {
 				team = t;
 			}
 		});
+
+		console.log('team_in =' + teamName);
+		console.log('team_out =' + team);
 
 		return team;
 	}

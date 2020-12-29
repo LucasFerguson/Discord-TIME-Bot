@@ -18,17 +18,6 @@ let thisCommand: Command = {
 };
 
 thisCommand.run = async (client, message, args, level) => {
-	// message.channel.send(`ClickUp`);
-
-	// if (!message.guild) {
-	// Get Users Tasks
-	// console.log('not message.guild');
-	// let cmd = client.getCommand('clickup' + args[0]);
-	// cmd.run(client, message, [message.author.id], level);
-	// } else if (message.guild) {
-	// console.log('message.guild  ' + message.channel.id);
-	// }
-
 	client.logger.log('Run Smart Command');
 	let cmd = client.getCommand('clickup_' + args.shift());
 	if (cmd.help.name == 'null') {

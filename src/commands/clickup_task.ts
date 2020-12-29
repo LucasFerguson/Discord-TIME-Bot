@@ -13,12 +13,21 @@ let thisCommand: Command = {
 	help: {
 		name: 'clickup_task',
 		category: 'ClickUp',
-		description: 'Do not Run.',
-		usage: 'clickupALL',
+		description: 'Get task with id.',
+		usage: 'clickup task <task id>',
 	},
 };
 
 thisCommand.run = async (client, message, args, level) => {
+	// incorrect parameters
+	if (args.length == 1) {
+	} else {
+		message.channel.send('incorrect parameters');
+		let help = client.getCommand('h');
+		help.run(client, message, ['clickup_task'], level);
+		return;
+	}
+
 	message.channel.startTyping();
 
 	let taskID = args[0];
@@ -37,7 +46,7 @@ thisCommand.run = async (client, message, args, level) => {
 
 	const exampleEmbed = {
 		color: `0x${task.status.color.substring(1)}`,
-		title: `${task.name} (${task.id})`,
+		title: `Name: ${task.name} (${task.id})`,
 		description: `${output}`,
 		// footer: {
 		// 	text: `${page + 1}/2`,

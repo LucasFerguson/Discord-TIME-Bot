@@ -23,7 +23,7 @@ let thisCommand: Command = {
 		category: 'User',
 		description:
 			'Displays all the available commands for your permission level.',
-		usage: 'help [command]',
+		usage: 'help <command>',
 	},
 };
 

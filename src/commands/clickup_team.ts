@@ -14,17 +14,18 @@ let thisCommand: Command = {
 		name: 'clickup_team',
 		category: 'ClickUp',
 		description: 'Get all ClickUp tasks for subteam.',
-		usage: 'clickupTeam [subteam]',
+		usage: 'clickupTeam <subteam>',
 	},
 };
 
 thisCommand.run = async (client, message, args, level) => {
-	message.channel.startTyping();
-
+	// incorrect parameters
 	if (!args[0]) {
 		let output = '';
 
-		client.database.subteams.forEach((team) => {
+		let subteams = await client.database.getAllSubteams();
+
+		subteams.forEach((team) => {
 			output += `${team.name}\n`;
 		});
 
@@ -41,17 +42,21 @@ thisCommand.run = async (client, message, args, level) => {
 		return;
 	}
 
+	message.channel.startTyping();
+
+	//correct parameters
+	let teamName = '';
+	args.forEach((s) => {
+		teamName += s;
+	});
+
 	try {
 		// get a specific task
 		// const { body } = await clickup.lists.getTasks("48453100"); // frputk https://app.clickup.com/2293969/v/f/18948674/6345890
-		let teamName = '';
-		args.forEach((s) => {
-			teamName += s;
-		});
 
-		let team = client.database.getSub(teamName);
+		let team = await client.database.getSubteam(teamName);
 		console.log('team ' + team);
-		let body = await client.clickup.folders.getLists(team.clickup.id); // frputk https://app.clickup.com/2293969/v/f/18948674/6345890
+		let body = await client.clickup.folders.getLists(team.id.clickup); // frputk https://app.clickup.com/2293969/v/f/18948674/6345890
 
 		body = body.body;
 

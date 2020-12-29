@@ -13,7 +13,7 @@ let thisCommand: Command = {
 		name: 'clickup_user',
 		category: 'ClickUp',
 		description: 'Get all ClickUp tasks someone is assigned to.',
-		usage: 'clickupGetTasks [User]',
+		usage: 'clickupGetTasks <user>',
 	},
 };
 
