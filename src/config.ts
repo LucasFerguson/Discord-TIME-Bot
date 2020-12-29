@@ -1,7 +1,7 @@
 import {
 	token as _token,
 	clickupToken as _clickupToken,
-} from './token.lock.json';
+} from '../tokens/token.lock.json';
 
 export default {
 	// Bot Owner, level 10 by default. You do not need to supply the owner ID, as the bot
