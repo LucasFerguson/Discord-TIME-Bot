@@ -18,16 +18,18 @@ module.exports = async (client: GuideBot) => {
 	// 	type: "PLAYING",
 	// });
 
+	await client.init();
+
 	client.user.setActivity(`-help`, {
 		type: 'PLAYING',
 	});
 	client.ready = true;
 
-	await client.init();
-
 	client.logger.ready(
 		`${client.user.tag}, ready to serve ${client.users.cache.size} users in ${client.guilds.cache.size} servers.`
 	);
+
+	client.logger.log('```' + client.letterArt + '```');
 
 	// client.clickup.update();
 };
