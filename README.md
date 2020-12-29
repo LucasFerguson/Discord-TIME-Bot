@@ -9,11 +9,11 @@ Date Updated 12/29/2020
 ## File Architecture
 
 TimeBot  
-├─build (compiled_javascript)  
-├─database (📁local_database)  
+├─build (💽 compiled_javascript)  
+├─database (📁 local_database)  
 ├─log  
 ├─src  
-└─tokens (🔐local_tokens)
+└─tokens (🔐 local_tokens)
 
 ---
 
