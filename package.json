@@ -27,6 +27,7 @@
 		"chalk": "^4.1.0",
 		"clickup.js": "^1.0.2",
 		"discord.js": "^12.4.1",
+		"firebase-admin": "^9.4.2",
 		"mkdirp": "^1.0.4",
 		"moment": "^2.29.1",
 		"moment-duration-format": "^2.3.2"
