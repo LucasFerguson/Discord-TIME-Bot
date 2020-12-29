@@ -1,3 +1,13 @@
+let letterArt = `
+#
+# ████████╗    ██╗    ███╗   ███╗    ███████╗    ██████╗  ██████╗ ████████╗
+# ╚══██╔══╝    ██║    ████╗ ████║    ██╔════╝    ██╔══██╗██╔═══██╗╚══██╔══╝
+#⠀⠀⠀⠀██║       ██║    ██╔████╔██║    █████╗      ██████╔╝██║   ██║   ██║   
+#⠀⠀⠀⠀██║       ██║    ██║╚██╔╝██║    ██╔══╝      ██╔══██╗██║   ██║   ██║   
+#⠀⠀⠀⠀██║       ██║    ██║ ╚═╝ ██║    ███████╗    ██████╔╝╚██████╔╝   ██║   
+#⠀⠀⠀⠀╚═╝       ╚═╝    ╚═╝     ╚═╝    ╚══════╝    ╚═════╝  ╚═════╝    ╚═╝   
+#                                                                           `;
+
 import { promisify } from 'util';
 import * as fs from 'fs';
 var readdir = promisify(fs.readdir);
@@ -19,13 +29,16 @@ const intents = ['GUILDS', 'GUILD_MESSAGES', 'DIRECT_MESSAGES'];
 // This is your client. Some people call it `bot`, some people call it `self`,
 // or `bot.something`, this is what we're refering to. Your client.
 const client = new GuideBot(); //const client = new GuideBot({ ws: { intents: intents } });
-
+client.letterArt = letterArt;
 // We're doing real fancy node 8 async/await stuff here, and to do that
 // we need to wrap stuff in an anonymous function. It's annoying but it works.
 
 const init = async () => {
 	// Here we load **commands** into memory, as a collection, so they're accessible
 	// here and everywhere else.
+	client.logger.log('');
+	client.logger.log('');
+	client.logger.log(letterArt);
 
 	const cmdFiles = await readdir(__dirname + '/src/commands/');
 	client.logger.debug(`Loading a total of ${cmdFiles.length / 2} commands.`);
@@ -36,7 +49,7 @@ const init = async () => {
 		client.loadCommand(filename);
 	});
 
-	client.logger.none('');
+	client.logger.log('');
 
 	// Then we load events, which will include our message and ready event.
 	const evtFiles = await readdir(__dirname + '/src/events/');
@@ -53,6 +66,7 @@ const init = async () => {
 		// This line is awesome by the way. Just sayin'.
 		client.on(filename, event.bind(null, client));
 	});
+	client.logger.log('');
 
 	// Here we login the client.
 	await client.login('' + tokens.discordToken);
