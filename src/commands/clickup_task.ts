@@ -30,6 +30,7 @@ thisCommand.run = async (client, message, args, level) => {
 
 	message.channel.startTyping();
 
+	// get a specific task
 	let taskID = args[0];
 	let get = await client.clickup.tasks.get(taskID, {});
 

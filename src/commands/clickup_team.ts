@@ -41,63 +41,49 @@ thisCommand.run = async (client, message, args, level) => {
 
 		return;
 	}
+	//correct parameters
 
 	message.channel.startTyping();
 
-	//correct parameters
 	let teamName = '';
 	args.forEach((s) => {
 		teamName += s;
 	});
 
-	try {
-		// get a specific task
-		// const { body } = await clickup.lists.getTasks("48453100"); // frputk https://app.clickup.com/2293969/v/f/18948674/6345890
+	// get database data
+	let team = await client.database.getSubteam(teamName);
+	let body = await client.clickup.folders.getLists(team.id.clickup);
+	body = body.body;
 
-		let team = await client.database.getSubteam(teamName);
-		console.log('team ' + team);
-		let body = await client.clickup.folders.getLists(team.id.clickup); // frputk https://app.clickup.com/2293969/v/f/18948674/6345890
+	interface list {
+		name: string;
+		id: string;
+		tasks: [Task];
+	}
 
-		body = body.body;
+	let all: list[] = [];
 
-		// interface task {
-		// 	name: string;
-		// }
+	for (let i = 0; i < body.lists.length; i++) {
+		let tasks = await client.clickup.lists.getTasks(body.lists[i].id);
+		tasks = tasks.body.tasks;
 
-		interface list {
-			name: string;
-			id: string;
-			tasks: [Task];
-		}
-
-		let all: list[] = [];
-
-		for (let i = 0; i < body.lists.length; i++) {
-			let tasks = await client.clickup.lists.getTasks(body.lists[i].id);
-			tasks = tasks.body.tasks;
-
-			all.push({
-				name: body.lists[i].name,
-				id: body.lists[i].id,
-				tasks: tasks,
-			});
-		}
-
-		// for (let i = 0; i < all[1].tasks.length; i++) {
-		// 	// const element = all[i];
-		// client.logger.log(all[0].tasks[0]);
-		// }
-
-		let output = '';
-		all.forEach((list) => {
-			output += '**List Name : ' + list.name + '**\n';
-			// client.logger.log();
-			list.tasks.forEach((task) => {
-				output += ` ${task.id} : [${task.name}](${task.url})\n`;
-			});
-			output += '\n';
+		all.push({
+			name: body.lists[i].name,
+			id: body.lists[i].id,
+			tasks: tasks,
 		});
+	}
 
+	let output = '';
+	all.forEach((list) => {
+		output += '**List Name : ' + list.name + '**\n';
+		list.tasks.forEach((task) => {
+			output += ` ${task.id} : [${task.name}](${task.url})\n`;
+		});
+		output += '\n';
+	});
+
+	try {
 		// client.logger.log(out);
 
 		const exampleEmbed = {
@@ -116,19 +102,7 @@ thisCommand.run = async (client, message, args, level) => {
 		message.channel.send({ embed: exampleEmbed });
 	} catch (error) {
 		message.channel.send('Team not Found');
-		// if (error.response) {
-		// 	// The request was made and the server responded with a status code
-		// 	// that falls out of the range of 2xx
-		// 	client.logger.log(error.response.body);
-		// 	client.logger.log(error.response.statusCode);
-		// 	client.logger.log(error.response.headers);
-		// } else if (error.request) {
-		// 	// The request was made but no response was received
-		// 	client.logger.log(error.request);
-		// } else {
-		// 	// Something happened in setting up the request that triggered an Error
-		// 	console.log('Error', error.message);
-		// }
+
 		client.logger.log(error);
 	}
 	/**

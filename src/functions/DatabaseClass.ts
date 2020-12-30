@@ -54,9 +54,6 @@ export default class Database {
 			}
 		});
 
-		console.log('team_in =' + teamName);
-		console.log('team_out =' + team);
-
 		return team;
 	}
 

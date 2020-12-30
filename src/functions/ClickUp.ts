@@ -22,6 +22,20 @@ import Teams from './clickupLib/Teams';
 import Views from './clickupLib/Views';
 import Webhooks from './clickupLib/Webhooks';
 
+// if (error.response) {
+// 	// The request was made and the server responded with a status code
+// 	// that falls out of the range of 2xx
+// 	client.logger.log(error.response.body);
+// 	client.logger.log(error.response.statusCode);
+// 	client.logger.log(error.response.headers);
+// } else if (error.request) {
+// 	// The request was made but no response was received
+// 	client.logger.log(error.request);
+// } else {
+// 	// Something happened in setting up the request that triggered an Error
+// 	console.log('Error', error.message);
+// }
+
 export default class Clickup {
 	_baseUrl: string;
 	_token: any;
@@ -58,7 +72,7 @@ export default class Clickup {
 		};
 		this._service = this._createGotInstance();
 
-		// // pull in all routes
+		// pull in all routes
 		this.authorization = new Authorization(this);
 		this.checklists = new Checklists(this);
 		this.comments = new Comments(this);
