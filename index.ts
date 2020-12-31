@@ -79,7 +79,7 @@ const init = async () => {
 
 		// Bind the client to any event, before the existing arguments
 		// provided by the discord.js event.
-		// This line is awesome by the way. Just sayin'.
+		// This line is awesome, by the way. Just sayin'.
 		client.on(filename, event.bind(null, client));
 	});
 	client.logger.log('');

@@ -29,7 +29,7 @@ export default class GuideBot extends Discord.Client {
 	/**
 	 * @param {import("discord.js").ClientOptions} options
 	 */
-	constructor(options?: import('discord.js').ClientOptions) {
+	constructor(options?: Discord.ClientOptions) {
 		super(options);
 
 		// Here we load the config.js file that contains our token and our prefix values.
@@ -136,12 +136,12 @@ export default class GuideBot extends Discord.Client {
 	This is a very basic permission system for commands which uses "levels"
 	"spaces" are intentionally left black so you can add them if you want.
 	NEVER GIVE ANYONE BUT OWNER THE LEVEL 10! By default this can run any
-	command including the VERY DANGEROUS `eval` command!
+	command!
 	*/
 	/**
 	 * @param {Discord.Message} message
 	 */
-	permlevel(message) {
+	permissionLevel(message) {
 		let permlvl = 0;
 		for (let i = 0; i < this.configLevels.length; i++) {
 			try {
@@ -159,12 +159,10 @@ export default class GuideBot extends Discord.Client {
 
 	/* 
 	COMMAND LOAD AND UNLOAD
-	
 	To simplify the loading and unloading of commands from multiple locations
 	including the index.js load loop, and the reload function, these 2 ensure
 	that unloading happens in a consistent manner across the board.
 	*/
-
 	/**
 	 * @param {string} commandPath
 	 */
@@ -188,15 +186,13 @@ export default class GuideBot extends Discord.Client {
 	/*
 	MESSAGE CLEAN FUNCTION
 	"Clean" removes @everyone pings, as well as tokens, and makes code blocks
-	escaped so they're shown more easily. As a bonus it resolves promises
-	and stringifies objects!
-	This is mostly only used by the Eval and Exec commands.
+	escaped so they're shown more easily. As a bonus it stringifies objects!
 	*/
 	/**
 	 * @param {string} text
 	 */
-	async clean(text) {
-		if (text && text.constructor.name == 'Promise') text = await text;
+	clean(text) {
+		// if (text && text.constructor.name == 'Promise') text = await text;
 		if (typeof text !== 'string')
 			text = require('util').inspect(text, { depth: 1 });
 
