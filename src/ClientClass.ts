@@ -24,8 +24,11 @@ export default class GuideBot extends Discord.Client {
 	wait: any;
 	settings: any;
 	ready: boolean;
-	letterArt: string;
-	startTime: number;
+
+	botInfo = {
+		startTime: 0,
+		letterArt: '',
+	};
 
 	/**
 	 * @param {import("discord.js").ClientOptions} options

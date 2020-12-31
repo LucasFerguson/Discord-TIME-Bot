@@ -16,7 +16,7 @@ module.exports = async (client: GuideBot) => {
 	client.ready = true;
 
 	client.logger.ready(
-		`[${Date.now() - client.startTime}ms] ${
+		`[${Date.now() - client.botInfo.startTime}ms] ${
 			client.user.tag
 		}, ready to serve ${client.users.cache.size} users in ${
 			client.guilds.cache.size
