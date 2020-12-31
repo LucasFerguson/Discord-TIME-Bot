@@ -30,8 +30,6 @@ let thisCommand: Command = {
 thisCommand.run = async (client, message, args, level) => {
 	// If no specific command is called, show all filtered commands.
 
-	client.commands;
-
 	// if (!args[0]) {
 	// 	// Filter all commands by which are available for the user's level, using the <Collection>.filter() method.
 	// 	const myCommands = message.guild

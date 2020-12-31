@@ -164,13 +164,13 @@ export default class GuideBot extends Discord.Client {
 	that unloading happens in a consistent manner across the board.
 	*/
 	/**
-	 * @param {string} commandPath
+	 * @param {string} commandName
 	 */
-	loadCommand(commandPath) {
+	loadCommand(commandName: string) {
 		try {
 			let start = Date.now();
 
-			const props = require(`./commands/${commandPath}`).default;
+			const props = require(`./commands/${commandName}`).default;
 			this.commands.push(props);
 			// this.logger.ready('Done with ' + commandPath);
 			let end = Date.now();
@@ -178,7 +178,7 @@ export default class GuideBot extends Discord.Client {
 				`Loaded Command: ${props.help.name}, [${end - start}ms]`
 			);
 		} catch (e) {
-			this.logger.error(`Unable to load command ${commandPath}: ${e}`);
+			this.logger.error(`Unable to load command ${commandName}: ${e}`);
 		}
 	}
 
@@ -186,7 +186,36 @@ export default class GuideBot extends Discord.Client {
 	 * @param {any} commandPath
 	 * @param {any} commandName
 	 */
-	async unloadCommand(commandPath, commandName) {}
+	unloadCommand(commandName: string): boolean {
+		this.logger.log(`Unloading Command: ${commandName}`);
+
+		let index: number = -1;
+
+		for (let c = 0; c < this.commands.length; c++) {
+			if (
+				this.commands[c].help.name.toLowerCase() ==
+				commandName.toLowerCase()
+			) {
+				index = c;
+			}
+
+			for (let a = 0; a < this.commands[c].conf.aliases.length; a++) {
+				if (
+					this.commands[c].conf.aliases[a].toLowerCase() ==
+					commandName.toLowerCase()
+				) {
+					index = c;
+				}
+			}
+		}
+		if (index == -1) {
+			this.logger.warn(`Failed Unloading Command: ${commandName}`);
+			return false;
+		} else {
+			this.commands.splice(index, 1);
+		}
+		return true;
+	}
 
 	/*
 	MESSAGE CLEAN FUNCTION
