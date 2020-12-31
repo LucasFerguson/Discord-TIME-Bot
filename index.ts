@@ -1,13 +1,3 @@
-// let letterArt = `
-// #
-// # ████████╗    ██╗    ███╗   ███╗    ███████╗    ██████╗  ██████╗ ████████╗
-// # ╚══██╔══╝    ██║    ████╗ ████║    ██╔════╝    ██╔══██╗██╔═══██╗╚══██╔══╝
-// #⠀⠀⠀⠀██║       ██║    ██╔████╔██║    █████╗      ██████╔╝██║   ██║   ██║
-// #⠀⠀⠀⠀██║       ██║    ██║╚██╔╝██║    ██╔══╝      ██╔══██╗██║   ██║   ██║
-// #⠀⠀⠀⠀██║       ██║    ██║ ╚═╝ ██║    ███████╗    ██████╔╝╚██████╔╝   ██║
-// #⠀⠀⠀⠀╚═╝       ╚═╝    ╚═╝     ╚═╝    ╚══════╝    ╚═════╝  ╚═════╝    ╚═╝
-// #                                                                           `;
-
 let letterArt = `
 ████████╗ ██╗ ███╗   ███╗ ███████╗
 ╚══██╔══╝ ██║ ████╗ ████║ ██╔════╝
@@ -33,19 +23,19 @@ import * as tokens from './tokens/token.lock.json';
 
 import * as Discord from 'discord.js';
 
-// import { GuideBot } from './src/ClientClass';
 import GuideBot from './src/ClientClass';
 
 // Default Intents the bot needs.
 // By default GuideBot needs Guilds, Guild Messages and Direct Messages to work.
 // For join messages to work you need Guild Members, which is privileged and requires extra setup.
-// For more info about intents see the README.
+// For more info about intents see https://discordjs.guide/popular-topics/intents.html.
 const intents = ['GUILDS', 'GUILD_MESSAGES', 'DIRECT_MESSAGES'];
 
 // This is your client. Some people call it `bot`, some people call it `self`,
 // or `bot.something`, this is what we're refering to. Your client.
 const client = new GuideBot(); //const client = new GuideBot({ ws: { intents: intents } });
 client.letterArt = letterArt;
+
 // We're doing real fancy node 8 async/await stuff here, and to do that
 // we need to wrap stuff in an anonymous function. It's annoying but it works.
 

@@ -168,10 +168,15 @@ export default class GuideBot extends Discord.Client {
 	 */
 	loadCommand(commandPath) {
 		try {
+			let start = Date.now();
+
 			const props = require(`./commands/${commandPath}`).default;
-			this.logger.log(`Loading Command: ${props.help.name}`);
 			this.commands.push(props);
 			// this.logger.ready('Done with ' + commandPath);
+			let end = Date.now();
+			this.logger.log(
+				`Loaded Command: ${props.help.name}, [${end - start}ms]`
+			);
 		} catch (e) {
 			this.logger.error(`Unable to load command ${commandPath}: ${e}`);
 		}
