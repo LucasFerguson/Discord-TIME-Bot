@@ -25,6 +25,7 @@ export default class GuideBot extends Discord.Client {
 	settings: any;
 	ready: boolean;
 	letterArt: string;
+	startTime: number;
 
 	/**
 	 * @param {import("discord.js").ClientOptions} options
@@ -62,16 +63,27 @@ export default class GuideBot extends Discord.Client {
 	}
 
 	async init() {
+		let start, end;
 		this.logger.debug('Loading a total of 3 functions.');
 
+		start = Date.now();
 		await this.logger.init();
-		this.logger.log('Loading Function: Logger Ready (:');
+		end = Date.now();
+		this.logger.log(`Loading Function: Logger Ready (: [${end - start}ms]`);
 
+		start = Date.now();
 		await this.clickup.init();
-		this.logger.log('Loading Function: ClickUp Ready (:');
+		end = Date.now();
+		this.logger.log(
+			`Loading Function: ClickUp Ready (: [${end - start}ms]`
+		);
 
+		start = Date.now();
 		await this.database.init();
-		this.logger.log('Loading Function: Database Ready (:');
+		end = Date.now();
+		this.logger.log(
+			`Loading Function: Database Ready (: [${end - start}ms]`
+		);
 
 		this.logger.log('');
 	}

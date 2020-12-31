@@ -10,15 +10,9 @@ export interface Task {
 	date_updated: '1604443149953';
 	date_closed: null;
 	archived: false;
-	creator: {
-		id: 1383898;
-		username: 'Grace M';
-		color: '#0388d1';
-		email: 'gmadson5275@gmail.com';
-		profilePicture: null;
-	};
-	assignees: [];
-	watchers: [];
+	creator: ClickupUser;
+	assignees: ClickupUser[];
+	watchers: ClickupUser[];
 	checklists: [];
 	tags: [];
 	parent: null;
@@ -42,4 +36,12 @@ export interface Task {
 	};
 	folder: { id: '16995360'; name: 'Mechanical'; hidden: false; access: true };
 	space: { id: '1280032' };
+}
+
+export interface ClickupUser {
+	id: 1000000;
+	username: 'username';
+	color: '#000000';
+	email: 'email';
+	profilePicture: null;
 }

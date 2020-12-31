@@ -30,6 +30,7 @@ export default class Database {
 
 	async init() {
 		// this.client.logger.log('Database Ready');
+		await new Promise((resolve) => setTimeout(resolve, 100));
 	}
 
 	async getAllSubteams(): Promise<SubTeam[]> {

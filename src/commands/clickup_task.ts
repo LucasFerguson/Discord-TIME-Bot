@@ -40,10 +40,16 @@ thisCommand.run = async (client, message, args, level) => {
 	output += `task.folder.name = ${task.folder.name} : ID ${task.folder.id}\n`;
 	output += `task.list.name = ${task.list.name} : ID ${task.list.id}\n`;
 	output += `task.url = ${task.url}\n`;
+	output += `task.status.status = **${task.status.status}**\n`;
+
 	output += `\n`;
-	output += `task.status.status = ${task.status.status}\n`;
+	output += `task.assignees =\n`;
+	task.assignees.forEach((user) => {
+		output += `${user.username}\n`;
+	});
+	output += `\n`;
+
 	output += `task.status.color = ${task.status.color}\n`;
-	console.log(task.status.color.substring(1));
 
 	const exampleEmbed = {
 		color: `0x${task.status.color.substring(1)}`,

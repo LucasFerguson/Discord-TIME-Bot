@@ -18,7 +18,7 @@ let thisCommand: Command = {
 };
 
 thisCommand.run = async (client, message, args, level) => {
-	client.logger.log('Run Smart Command');
+	// client.logger.log('Run Smart Command');
 	let cmd = client.getCommand('clickup_' + args.shift());
 	if (cmd.help.name == 'null') {
 		let helpCommand = client.getCommand('help');

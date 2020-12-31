@@ -16,11 +16,15 @@ module.exports = async (client: GuideBot) => {
 	client.ready = true;
 
 	client.logger.ready(
-		`${client.user.tag}, ready to serve ${client.users.cache.size} users in ${client.guilds.cache.size} servers.
+		`[${Date.now() - client.startTime}ms] ${
+			client.user.tag
+		}, ready to serve ${client.users.cache.size} users in ${
+			client.guilds.cache.size
+		} servers.
 		`
 	);
 
-	client.logger.log('```' + client.letterArt + '```');
+	// client.logger.log('```' + client.letterArt + '```');
 
 	// client.clickup.update();
 };

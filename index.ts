@@ -62,17 +62,21 @@ const init = async () => {
 	client.logger.debug(`Loading a total of ${evtFiles.length / 2} events.`);
 
 	evtFiles.forEach((file) => {
+		let start = Date.now();
 		if (!file.endsWith('.js')) return;
 		const filename = file.split('.')[0];
-		client.logger.log(`Loading Event: ${filename}`);
 		const event = require(`./src/events/${filename}`);
 
 		// Bind the client to any event, before the existing arguments
 		// provided by the discord.js event.
 		// This line is awesome, by the way. Just sayin'.
 		client.on(filename, event.bind(null, client));
+		let end = Date.now();
+		client.logger.log(`Loaded Event: ${filename}, [${end - start}ms]`);
 	});
 	client.logger.log('');
+
+	client.startTime = Date.now();
 
 	// Here we login the client.
 	await client.login('' + tokens.discordToken);
