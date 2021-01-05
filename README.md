@@ -11,8 +11,8 @@ Date Updated 1/5/2021
 TimeBot  
 ├─build (💽 compiled_javascript)  
 ├─database (📁 local_database)  
-├─log  
-├─src  
+├─log (PM2 Logs)  
+├─src (Main App)  
 └─tokens (🔐 local_tokens)
 
 ---
