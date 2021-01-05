@@ -7,4 +7,5 @@ log/*
 
 tokens/*
 
-src/token.lock.json
+tokens/token.lock.json
+!tokens/temporary.token.lock.json
