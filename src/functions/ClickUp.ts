@@ -4,6 +4,7 @@ import * as Discord from 'discord.js';
 
 import GuideBot from '../ClientClass';
 import config from '../config';
+import * as tokens from '../../tokens/token.lock.json';
 import { Folder } from '../config/Folder';
 import { Space } from '../config/Space';
 import { Task } from '../config/Task';
@@ -20,6 +21,20 @@ import Tasks from './clickupLib/Tasks';
 import Teams from './clickupLib/Teams';
 import Views from './clickupLib/Views';
 import Webhooks from './clickupLib/Webhooks';
+
+// if (error.response) {
+// 	// The request was made and the server responded with a status code
+// 	// that falls out of the range of 2xx
+// 	client.logger.log(error.response.body);
+// 	client.logger.log(error.response.statusCode);
+// 	client.logger.log(error.response.headers);
+// } else if (error.request) {
+// 	// The request was made but no response was received
+// 	client.logger.log(error.request);
+// } else {
+// 	// Something happened in setting up the request that triggered an Error
+// 	console.log('Error', error.message);
+// }
 
 export default class Clickup {
 	_baseUrl: string;
@@ -50,14 +65,14 @@ export default class Clickup {
 	constructor(_client) {
 		this.client = _client;
 		this._baseUrl = 'https://api.clickup.com/api/v2';
-		this._token = config.clickupToken;
+		this._token = tokens.clickupToken;
 		this._headers = {
 			authorization: this._token,
 			'content-type': 'application/json',
 		};
 		this._service = this._createGotInstance();
 
-		// // pull in all routes
+		// pull in all routes
 		this.authorization = new Authorization(this);
 		this.checklists = new Checklists(this);
 		this.comments = new Comments(this);
@@ -73,12 +88,7 @@ export default class Clickup {
 	}
 
 	async init() {
-		this.client.logger.log('ClickUp Ready');
-		// this.getAllTasks();
-
-		// let hook = await this.webhooks.create();
-		// console.log('hook hook hook hook hook ');
-		// console.log(hook);
+		// this.client.logger.log('Loading Function: ClickUp Ready (:');
 	}
 
 	async getAllTasks() {

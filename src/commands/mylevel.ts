@@ -18,13 +18,13 @@ let thisCommand: Command = {
 };
 
 thisCommand.run = async (client, message, args, level) => {
-	let friendly = 'null';
+	let nameOfLevel = 'null';
 	for (let i = 0; i < client.configLevels.length; i++) {
 		if (client.configLevels[i].level == level) {
-			friendly = client.configLevels[i].name;
+			nameOfLevel = client.configLevels[i].name;
 		}
 	}
-	message.reply(`Your permission level is: Level ${level} - ${friendly}`);
+	message.reply(`Your permission level is: Level ${level} - ${nameOfLevel}`);
 };
 
 export default thisCommand;

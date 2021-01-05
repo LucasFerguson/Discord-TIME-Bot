@@ -3,7 +3,7 @@ import { Command } from '../config/Command';
 let thisCommand: Command = {
 	run: async (client, message, args, level) => {},
 	conf: {
-		enabled: true,
+		enabled: false,
 		guildOnly: false,
 		aliases: ['User'],
 		permLevel: 0,
@@ -13,7 +13,7 @@ let thisCommand: Command = {
 		name: 'clickup_user',
 		category: 'ClickUp',
 		description: 'Get all ClickUp tasks someone is assigned to.',
-		usage: 'clickupGetTasks [User]',
+		usage: 'clickupGetTasks <user>',
 	},
 };
 

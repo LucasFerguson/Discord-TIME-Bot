@@ -1,82 +1,107 @@
-// @ts-nocheck
-
 import GuideBot from '../ClientClass';
-import { subteams as _subteams } from '../../../database/subteams.json';
-import * as fs from 'fs';
+// import { subteams as _subteams } from '../../../database/subteams.json';
+// import * as fs from 'fs';
+
+import * as admin from 'firebase-admin';
+import * as tokens from '../../tokens/token.lock.json';
+import { SubTeam } from '../config/SubTeam';
 
 export default class Database {
-	subteams = _subteams;
 	client: GuideBot;
+	app: admin.app.App;
+	db: FirebaseFirestore.Firestore;
+	subteams;
 
 	constructor(_client) {
 		this.client = _client;
-		this.subteams = _subteams; // JSON.parse();
+
 		// console.log(this.subteams);
+
+		//Initialize on Cloud Functions
+		// admin = require('firebase-admin');
+		this.app = admin.initializeApp({
+			credential: admin.credential.cert(
+				<admin.ServiceAccount>tokens.googleFirebase
+			),
+		});
+
+		this.db = this.app.firestore();
 	}
 
-	getSub(_name: string) {
-		// this.subteams.
-		// return
-		for (let i = 0; i < this.subteams.length; i++) {
+	async init() {
+		// this.client.logger.log('Database Ready');
+		// await new Promise((resolve) => setTimeout(resolve, 100));
+	}
+
+	async getAllSubteams(): Promise<SubTeam[]> {
+		let subteams = [];
+		let collection = await this.db.collection('subteams').get();
+		collection.docs.forEach((doc) => {
+			subteams.push({ name: doc.id, id: doc.data() });
+		});
+		return subteams;
+	}
+
+	async getSubteam(teamName: string): Promise<SubTeam> {
+		let subteams = await this.getAllSubteams();
+
+		let team: SubTeam;
+		subteams.forEach((t) => {
 			if (
-				this.subteams[i].name.toLowerCase().replace(' ', '') ==
-				_name.toLowerCase()
+				t.name.toLowerCase().replace(' ', '') ==
+				teamName.toLowerCase().replace(' ', '')
 			) {
-				return this.subteams[i];
+				team = t;
 			}
-		}
+		});
+
+		return team;
 	}
 
-	addUser() {}
-
-	update() {
-		let serverid = '480598748074868768'; // CHANGE CHANGE CHANGE CHANGE
-
-		let userlist = [];
-		console.log(`Logged in as ${this.client.user.tag}!`);
+	async updateUsers() {
+		let serverid = '480598748074868768';
 		// Get the Guild and store it under the variable "list"
 		const guild = this.client.guilds.cache.get(serverid);
-
+		const members = await guild.members.fetch();
+		members.forEach((user) => {
+			console.log(user);
+		});
 		// Iterate through the collection of GuildMembers from the Guild getting the username property of each member
-		// guild.members.members.cache.forEach((member) =>
-		// 	console.log('member = ' + member.user.username)
+		// guild.members..members.cache.forEach((member) =>
+		// 	console.log("member = " + member.user.username)
 		// );
-		guild.members
-			.fetch()
-			.then((user) => {
-				console.log(
-					user.forEach((u) => {
-						if (!u.user.bot) {
-							userlist.push(u);
-						}
-					})
-				);
-			})
-			.then(() => {
-				// console.log(userlist);
-				// fs.writeFile("./file.json", userlist).catch(console.error);
+		// guild.members
+		// 	.fetch()
+		// 	.then((user) => {
+		// 		console.log(
+		// 			user.forEach((u) => {
+		// 				if (!u.user.bot) {
+		// 					userlist.push(u);
+		// 				}
+		// 			})
+		// 		);
+		// 	})
+		// 	.then(() => {
+		// 		// console.log(userlist);
+		// 		// fs.writeFile("./file.json", userlist).catch(console.error);
 
-				let userData = [];
+		// 		let userData = [];
 
-				userlist.forEach((u) => {
-					// console.log(u.displayName);
-					userData.push({
-						displayName: u.displayName,
-						id: u.id,
-						email: '',
-					});
-				});
+		// 		userlist.forEach((u) => {
+		// 			console.log(u.displayName);
+		// 			userData.push({ displayName: u.displayName, id: u.id });
+		// 		});
 
-				let json = JSON.stringify(userData);
+		// 		let json = JSON.stringify(userData);
 
-				// console.log(json);
+		// 		console.log(json);
 
-				fs.writeFile('./src/database/users.json', json, function (err) {
-					if (err) return console.log(err);
-					console.log('userlist > file.json');
-				});
-			})
-			.catch(console.error);
+		// 		fs.writeFile('./src/storage/file.json', json, function (err) {
+		// 			if (err) return console.log(err);
+		// 			console.log('userlist > file.json');
+		// 		});
+		// 	})
+		// 	.catch(console.error);
 
 		// console.log(userlist);
 	}

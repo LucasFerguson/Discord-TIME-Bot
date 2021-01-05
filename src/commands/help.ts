@@ -23,14 +23,12 @@ let thisCommand: Command = {
 		category: 'User',
 		description:
 			'Displays all the available commands for your permission level.',
-		usage: 'help [command]',
+		usage: 'help <command>',
 	},
 };
 
 thisCommand.run = async (client, message, args, level) => {
 	// If no specific command is called, show all filtered commands.
-
-	client.commands;
 
 	// if (!args[0]) {
 	// 	// Filter all commands by which are available for the user's level, using the <Collection>.filter() method.

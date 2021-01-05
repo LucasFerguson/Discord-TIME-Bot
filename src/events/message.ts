@@ -9,20 +9,19 @@ import * as Discord from 'discord.js';
  * @param { Discord.Message } message
  */
 module.exports = async (client: GuideBot, message: Discord.Message) => {
-	// It's good practice to ignore other bots. This also makes your bot ignore itself
-	// and not get into a spam loop (we call that "botception").
-
 	if (message.channel.id == '774676961481064468') {
 		client.clickup.update(message);
 	}
 
+	// It's good practice to ignore other bots. This also makes your bot ignore itself
+	// and not get into a spam loop (we call that "botception").
 	if (message.author.bot) return;
 
 	client.logger.cmd(
 		`User [${message.author.tag}], Message [${message.content}]`
 	);
 
-	// Grab the settings for this server from Enmap.
+	// Grab the settings for this server.
 	// If there is no guild, get default conf (DMs)
 	const settings = client.getSettings(message.guild);
 
@@ -30,7 +29,7 @@ module.exports = async (client: GuideBot, message: Discord.Message) => {
 	const prefixMention = new RegExp(`^<@!?${client.user.id}>( |)$`);
 	if (message.content.match(prefixMention)) {
 		return message.reply(
-			`My prefix on this guild is \`${settings.prefix}\``
+			`My prefix on this server is \`${settings.prefix}\``
 		);
 	}
 
@@ -52,11 +51,9 @@ module.exports = async (client: GuideBot, message: Discord.Message) => {
 	if (message.guild && !message.member)
 		await message.guild.members.fetch(message.author);
 
-	// Check whether the command, or alias, exist in the collections defined
-	// in app.js.
+	// Check whether the command, or alias, exist in the collections defined.
 	const cmd = client.getCommand(command);
-	// using this const varName = thing OR otherThing; is a pretty efficient
-	// and clean way to grab one of 2 values!
+
 	if (!cmd) return;
 
 	// Some commands may not be useable in DMs. This check prevents those commands from running
@@ -68,7 +65,7 @@ module.exports = async (client: GuideBot, message: Discord.Message) => {
 	}
 
 	// Get the user or member's permission level from the elevation
-	const level = client.permlevel(message);
+	const level = client.permissionLevel(message);
 
 	if (level < cmd.conf.permLevel) {
 		message.channel.send(`You do not have permission to use this command.`);
@@ -76,41 +73,9 @@ module.exports = async (client: GuideBot, message: Discord.Message) => {
 		return;
 	}
 
-	// if (level < client.levelCache[cmd.conf.permLevel]) {
-	// 	if (settings.systemNotice === "true") {
-	// 		return message.channel
-	// 			.send(`You do not have permission to use this command.
-	// Your permission level is ${level} (${
-	// 			client.config.permLevels.find((l) => l.level === level).name
-	// 		})
-	// This command requires level ${client.levelCache[cmd.conf.permLevel]} (${
-	// 			cmd.conf.permLevel
-	// 		})`);
-	// 	} else {
-	// 		return;
-	// 	}
-	// }
-
-	// To simplify message arguments, the author's level is now put on level (not member so it is supported in DMs)
-	// The "level" command module argument will be deprecated in the future.
-	// message.author.permLevel = level;
-
-	// message.flags = [];
-	// while (args[0] && args[0][0] === "-") {
-	// 	message.flags.push(args.shift().slice(1));
-	// }
-	// If the command exists, **AND** the user has permission, run it.
-	// client.logger.cmd(
-	// 	`[CMD] ${
-	// 		client.config.permLevels.find((l) => l.level === level).name
-	// 	} ${message.author.username} (${message.author.id}) ran command ${
-	// 		cmd.help.name
-	// 	}`
-	// );
-
 	client.logger.cmd(
-		`[CMD] ${message.author.username} (${message.author.id}) Level (${level}). Running Command <${cmd.help.name}>, With args <${args}>`
+		`[Command] ${message.author.username} (${message.author.id}) Level (${level}). Running Command <${cmd.help.name}>, With args <${args}>`
 	);
-	//Processes <${this.filename}>, Running Command <${this.commands[c].names[0]}>, With <${_args}>`
+
 	cmd.run(client, message, args, level);
 };

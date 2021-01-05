@@ -1,7 +1,5 @@
 import { DiscordAPIError, TextChannel } from 'discord.js';
 import GuideBot from '../ClientClass';
-import config from '../config';
-// import { version as _version } from '.../package.json';
 import * as Discord from 'discord.js';
 
 /*
@@ -23,11 +21,11 @@ export default class Logger {
 		let serverLucas = this.client.guilds.cache.get('645153111538794496');
 		// @ts-ignore
 		this.logsServer = await this.client.channels.fetch(
-			config.discord.logs.server
+			this.client.config.discord.logs.server
 		);
 		// @ts-ignore
 		this.logsTimebot = await this.client.channels.fetch(
-			config.discord.logs.timebot
+			this.client.config.discord.logs.timebot
 		);
 	}
 
@@ -46,7 +44,7 @@ export default class Logger {
 		this.default('[CMD] ' + content);
 	}
 	none(content) {
-		this.default('[] ' + content);
+		this.default(content);
 	}
 	log(content) {
 		this.default(content);
@@ -63,45 +61,8 @@ export default class Logger {
 	}
 
 	discord(_content) {
-		this.logsServer.send(`${_content}`);
-
-		// let channel = this.client.channels.get('645171221104689152');
-		// c.send('Pong');
-		// const exampleEmbed = {
-		// 	color: 0xf6b436,
-		// 	// title: 'T.I.M.E Bot',
-		// 	// url: 'https://timebots5275.com/',
-		// 	author: {
-		// 		name: 'T.I.M.E Bot',
-		// 		url: 'https://timebots5275.com/',
-		// 		icon_url:
-		// 			'https://images.squarespace-cdn.com/content/59c96af19f7456ec37988859/1547608155061-17G10BA9MJPY1ZW611MU/TIME+Bots+Logo+changed+to+all+black2+%281%29.png?format=1500w&content-type=image%2Fpng',
-		// 	},
-		// 	description: `${_content}`,
-		// 	// thumbnail: {
-		// 	// 	url:
-		// 	// 		'https://images.squarespace-cdn.com/content/59c96af19f7456ec37988859/1547608155061-17G10BA9MJPY1ZW611MU/TIME+Bots+Logo+changed+to+all+black2+%281%29.png?format=1500w&content-type=image%2Fpng',
-		// 	// },
-
-		// 	timestamp: new Date(),
-		// 	footer: {
-		// 		text: 'Date',
-		// 		// icon_url:
-		// 		// 	'https://images.squarespace-cdn.com/content/59c96af19f7456ec37988859/1547608155061-17G10BA9MJPY1ZW611MU/TIME+Bots+Logo+changed+to+all+black2+%281%29.png?format=1500w&content-type=image%2Fpng',
-		// 	},
-		// };
-
-		// let a = {
-		// 	title: 'Help Command',
-		// 	description:
-		// 		'Use -help <commandname> for details\n`- help ping`\n\n== System ==\n` - ping`: Test the latency from the Server to the Discord API. Ping Pong. :ping_pong: \n` - readline` : read Line\n` - reboot` : Shuts down the bot. If running under PM2, bot will restart automatically.\n` - stats` : Gives some useful bot statistics\n',
-		// 	color: 16167990,
-		// 	footer: {
-		// 		text: '1/4',
-		// 	},
-		// };
-
-		// this.logsServer.send({ embed: a });
+		let text = this.client.clean(_content);
+		this.logsServer.send(`${text}`);
 	}
 
 	// console(content, type = 'log') {

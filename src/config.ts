@@ -1,8 +1,3 @@
-import {
-	token as _token,
-	clickupToken as _clickupToken,
-} from '../tokens/token.lock.json';
-
 export default {
 	// Bot Owner, level 10 by default. You do not need to supply the owner ID, as the bot
 	// will pull this information directly from its application page.
@@ -13,10 +8,6 @@ export default {
 
 	// Bot Support, level 8 by default. Array of user ID strings
 	support: [],
-
-	// Your Bot's Token. Available on https://discordapp.com/developers/applications/me
-	token: _token,
-	clickupToken: _clickupToken,
 
 	discord: {
 		logs: {

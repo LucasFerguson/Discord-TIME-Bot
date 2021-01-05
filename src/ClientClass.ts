@@ -25,10 +25,15 @@ export default class GuideBot extends Discord.Client {
 	settings: any;
 	ready: boolean;
 
+	botInfo = {
+		startTime: 0,
+		letterArt: '',
+	};
+
 	/**
 	 * @param {import("discord.js").ClientOptions} options
 	 */
-	constructor(options?: import('discord.js').ClientOptions) {
+	constructor(options?: Discord.ClientOptions) {
 		super(options);
 
 		// Here we load the config.js file that contains our token and our prefix values.
@@ -61,8 +66,29 @@ export default class GuideBot extends Discord.Client {
 	}
 
 	async init() {
+		let start, end;
+		this.logger.debug('Loading a total of 3 functions.');
+
+		start = Date.now();
 		await this.logger.init();
+		end = Date.now();
+		this.logger.log(`Loading Function: Logger Ready (: [${end - start}ms]`);
+
+		start = Date.now();
 		await this.clickup.init();
+		end = Date.now();
+		this.logger.log(
+			`Loading Function: ClickUp Ready (: [${end - start}ms]`
+		);
+
+		start = Date.now();
+		await this.database.init();
+		end = Date.now();
+		this.logger.log(
+			`Loading Function: Database Ready (: [${end - start}ms]`
+		);
+
+		this.logger.log('');
 	}
 
 	/**
@@ -125,12 +151,12 @@ export default class GuideBot extends Discord.Client {
 	This is a very basic permission system for commands which uses "levels"
 	"spaces" are intentionally left black so you can add them if you want.
 	NEVER GIVE ANYONE BUT OWNER THE LEVEL 10! By default this can run any
-	command including the VERY DANGEROUS `eval` command!
+	command!
 	*/
 	/**
 	 * @param {Discord.Message} message
 	 */
-	permlevel(message) {
+	permissionLevel(message) {
 		let permlvl = 0;
 		for (let i = 0; i < this.configLevels.length; i++) {
 			try {
@@ -148,23 +174,26 @@ export default class GuideBot extends Discord.Client {
 
 	/* 
 	COMMAND LOAD AND UNLOAD
-	
 	To simplify the loading and unloading of commands from multiple locations
 	including the index.js load loop, and the reload function, these 2 ensure
 	that unloading happens in a consistent manner across the board.
 	*/
-
 	/**
-	 * @param {string} commandPath
+	 * @param {string} commandName
 	 */
-	loadCommand(commandPath) {
+	loadCommand(commandName: string) {
 		try {
-			const props = require(`./commands/${commandPath}`).default;
-			this.logger.log(`Loading Command: ${props.help.name}`);
+			let start = Date.now();
+
+			const props = require(`./commands/${commandName}`).default;
 			this.commands.push(props);
 			// this.logger.ready('Done with ' + commandPath);
+			let end = Date.now();
+			this.logger.log(
+				`Loaded Command: ${props.help.name}, [${end - start}ms]`
+			);
 		} catch (e) {
-			this.logger.error(`Unable to load command ${commandPath}: ${e}`);
+			this.logger.error(`Unable to load command ${commandName}: ${e}`);
 		}
 	}
 
@@ -172,20 +201,47 @@ export default class GuideBot extends Discord.Client {
 	 * @param {any} commandPath
 	 * @param {any} commandName
 	 */
-	async unloadCommand(commandPath, commandName) {}
+	unloadCommand(commandName: string): boolean {
+		this.logger.log(`Unloading Command: ${commandName}`);
+
+		let index: number = -1;
+
+		for (let c = 0; c < this.commands.length; c++) {
+			if (
+				this.commands[c].help.name.toLowerCase() ==
+				commandName.toLowerCase()
+			) {
+				index = c;
+			}
+
+			for (let a = 0; a < this.commands[c].conf.aliases.length; a++) {
+				if (
+					this.commands[c].conf.aliases[a].toLowerCase() ==
+					commandName.toLowerCase()
+				) {
+					index = c;
+				}
+			}
+		}
+		if (index == -1) {
+			this.logger.warn(`Failed Unloading Command: ${commandName}`);
+			return false;
+		} else {
+			this.commands.splice(index, 1);
+		}
+		return true;
+	}
 
 	/*
 	MESSAGE CLEAN FUNCTION
 	"Clean" removes @everyone pings, as well as tokens, and makes code blocks
-	escaped so they're shown more easily. As a bonus it resolves promises
-	and stringifies objects!
-	This is mostly only used by the Eval and Exec commands.
+	escaped so they're shown more easily. As a bonus it stringifies objects!
 	*/
 	/**
 	 * @param {string} text
 	 */
-	async clean(text) {
-		if (text && text.constructor.name == 'Promise') text = await text;
+	clean(text) {
+		// if (text && text.constructor.name == 'Promise') text = await text;
 		if (typeof text !== 'string')
 			text = require('util').inspect(text, { depth: 1 });
 

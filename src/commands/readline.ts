@@ -94,7 +94,7 @@ thisCommand.run = async (client, message, args, level) => {
 			lines += await processLineByLine(arr[i]);
 		}
 
-		message.channel.send('This Bot has ' + lines + ' Total lines of code.');
+		message.channel.send('TIME Bot total lines of code = ' + lines + '.');
 	});
 };
 
