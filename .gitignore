@@ -2,10 +2,11 @@
 node_modules
 
 build/*
+!build/temporary.txt
 
 log/*
+!log/temporary.txt
 
 tokens/*
-
 tokens/token.lock.json
 !tokens/temporary.token.lock.json
