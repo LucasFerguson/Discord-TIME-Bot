@@ -3,7 +3,7 @@ import { Command } from '../config/Command';
 let thisCommand: Command = {
 	run: async (client, message, args, level) => {},
 	conf: {
-		enabled: true,
+		enabled: false,
 		guildOnly: false,
 		aliases: ['User'],
 		permLevel: 0,

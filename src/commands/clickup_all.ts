@@ -13,7 +13,7 @@ let thisCommand: Command = {
 	help: {
 		name: 'clickup_all',
 		category: 'ClickUp',
-		description: 'Do not Run.',
+		description: 'Do not run.',
 		usage: 'clickupALL',
 	},
 };
