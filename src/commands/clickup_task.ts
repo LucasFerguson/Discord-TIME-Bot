@@ -32,14 +32,14 @@ thisCommand.run = async (client, message, args, level) => {
 
 	// get a specific task
 	let taskID = args[0];
-	let get = await client.clickup.tasks.get(taskID, {});
+	let get = await client.clickup.tasks.get(taskID, { subtasks: true });
 
 	let task: Task = get.body;
 
-	let get2 = await client.clickup.tasks.getSubtasks(taskID, {});
-	let subtasks: Task[] = get2.body;
+	// let get2 = await client.clickup.tasks.getSubtasks(taskID, {});
+	// let subtasks: Task[] = get2.body;
 
-	client.logger.log(subtasks);
+	client.logger.log(task);
 
 	let output = '';
 	output += `task.folder.name = ${task.folder.name} : ID ${task.folder.id}\n`;

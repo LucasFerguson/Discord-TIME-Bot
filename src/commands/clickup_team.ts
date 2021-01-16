@@ -62,11 +62,15 @@ thisCommand.run = async (client, message, args, level) => {
 	}
 
 	let all: list[] = [];
+	let sub: list[] = [];
 
 	for (let i = 0; i < body.lists.length; i++) {
-		let tasks = await client.clickup.lists.getTasks(body.lists[i].id);
+		let tasks = await client.clickup.lists.getTasks(body.lists[i].id, {
+			subtasks: true,
+		});
 		tasks = tasks.body.tasks;
-
+		// client.logger.log('tasks');
+		// client.logger.log(tasks);
 		all.push({
 			name: body.lists[i].name,
 			id: body.lists[i].id,
@@ -78,7 +82,11 @@ thisCommand.run = async (client, message, args, level) => {
 	all.forEach((list) => {
 		output += '**List Name : ' + list.name + '**\n';
 		list.tasks.forEach((task) => {
-			output += ` ${task.id} : [${task.name}](${task.url})\n`;
+			if (task.parent == null) {
+				output += ` ${task.id} : [${task.name}](${task.url})\n`;
+			} else {
+				output += ` |- ${task.id} : [${task.name}](${task.url})\n`;
+			}
 		});
 		output += '\n';
 	});
