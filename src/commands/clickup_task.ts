@@ -36,6 +36,11 @@ thisCommand.run = async (client, message, args, level) => {
 
 	let task: Task = get.body;
 
+	let get2 = await client.clickup.tasks.getSubtasks(taskID, {});
+	let subtasks: Task[] = get2.body;
+
+	client.logger.log(subtasks);
+
 	let output = '';
 	output += `task.folder.name = ${task.folder.name} : ID ${task.folder.id}\n`;
 	output += `task.list.name = ${task.list.name} : ID ${task.list.id}\n`;
@@ -48,6 +53,13 @@ thisCommand.run = async (client, message, args, level) => {
 		output += `${user.username}\n`;
 	});
 	output += `\n`;
+
+	// output += `\n`;
+	// output += `task.subtasks =\n`;
+	// subtasks.forEach((task) => {
+	// 	output += `${task.name}\n`;
+	// });
+	// output += `\n`;
 
 	output += `task.status.color = ${task.status.color}\n`;
 

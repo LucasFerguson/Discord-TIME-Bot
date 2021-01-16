@@ -27,6 +27,19 @@ export default class Tasks {
 	}
 
 	/**
+	 * Get subtasks task
+	 *
+	 * @param {String} taskId The task id
+	 * @param {Object} [options] The parameter options to pass in
+	 */
+	async getSubtasks(taskId, options) {
+		return this.client.get({
+			endpoint: `task/${taskId}?subtasks=true`, ///api/v2/task/:parent_id?subtasks=true
+			params: { subtasks: true },
+		});
+	}
+
+	/**
 	 * Update a task
 	 *
 	 * @param {String} taskId The task id
