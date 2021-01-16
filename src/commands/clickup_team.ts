@@ -69,6 +69,13 @@ thisCommand.run = async (client, message, args, level) => {
 			subtasks: true,
 		});
 		tasks = tasks.body.tasks;
+
+		let temp = [];
+		for (let i = tasks.length; i >= 0; i--) {
+			temp.push(tasks[i]);
+		}
+		tasks = temp;
+
 		// client.logger.log('tasks');
 		// client.logger.log(tasks);
 		all.push({
