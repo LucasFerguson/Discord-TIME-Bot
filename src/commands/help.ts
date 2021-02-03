@@ -5,7 +5,7 @@ command is also filtered by level, so if a user does not have access to
 a command, it is not shown to them. If a command name is given with the
 help command, its extended help is shown.
 */
-import { Message } from 'discord.js';
+import * as Discord from 'discord.js';
 import GuideBot from '../ClientClass';
 import { Command } from '../config/Command';
 
@@ -28,8 +28,6 @@ let thisCommand: Command = {
 };
 
 thisCommand.run = async (client, message, args, level) => {
-	// If no specific command is called, show all filtered commands.
-
 	// if (!args[0]) {
 	// 	// Filter all commands by which are available for the user's level, using the <Collection>.filter() method.
 	// 	const myCommands = message.guild
@@ -50,8 +48,6 @@ thisCommand.run = async (client, message, args, level) => {
 	// 	0
 	// 	);
 
-	let responseMessage = '';
-
 	let categories = [
 		{ name: 'User', arr: [], page: 0 },
 		{ name: 'ClickUp', arr: [], page: 0 },
@@ -68,136 +64,60 @@ thisCommand.run = async (client, message, args, level) => {
 	let page = 0;
 
 	if (!args[0]) {
-		// message.channel.send(output);
-
-		// const exampleEmbed = {
-		// 	color: 0xf6b436,
-		// 	title: 'Help Command',
-		// 	description: `${output}`,
-		// 	footer: {
-		// 		text: '1/4',
-		// 	},
-		// };
+		// If no specific command is called, show all filtered commands.
 
 		let botMessage = await message.channel.send({
 			embed: getpage(client, 0, categories),
 		});
 
-		await botMessage.react('◀️');
-		await botMessage.react('▶️');
-		// await botMessage.react('🔢');
-		await botMessage.react('❌');
+		addMenu(client, botMessage, categories);
+	}
 
-		let r1 = client.addReactionsListener(
-			botMessage,
-			'▶️',
-			(reaction, user) => {
-				botMessage.edit({ embed: getpage(client, 1, categories) });
-				if (message.guild) {
-					reaction.users.remove(user.id);
-				}
-			}
-		);
-
-		let r2 = client.addReactionsListener(
-			botMessage,
-			'◀️',
-			(reaction, user) => {
-				botMessage.edit({ embed: getpage(client, 0, categories) });
-				if (message.guild) {
-					reaction.users.remove(user.id);
-				}
-			}
-		);
-
-		let r3 = client.addReactionsListener(
-			botMessage,
-			'❌',
-			(reaction, user) => {
-				r1.removeAllListeners();
-				r2.removeAllListeners();
-				r3.removeAllListeners();
-				try {
-					botMessage.delete();
-				} catch (e) {}
-
-				if (message.guild) {
-					try {
-						message.delete();
-					} catch (e) {}
-				}
-			}
-		);
-
-		// botMessage
-		// 	.awaitReactions(
-		// 		(reaction, user) =>
-		// 			user.id == message.author.id &&
-		// 			(reaction.emoji.name == '◀️' ||
-		// 				reaction.emoji.name == '▶️'),
-		// 		{ max: 1, time: 30000 }
-		// 	)
-		// 	.then((collected) => {
-		// 		if (collected.first().emoji.name == '▶️') {
-		// 			collected.first().users.remove(message.author.id);
-		// 			botMessage.edit({ embed: getpage(client, 1, categorys) });
-		// 		}
-
-		// 		if (collected.first().emoji.name == '◀️') {
-		// 			collected.first().users.remove(message.author.id);
-		// 			botMessage.edit({ embed: getpage(client, 0, categorys) });
-		// 		}
-		// 	})
-		// 	.catch(() => {
-		// 		client.logger.log(
-		// 			'No reaction after 30 seconds, operation canceled'
-		// 		);
-		// 	});
-	} else {
+	if (args[0]) {
 		// Show individual command's help.
 
-		// try {
-		// } catch (e) {
-
-		// }
-
 		let isCommand = true;
+		let category;
 
 		for (let i = 0; i < categories.length; i++) {
 			if (args[0].toLowerCase() == categories[i].name.toLowerCase()) {
 				isCommand = false;
-				client.logger.log('category ' + categories[i].name);
-
-				let output = `\nUse ${client.config.defaultSettings.prefix}help <commandname> for details ***-help ping***`;
-				output += `\nUse ${client.config.defaultSettings.prefix}help <command category> ***-help ClickUp***\n`;
-
-				output += `\n**== __${categories[i].name} Commands__ ==**\n`;
-				categories[i].arr.forEach((c) => {
-					output += `***${client.config.defaultSettings.prefix}${c.help.name}*** : \`${c.help.description}\`\n`;
-				});
-
-				const exampleEmbed = {
-					color: 0xe7e7e7,
-					author: {
-						name: `${categories[i].name} Commands`,
-						icon_url: '',
-					},
-
-					description: `${output}`,
-					footer: {
-						text: `${page + 1}/1`,
-					},
-				};
-
-				if (categories[i].name == 'ClickUp') {
-					exampleEmbed.author.icon_url =
-						'https://clickup.com/landing/images/for-se-page/clickup.png';
-				}
-
-				message.channel.send({
-					embed: exampleEmbed,
-				});
+				category = categories[i];
 			}
+		}
+
+		if (!isCommand) {
+			client.logger.log('category ' + category.name);
+
+			let output = `\nUse ${client.config.defaultSettings.prefix}help <commandname> for details ***-help ping***`;
+			output += `\nUse ${client.config.defaultSettings.prefix}help <command category> ***-help ClickUp***\n`;
+
+			output += `\n**== __${category.name} Commands__ ==**\n`;
+			category.arr.forEach((c) => {
+				output += `***${client.config.defaultSettings.prefix}${c.help.name}*** : \`${c.help.description}\`\n`;
+			});
+
+			const exampleEmbed = {
+				color: 0xe7e7e7,
+				author: {
+					name: `${category.name} Commands`,
+					icon_url: '',
+				},
+
+				description: `${output}`,
+				footer: {
+					text: `${page + 1}/1`,
+				},
+			};
+
+			if (category.name == 'ClickUp') {
+				exampleEmbed.author.icon_url =
+					'https://clickup.com/landing/images/for-se-page/clickup.png';
+			}
+
+			message.channel.send({
+				embed: exampleEmbed,
+			});
 		}
 
 		if (isCommand) {
@@ -263,4 +183,44 @@ function getpage(client: GuideBot, page: number, categories) {
 	// message.edit({ embed: exampleEmbed });
 
 	return exampleEmbed;
+}
+
+async function addMenu(
+	client: GuideBot,
+	botMessage: Discord.Message,
+	categories
+) {
+	await botMessage.react('◀️');
+	await botMessage.react('▶️');
+	// await botMessage.react('🔢');
+	await botMessage.react('❌');
+
+	let r1 = client.addReactionsListener(botMessage, '▶️', (reaction, user) => {
+		botMessage.edit({ embed: getpage(client, 1, categories) });
+		if (botMessage.guild) {
+			reaction.users.remove(user.id);
+		}
+	});
+
+	let r2 = client.addReactionsListener(botMessage, '◀️', (reaction, user) => {
+		botMessage.edit({ embed: getpage(client, 0, categories) });
+		if (botMessage.guild) {
+			reaction.users.remove(user.id);
+		}
+	});
+
+	let r3 = client.addReactionsListener(botMessage, '❌', (reaction, user) => {
+		r1.removeAllListeners();
+		r2.removeAllListeners();
+		r3.removeAllListeners();
+		try {
+			botMessage.delete();
+		} catch (e) {}
+
+		// if (botMessage.guild) {
+		// 	try {
+		// 		message.delete();
+		// 	} catch (e) {}
+		// }
+	});
 }
