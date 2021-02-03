@@ -1,3 +1,5 @@
+import * as Discord from 'discord.js';
+import GuideBot from '../ClientClass';
 import { Command } from '../config/Command';
 
 let thisCommand: Command = {

@@ -1,13 +1,9 @@
 import got from 'got';
-import { Http2ServerRequest } from 'http2';
 import * as Discord from 'discord.js';
 
 import GuideBot from '../ClientClass';
-import config from '../config';
 import * as tokens from '../../tokens/token.lock.json';
 import { Folder } from '../config/Folder';
-import { Space } from '../config/Space';
-import { Task } from '../config/Task';
 
 import Authorization from './clickupLib/Authorization';
 import Checklists from './clickupLib/Checklists';
@@ -21,20 +17,6 @@ import Tasks from './clickupLib/Tasks';
 import Teams from './clickupLib/Teams';
 import Views from './clickupLib/Views';
 import Webhooks from './clickupLib/Webhooks';
-
-// if (error.response) {
-// 	// The request was made and the server responded with a status code
-// 	// that falls out of the range of 2xx
-// 	client.logger.log(error.response.body);
-// 	client.logger.log(error.response.statusCode);
-// 	client.logger.log(error.response.headers);
-// } else if (error.request) {
-// 	// The request was made but no response was received
-// 	client.logger.log(error.request);
-// } else {
-// 	// Something happened in setting up the request that triggered an Error
-// 	console.log('Error', error.message);
-// }
 
 export default class Clickup {
 	_baseUrl: string;
@@ -95,14 +77,6 @@ export default class Clickup {
 		let get = await this.spaces.getFolders('1280032');
 		let folders: Folder[] = get.body.folders;
 
-		// console.log(folders[0].lists[0].name);
-
-		// folders.forEach((folder) => {
-		// 	folder.lists.forEach((list) => {
-		// 		console.log(list.id);
-		// 		let gettasks = await this.lists.getTasks('1280032');
-		// 	});
-		// });
 		let num = 0;
 		let returnString = '';
 

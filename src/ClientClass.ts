@@ -327,7 +327,3 @@ export default class GuideBot extends Discord.Client {
 		}
 	}
 }
-
-// module.exports = {
-// 	GuideBot,
-// };

@@ -1,7 +1,7 @@
 /*
 Reloads a command that\"s been modified
 */
-import { Message } from 'discord.js';
+import * as Discord from 'discord.js';
 import GuideBot from '../ClientClass';
 import { Command } from '../config/Command';
 

@@ -2,9 +2,10 @@
 
 Lucas Ferguson  
 Date 10/31/2020  
-Date Updated 1/5/2021
+Date Updated 2/3/2021
 
 ---
+
 ## File Architecture
 
 TimeBot  
@@ -17,7 +18,7 @@ TimeBot
 ---
 
 Credit  
-https://github.com/AnIdiotsGuide/guidebot/blob/master/commands/stats.js  
+https://github.com/AnIdiotsGuide/guidebot
 https://discohook.org/
 
 | Table     | Description |
