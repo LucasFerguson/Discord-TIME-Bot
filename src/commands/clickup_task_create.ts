@@ -14,55 +14,71 @@ let thisCommand: Command = {
 		name: 'clickup_task_create',
 		category: 'ClickUp',
 		description: 'Create task.',
-		usage: 'clickup task <task id>',
+		usage: 'clickup team <subteam> <task name>',
 	},
 };
 
 thisCommand.run = async (client, message, args, level) => {
 	// incorrect parameters
-	if (args.length == 1) {
-	} else {
-		message.channel.send('incorrect parameters');
-		let help = client.getCommand('h');
-		help.run(client, message, ['clickup_task'], level);
+	if (!args[0] || !args[1]) {
+		let output = '';
+
+		let subteams = await client.database.getAllSubteams();
+
+		subteams.forEach((team) => {
+			output += `${team.name}\n`;
+		});
+
+		const exampleEmbed = {
+			color: 0xe7e7e7,
+			title: 'ClickUp - Subteams',
+			description: `${output}`,
+			// footer: {
+			// 	text: `${page + 1}/2`,
+			// },
+		};
+		message.channel.send({ embed: exampleEmbed });
+
 		return;
 	}
+	//correct parameters
 
 	message.channel.startTyping();
 
-
-	// get a specific task
-	let taskID = args[0];
-	let get = await client.clickup.tasks.get(taskID, { subtasks: true });
-
-	let task: Task = get.body;
-
-	client.logger.log(task);
-
-	let output = '';
-	output += `task.folder.name = ${task.folder.name} : ID ${task.folder.id}\n`;
-	output += `task.list.name = ${task.list.name} : ID ${task.list.id}\n`;
-	output += `task.url = ${task.url}\n`;
-	output += `task.status.status = **${task.status.status}**\n`;
-
-	output += `\n`;
-	output += `task.assignees =\n`;
-	task.assignees.forEach((user) => {
-		output += `${user.username}\n`;
+	let teamName = '';
+	args.forEach((s) => {
+		teamName += s;
 	});
-	output += `\n`;
 
-	output += `task.status.color = ${task.status.color}\n`;
+	// get database data
+	let team = await client.database.getSubteam(teamName);
+	let body = await client.clickup.folders.getLists(team.id.clickup);
+	body = body.body;
 
-	const exampleEmbed = {
-		color: `0x${task.status.color.substring(1)}`,
-		title: `Name: ${task.name} (${task.id})`,
-		description: `${output}`,
-		// footer: {
-		// 	text: `${page + 1}/2`,
-		// },
-	};
-	message.channel.send({ embed: exampleEmbed });
+
+	try {
+		// client.logger.log(out);
+
+		const exampleEmbed = {
+			color: 0xe7e7e7,
+			title: `ClickUp - ${team.name}`,
+			description: `Task ID : Task URL \n${output}`,
+			// footer: {
+			// 	text: `${page + 1}/2`,
+			// },
+			author: {
+				name: `ClickUp - ${team.name}`,
+				icon_url:
+					'https://clickup.com/landing/images/for-se-page/clickup.png',
+			},
+		};
+		message.channel.send({ embed: exampleEmbed });
+	} catch (error) {
+		message.channel.send('Team not Found');
+
+		client.logger.log(error);
+	}
+
 	message.channel.stopTyping();
 };
 
