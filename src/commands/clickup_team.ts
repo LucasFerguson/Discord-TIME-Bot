@@ -2,7 +2,7 @@ import { Command } from '../config/Command';
 import { Task } from '../config/Task';
 
 let thisCommand: Command = {
-	run: async (client, message, args, level) => {},
+	run: async (client, message, args, level) => { },
 	conf: {
 		enabled: true,
 		guildOnly: false,
@@ -88,7 +88,7 @@ thisCommand.run = async (client, message, args, level) => {
 
 	let output = '';
 	all.forEach((list) => {
-		output += '**List Name : ' + list.name + '**\n';
+		output += '**List Name : ' + list.name + '  ' + list.id + '**\n';
 		list.tasks.forEach((task) => {
 			if (task.parent == null) {
 				output += ` ${task.id} : [${task.name}](${task.url})\n`;
