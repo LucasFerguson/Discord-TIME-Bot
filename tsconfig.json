@@ -8,5 +8,8 @@
         "watch": true,
         "resolveJsonModule": true,
         // "esModuleInterop": true 
+        "types": [
+            "node"
+        ]
     }
 }

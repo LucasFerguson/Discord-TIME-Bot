@@ -6,21 +6,21 @@ let thisCommand: Command = {
 	conf: {
 		enabled: true,
 		guildOnly: false,
-		aliases: [''],
+		aliases: ['taskcreate'],
 		permLevel: 0,
 	},
 
 	help: {
-		name: 'clickup_task_create',
+		name: 'clickup_create_task',
 		category: 'ClickUp',
 		description: 'Create task.',
-		usage: 'clickup team <subteam> <task name>',
+		usage: 'createtask <subteam name> <list number> <task name>',
 	},
 };
 
 thisCommand.run = async (client, message, args, level) => {
 	// incorrect parameters
-	if (!args[0] || !args[1]) {
+	if (!args[0] || !args[1] || !args[2]) {
 		let output = '';
 
 		let subteams = await client.database.getAllSubteams();
@@ -58,6 +58,7 @@ thisCommand.run = async (client, message, args, level) => {
 
 	try {
 		// client.logger.log(out);
+		let output = '';
 
 		const exampleEmbed = {
 			color: 0xe7e7e7,
