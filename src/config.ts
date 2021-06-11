@@ -9,6 +9,8 @@ export default {
 	// Bot Support, level 8 by default. Array of user ID strings
 	support: [],
 
+	leads: [],
+
 	discord: {
 		logs: {
 			server: '645171221104689152',

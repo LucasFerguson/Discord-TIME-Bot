@@ -107,7 +107,7 @@ thisCommand.run = async (client, message, args, level) => {
 		const exampleEmbed = {
 			color: 0xe7e7e7,
 			title: `ClickUp - ${team.name}`,
-			description: `Task ID : Task URL \n${output.substring(0, 1990)}`,
+			description: `Task ID : Task URL \n${output.substring(0, 1960)}\nError: message over 2000 characters`,
 			// footer: {
 			// 	text: `${page + 1}/2`,
 			// },
