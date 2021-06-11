@@ -17,7 +17,7 @@ export default class Database {
 		// admin = require('firebase-admin');
 		this.app = admin.initializeApp({
 			credential: admin.credential.cert(
-				<admin.ServiceAccount>tokens.googleFirebase
+				<admin.ServiceAccount> tokens.googleFirebase
 			),
 		});
 
@@ -41,7 +41,7 @@ export default class Database {
 	async getSubteam(teamName: string): Promise<SubTeam> {
 		let subteams = await this.getAllSubteams();
 
-		let team: SubTeam;
+		let team: SubTeam = null;
 		subteams.forEach((t) => {
 			if (
 				t.name.toLowerCase().replace(' ', '') ==

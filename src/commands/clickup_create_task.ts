@@ -6,7 +6,7 @@ let thisCommand: Command = {
 	conf: {
 		enabled: true,
 		guildOnly: false,
-		aliases: ['taskcreate'],
+		aliases: ['taskcreate', 'createtask'],
 		permLevel: 0,
 	},
 
@@ -20,6 +20,7 @@ let thisCommand: Command = {
 
 thisCommand.run = async (client, message, args, level) => {
 	// incorrect parameters
+
 	if (!args[0] || !args[1] || !args[2]) {
 		let output = '';
 
@@ -37,6 +38,8 @@ thisCommand.run = async (client, message, args, level) => {
 			// 	text: `${page + 1}/2`,
 			// },
 		};
+		message.channel.send('Incorrect Parameters. ' + thisCommand.help.usage);
+
 		message.channel.send({ embed: exampleEmbed });
 
 		return;
@@ -45,39 +48,42 @@ thisCommand.run = async (client, message, args, level) => {
 
 	message.channel.startTyping();
 
-	let teamName = '';
-	args.forEach((s) => {
-		teamName += s;
-	});
+	let subteamName = '' + args[0];
+	let listNumber = Number.parseInt(args[1]);
+	let taskName = '';
+	for (let i = 2; i < args.length; i++) {
+		taskName += args[i] + " ";
+	}
 
 	// get database data
-	let team = await client.database.getSubteam(teamName);
+	let team = await client.database.getSubteam(subteamName);
+	if (team == null) {
+		message.channel.send('Error: Unknown Subteam');
+		return;
+	}
 	let body = await client.clickup.folders.getLists(team.id.clickup);
 	body = body.body;
 
+	interface list {
+		name: string;
+		id: string;
+	}
 
-	try {
-		// client.logger.log(out);
-		let output = '';
+	let allSubteamLists: list[] = [];
 
-		const exampleEmbed = {
-			color: 0xe7e7e7,
-			title: `ClickUp - ${team.name}`,
-			description: `Task ID : Task URL \n${output}`,
-			// footer: {
-			// 	text: `${page + 1}/2`,
-			// },
-			author: {
-				name: `ClickUp - ${team.name}`,
-				icon_url:
-					'https://clickup.com/landing/images/for-se-page/clickup.png',
-			},
-		};
-		message.channel.send({ embed: exampleEmbed });
-	} catch (error) {
-		message.channel.send('Team not Found');
+	for (let i = 0; i < body.lists.length; i++) {
+		allSubteamLists.push({
+			name: body.lists[i].name,
+			id: body.lists[i].id,
+		});
+	}
 
-		client.logger.log(error);
+	let response = await client.clickup.lists.createTask(allSubteamLists[listNumber - 1].id, { "name": taskName });
+
+	if (response.statusCode == 200) {
+		message.channel.send("```New Task Created!\n Task Name: \"" + taskName + "\" List: \"" + allSubteamLists[listNumber - 1].name + "\"```");
+	} else {
+		message.channel.send("```Error: Could not create new task. statusCode = " + response.statusCode + "```");
 	}
 
 	message.channel.stopTyping();

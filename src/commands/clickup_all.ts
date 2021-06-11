@@ -2,7 +2,7 @@ import { Command } from '../config/Command';
 import { Folder } from '../config/Folder';
 
 let thisCommand: Command = {
-	run: async (client, message, args, level) => {},
+	run: async (client, message, args, level) => { },
 	conf: {
 		enabled: true,
 		guildOnly: false,
@@ -13,7 +13,7 @@ let thisCommand: Command = {
 	help: {
 		name: 'clickup_all',
 		category: 'ClickUp',
-		description: 'Do not run.',
+		description: 'List of all ClickUp Folders and Lists',
 		usage: 'clickupALL',
 	},
 };

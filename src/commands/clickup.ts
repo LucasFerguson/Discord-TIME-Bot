@@ -3,7 +3,7 @@ import GuideBot from '../ClientClass';
 import { Command } from '../config/Command';
 
 let thisCommand: Command = {
-	run: async (client, message, args, level) => {},
+	run: async (client, message, args, level) => { },
 	conf: {
 		enabled: true,
 		guildOnly: false,
@@ -14,7 +14,7 @@ let thisCommand: Command = {
 	help: {
 		name: 'clickup',
 		category: 'ClickUp',
-		description: 'ClickUp',
+		description: 'Show ClickUp commands',
 		usage: 'clickup',
 	},
 };

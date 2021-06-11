@@ -3,6 +3,7 @@
 		"Timebot",
 		"firestore",
 		"subteam",
-		"subteams"
+		"subteams",
+		"taskcreate"
 	]
 }
