@@ -1,18 +1,17 @@
-let letterArt = `
-████████╗ ██╗ ███╗   ███╗ ███████╗
-╚══██╔══╝ ██║ ████╗ ████║ ██╔════╝
-   ██║    ██║ ██╔████╔██║ █████╗  
-   ██║    ██║ ██║╚██╔╝██║ ██╔══╝  
-   ██║    ██║ ██║ ╚═╝ ██║ ███████╗
-   ╚═╝    ╚═╝ ╚═╝     ╚═╝ ╚══════╝
-                                  
-⠀⠀⠀⠀██████╗  ██████╗ ████████╗    
-⠀⠀⠀⠀██╔══██╗██╔═══██╗╚══██╔══╝    
-⠀⠀⠀⠀██████╔╝██║   ██║   ██║       
-⠀⠀⠀⠀██╔══██╗██║   ██║   ██║       
-⠀⠀⠀⠀██████╔╝╚██████╔╝   ██║       
-⠀⠀⠀⠀╚═════╝  ╚═════╝    ╚═╝       
-`;
+
+// ████████╗ ██╗ ███╗   ███╗ ███████╗
+// ╚══██╔══╝ ██║ ████╗ ████║ ██╔════╝
+//    ██║    ██║ ██╔████╔██║ █████╗  
+//    ██║    ██║ ██║╚██╔╝██║ ██╔══╝  
+//    ██║    ██║ ██║ ╚═╝ ██║ ███████╗
+//    ╚═╝    ╚═╝ ╚═╝     ╚═╝ ╚══════╝
+
+// ⠀⠀⠀⠀██████╗  ██████╗ ████████╗    
+// ⠀⠀⠀⠀██╔══██╗██╔═══██╗╚══██╔══╝    
+// ⠀⠀⠀⠀██████╔╝██║   ██║   ██║       
+// ⠀⠀⠀⠀██╔══██╗██║   ██║   ██║       
+// ⠀⠀⠀⠀██████╔╝╚██████╔╝   ██║       
+// ⠀⠀⠀⠀╚═════╝  ╚═════╝    ╚═╝    
 
 import { promisify } from 'util';
 import * as fs from 'fs';
@@ -34,15 +33,12 @@ const intents = ['GUILDS', 'GUILD_MESSAGES', 'DIRECT_MESSAGES'];
 // This is your client. Some people call it `bot`, some people call it `self`,
 // or `bot.something`, this is what we're refering to. Your client.
 const client = new GuideBot(); //const client = new GuideBot({ ws: { intents: intents } });
-client.botInfo.letterArt = letterArt;
 
 // We're doing real fancy node 8 async/await stuff here, and to do that
 // we need to wrap stuff in an anonymous function. It's annoying but it works.
 
 const init = async () => {
 	client.logger.log('');
-	client.logger.log('');
-	client.logger.log(letterArt);
 
 	// Here we load **commands** into memory, as a collection, so they're accessible
 	// here and everywhere else.

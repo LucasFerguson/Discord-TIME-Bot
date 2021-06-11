@@ -27,7 +27,19 @@ export default class GuideBot extends Discord.Client {
 
 	botInfo = {
 		startTime: 0,
-		letterArt: '',
+		letterArt: `           T.I.M.E. Bot   
+████████╗ ██╗ ███╗   ███╗ ███████╗
+╚══██╔══╝ ██║ ████╗ ████║ ██╔════╝
+   ██║    ██║ ██╔████╔██║ █████╗  
+   ██║    ██║ ██║╚██╔╝██║ ██╔══╝  
+   ██║    ██║ ██║ ╚═╝ ██║ ███████╗
+   ╚═╝    ╚═╝ ╚═╝     ╚═╝ ╚══════╝
+⠀⠀⠀⠀██████╗  ██████╗ ████████╗    
+⠀⠀⠀⠀██╔══██╗██╔═══██╗╚══██╔══╝    
+⠀⠀⠀⠀██████╔╝██║   ██║   ██║       
+⠀⠀⠀⠀██╔══██╗██║   ██║   ██║       
+⠀⠀⠀⠀██████╔╝╚██████╔╝   ██║       
+⠀⠀⠀⠀╚═════╝  ╚═════╝    ╚═╝      `,
 	};
 
 	/**
@@ -47,11 +59,6 @@ export default class GuideBot extends Discord.Client {
 		// catalogued, listed, etc.
 		this.commands = [];
 		this.aliases = [];
-
-		// Now we integrate the use of Evie's awesome Enhanced Map module, which
-		// essentially saves a collection to disk. This is great for per-server configs,
-		// and makes things extremely easy for this purpose.
-		// this.settings = {};
 
 		//requiring the Logger class for easy console logging
 		this.logger = new Logger(this);
@@ -139,7 +146,7 @@ export default class GuideBot extends Discord.Client {
 			// reaction.remove();
 			try {
 				message.reactions.removeAll();
-			} catch (e) {}
+			} catch (e) { }
 			// message.delete();
 		});
 

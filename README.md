@@ -25,3 +25,13 @@ https://discohook.org/
 | --------- | ----------- |
 | Header    | Text        |
 | Paragraph | Text        |
+
+
+ = STATISTICS = 
+• Mem Usage  :: 35.71 MB
+• Uptime     :: 138 days, 4 hrs, 59 mins, 56 secs
+• Users      :: 40
+• Servers    :: 2
+• Channels   :: 75
+• Discord.js :: v12.5.1
+• Node       :: v10.19.0
