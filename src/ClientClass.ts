@@ -9,6 +9,7 @@ import { Command } from './config/Command';
 
 import config from './config';
 import configLevels from './configLevels';
+import thisCommand from './commands/clickup';
 
 var wait = require('util').promisify(setTimeout);
 
@@ -282,6 +283,7 @@ export default class GuideBot extends Discord.Client {
 		// 	returnObject[key] = guildData[key] ? guildData[key] : defaults[key];
 		// });
 		return this.config.defaultSettings;
+
 	}
 
 	// writeSettings overrides, or adds, any configuration item that is different
